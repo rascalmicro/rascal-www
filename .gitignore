@@ -1,0 +1,22 @@
+
+# Blogofile
+_controllers/
+!_controllers/static.py
+_filters/
+_site/
+_templates/
+!_templates/footer.mako
+!_templates/head.mako
+!_templates/header.mako
+!_templates/post.mako
+!_templates/site.mako
+!_templates/static.mako
+
+# PHPBB
+forum/
+!forum/styles/prosilver/templates/overall_header.html
+!forum/styles/prosilver/templates/overall_footer.html
+
+# Non-diffable stuff
+img/
+

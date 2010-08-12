@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+}
+
+body {
+    font-family: "Molengo","URW Gothic L",sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+.rascalcontent { /* named to avoid conflict with phpBB .content rules */
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background: #414243;
+    height: 150px;
+    color: #E7E8E9;
+}
+
+#torso {
+    background: #E7E8E9;
+    color: #414243;
+    padding-bottom: 15px;
+    min-height: 700px;
+}
+
+#footer {
+    clear: both;
+    background: #414243;
+    color: #4EABBF;
+    padding-bottom: 20px;
+}
+
+#topbar {
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 950px;
+    text-align: right;
+    font-size: 1.125em;
+    border-bottom: 1px dotted #E9865C;
+}
+
+#topcontent {
+    text-align: right;
+}
+
+#lefttorso {
+    width: 450px;
+    float: left;
+}
+
+#righttorso {
+    width: 450px;
+    margin-left: 500px;*/
+}
+
+#bottomcontent, #bottombar {
+    text-align: center;
+}
+
+#nav {
+    margin-top: 30px;
+}
+
+#nav li {
+    display: inline;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+img {
+    margin: 10px;
+    margin-left: 0px;
+}
+
+#rascallogo {
+    clear: none;
+    float: left;
+    height: 70px;
+    border: none;
+    margin-top: -20px;
+}
+
+#righttorso img {
+    border: 5px solid #414243;
+    margin-left: -500px;
+}
+
+p {
+    padding: 10px;
+}
+
+/* headings */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Trebuchet MS",Verdana,sans-serif;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    color: #51A8CB;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #475373;
+}
+
+h3 {
+    font-size: 1.1em;
+    color: #CCC059;
+}
+
+h4 {
+    font-size: 1em;
+    color: #414243;
+}
+
+/* links */
+
+#header a {
+    color: #51A8CB;
+    text-decoration: none;
+}
+
+#header a:visited {
+    color: #51A8CB;
+}
+
+#header a:hover {
+    color: #95C3DB;
+}
+
+#torso a {
+    color: #475373;
+    font-weight: bold;
+}
+
+#torso a:visited {
+    color: #475373;
+    font-weight: bold;
+}
+
+#torso a:hover {
+    color: #51A8CB;
+    font-weight: bold;
+}
+
+#footer a {
+    color: #E7E8E9;
+}
+
+#footer a:visited {
+    color: #E7E8E9;
+}
+
+#footer a:hover {
+    color: #E7E8E9;
+}
+
+/* for gitit */
+
+.tabs li + li + li + li { /* hides discuss tab */
+    display: none;
+}
+
+* { margin:0px; padding:0px; }
+
+body, ul, ol, dl {
+    margin: 0px;
+}
+
+#doc3 { margin: 0px; }
+
+#sidebar {
+    padding: 10px;
+    padding-top: 25px;
+    float: right;
+}
+
+#userbox { display: none; }
+
+#yui-main { background: #E7E8E9; }
+
+#maincol {
+    background: #E7E8E9;
+    color: #222233;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#topcontent {
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+}
+
+#content {
+    min-height: 700px;
+}
+
+h1.pageTitle {
+    font-size: 20px;
+}
+
+/* end gitit styles */
+
+/* for phpBB */
+
+#search-box {
+    margin: 0;
+    padding-top: 20px;
+}
+
+#wrap {
+	padding-top: 10px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.postbody .content {
+    font-size: 0.875em;
+}
+
+.navbar {
+    background-color: #A2A7BB;
+}
+
+.forumbg, .forabg {
+    background-color: #A2A7BB;
+}
+
+.username-coloured {
+    color: #475373 !important; /* forces override of inline style */
+}
+
+html, body { /* counteracting phpBB's attempt to force a vertical scroll bar */
+    height: 100%;
+    background-color: #414243;
+}
+
+#page-body p {
+    margin-bottom: 0;
+}
+
+#phpbb #torso {
+    padding-bottom: 0;
+}
+
+#topcontent p {
+    line-height: 1em;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+#page-footer .corners-bottom {
+    display: none;
+}
+
+#page-footer .linklist {
+    padding-bottom: 5px;
+}
+
+/* end phpBB styles */
+
+/* for blogofile */
+
+.blog_post_title {
+    padding-top: 10px;
+}
+
+/* end blogofile styles */
