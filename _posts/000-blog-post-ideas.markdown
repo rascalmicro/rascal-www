@@ -74,3 +74,18 @@ Running a company
 	* UPS account
 	* Kitting parts for Advanced Assembly with envelopes and 2x4 stickers
 	* Economics of PCBs
+
+## General hackery skills ##
+1. Using a packet sniffer like Wireshark
+2. How the internet works
+3. Install Tomato or DDWRT or whatever
+4. SSH
+5. Soldering tricks-- flux, wire-wrap wire for rework, heatgun for chip removal
+
+## More explanation of LED driver circuit ##
+
+Suppose the LED is at max current. The pot is at 10k, and Q1 is off. The V<sub>BE</sub>'s balance each other. If you lower the pot resistance, the voltage below Q1's emitter drops, which turns on Q1 a little. This makes a little collector current flow, which creates a voltage drop across the collector resistor. This pulls the MOSFET gate a little lower, so it turns off more. This makes the LED current drop, which lowers the voltage holding up the other diode. This process continues until the voltages below the diodes match again. If the voltage in the LED leg were higher, more current would flow in Q1, which would push the process along. If the voltage in the LED leg were to drop below the voltage in the control leg, the current in Q1 would drop, which would reverse the process, reducing current in Q1 and turning on the MOSFET, such that the voltage in the LED leg would rise again.
+
+Not exactly true because the two diodes aren't actually identical, but they're close enough.
+http://radiolocation.tripod.com/LEDdimmer/LEDlampDimmer.html
+

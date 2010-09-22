@@ -1,3 +1,13 @@
+@rascal-main: #CD2820;
+@rascal-light: @rascal-main + #222;
+@rascal-extra-light: @rascal-main + #444;
+@rascal-dark: @rascal-main - #222;
+@rascal-gray: #414243;
+@rascal-white: #E7E8E9;
+@rascal-complement: #51A8CB;
+@rascal-forum-bg: #CCCCCC;
+@rascal-dark-blue: #475373;
+
 * {
     margin: 0;
     padding: 0;
@@ -20,22 +30,22 @@ body {
 }
 
 #header {
-    background: #414243;
+    background: @rascal-gray;
     height: 150px;
-    color: #E7E8E9;
+    color: @rascal-white;
 }
 
 #torso {
-    background: #E7E8E9;
-    color: #414243;
+    background: @rascal-white;
+    color: @rascal-gray;
     padding-bottom: 15px;
     min-height: 700px;
 }
 
 #footer {
     clear: both;
-    background: #414243;
-    color: #4EABBF;
+    background: @rascal-gray;
+    color: @rascal-light;
     padding-bottom: 20px;
 }
 
@@ -46,7 +56,7 @@ body {
     width: 950px;
     text-align: right;
     font-size: 1.125em;
-    border-bottom: 1px dotted #E9865C;
+    border-bottom: 1px dotted @rascal-white;
 }
 
 #topcontent {
@@ -60,7 +70,7 @@ body {
 
 #righttorso {
     width: 450px;
-    margin-left: 500px;*/
+    margin-left: 500px;
 }
 
 #bottomcontent, #bottombar {
@@ -91,12 +101,16 @@ img {
 }
 
 #righttorso img {
-    border: 5px solid #414243;
+    border: 5px solid @rascal-gray;
     margin-left: -500px;
 }
 
-p {
+p, .mc-field-group {
     padding: 10px;
+}
+
+ul, ol {
+    margin-left: 40px;
 }
 
 /* headings */
@@ -109,117 +123,66 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2em;
-    color: #51A8CB;
-    font-weight: normal;
+    font-size: 1.3em;
+    color: @rascal-dark-blue;
 }
 
 h2 {
     font-size: 1.2em;
-    color: #475373;
+    color: @rascal-dark-blue;
 }
 
 h3 {
     font-size: 1.1em;
-    color: #CCC059;
+    color: @rascal-dark-blue;
 }
 
 h4 {
     font-size: 1em;
-    color: #414243;
+    color: @rascal-gray;
 }
 
 /* links */
 
 #header a {
-    color: #51A8CB;
+    color: @rascal-main;
     text-decoration: none;
 }
 
 #header a:visited {
-    color: #51A8CB;
+    color: @rascal-light;
 }
 
 #header a:hover {
-    color: #95C3DB;
+    color: @rascal-extra-light;
 }
 
 #torso a {
-    color: #475373;
+    color: @rascal-dark;
     font-weight: bold;
 }
 
 #torso a:visited {
-    color: #475373;
+    color: @rascal-dark;
     font-weight: bold;
 }
 
 #torso a:hover {
-    color: #51A8CB;
+    color: @rascal-main;
     font-weight: bold;
 }
 
 #footer a {
-    color: #E7E8E9;
+    color: @rascal-white;
 }
 
 #footer a:visited {
-    color: #E7E8E9;
+    color: @rascal-white;
 }
 
 #footer a:hover {
-    color: #E7E8E9;
+    color: @rascal-white;
 }
-
-/* for gitit */
-
-.tabs li + li + li + li { /* hides discuss tab */
-    display: none;
-}
-
-* { margin:0px; padding:0px; }
-
-body, ul, ol, dl {
-    margin: 0px;
-}
-
-#doc3 { margin: 0px; }
-
-#sidebar {
-    padding: 10px;
-    padding-top: 25px;
-    float: right;
-}
-
-#userbox { display: none; }
-
-#yui-main { background: #E7E8E9; }
-
-#maincol {
-    background: #E7E8E9;
-    color: #222233;
-    width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
-
-#topcontent {
-    width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 120px;
-}
-
-#content {
-    min-height: 700px;
-}
-
-h1.pageTitle {
-    font-size: 20px;
-}
-
-/* end gitit styles */
 
 /* for phpBB */
 
@@ -238,12 +201,8 @@ h1.pageTitle {
     font-size: 0.875em;
 }
 
-.navbar {
-    background-color: #A2A7BB;
-}
-
-.forumbg, .forabg {
-    background-color: #A2A7BB;
+.navbar, .forumbg, .forabg {
+    background-color: @rascal-forum-bg;
 }
 
 .username-coloured {
@@ -252,7 +211,7 @@ h1.pageTitle {
 
 html, body { /* counteracting phpBB's attempt to force a vertical scroll bar */
     height: 100%;
-    background-color: #414243;
+    background-color: @rascal-gray;
 }
 
 #page-body p {
@@ -267,6 +226,15 @@ html, body { /* counteracting phpBB's attempt to force a vertical scroll bar */
     line-height: 1em;
     font-size: 1em;
     margin-bottom: 0;
+}
+
+ul.forums {
+    background-color: @rascal-white;
+    background-image: none;
+}
+
+ul.topiclist li.row:hover {
+    background-color: @rascal-forum-bg;
 }
 
 #page-footer .corners-bottom {
@@ -286,3 +254,4 @@ html, body { /* counteracting phpBB's attempt to force a vertical scroll bar */
 }
 
 /* end blogofile styles */
+

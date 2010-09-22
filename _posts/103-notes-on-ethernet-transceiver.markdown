@@ -2,7 +2,7 @@
 author: Brandon Stafford
 categories: ethernet, protocols, hardware
 date: 2010/07/06 15:22:00
-draft: False
+draft: True
 format: markdown
 title: Notes on the Micrel KSZ8041TL Ethernet transceiver
 ---
