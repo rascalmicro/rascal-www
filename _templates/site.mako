@@ -1,18 +1,12 @@
-<%inherit file="base.mako" />
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        ${self.head()}
-    </head>
+<%inherit file="base.mako" /><!DOCTYPE html>
+<html lang="en">${self.head()}
     <body>
         <div class="content">
             ${self.header()}
             <div id="torso">
                 <div class="rascalcontent">
                     <div id="main_block">
-                        <div id="prose_block">
-                        ${next.body()}
+                        <div id="prose_block">${next.body()}
                         </div><!-- end prose block -->
                     </div><!-- end main block -->
                 </div>
