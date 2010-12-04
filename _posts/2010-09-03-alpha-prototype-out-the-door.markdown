@@ -10,4 +10,4 @@ I just sent the first working version of the Rascal to a friend of mine in Calif
 
 It feels good to be shipping something to someone, even if he's not a paying customer.
 
-<img src="http://69.164.219.36/img/alpha-rascal-shipped-2010-09-03.jpg">
+<img src="http://rascalmicro.com/img/alpha-rascal-shipped-2010-09-03.jpg">

@@ -46,7 +46,7 @@ $$code(lang=text)
     e1000e                119824  0 
 $$/code
 
-The first number is the size of the driver. The second is the number of other drivers depending on it. The last column is a list of those drivers.
+The first number in each row is the size of the driver. The second is the number of other drivers depending on it. The last column is a list of the dependent drivers.
 
 $$code(lang=bash)
     lsmod | grep usbserial

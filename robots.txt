@@ -1,5 +1,2 @@
-User-agent: Browsershots
-Disallow:
-
 User-agent: *
-Disallow: /
+Disallow: /files/datasheets/

@@ -21,7 +21,7 @@
 #  If you're hosting a blogofile powered site as a subdirectory of a larger
 #  non-blogofile site, then you would set the site_url to the full URL
 #  including that subdirectory: "http://www.yoursite.com/path/to/blogofile-dir"
-site_url = "http://69.164.219.36"
+site_url = "http://rascalmicro.com"
 
 static_enabled = True
 
