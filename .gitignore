@@ -1,13 +1,6 @@
 
 # Blogofile
-_controllers/
-_filters/
 _site/
-_templates/
 
-# PHPBB
-forum/
-
-# Non-diffable stuff
-img/
-
+# Python executables
+*.pyc
