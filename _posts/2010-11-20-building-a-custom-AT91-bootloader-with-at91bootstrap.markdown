@@ -21,7 +21,7 @@ For reasons that I don't get, Atmel has released two different branches of AT91B
 
 The documentation provided by Atmel is a little weak, containing aspiring sentences like, "By default, this array contains only one line whose all data is C precompilator defines." ("Precompilator" is almost a word in French; I think a lot of the work for the AT91 chips happens at [the Atmel office just west of Versailles, France][3] (you can just make out the Atmel logo on the sign).)
 
-To build the bootloader, I used the [2010q1 release of the CodeSourcery arm-none-eabi toolchain][4]. The "none" means that the binary is being built for use with an operating system; the "eabi" means that the executable will use the [standard compilation conventions][5] for ARM processors.
+To build the bootloader, I used the [2010q1 release of the CodeSourcery arm-none-eabi toolchain][4]. The "none" means that the binary is being built for use without an operating system; the "eabi" means that the executable will use the [standard compilation conventions][5] for ARM processors.
 
 ## The build command ##
 
