@@ -22,24 +22,26 @@ For now, the hardware is under the [Creative Commons BY-SA license][33], and the
  * [Gerber files][34]
  * [Bill of materials][35]
 
-### Bootloaders
+### Bootloaders ###
  * [AT91Bootstrap Project 3.0 ELF][4] for loading via JTAG
  * [AT91Bootstrap Project 3.0 binary][5] for writing into serial flash
 
 *For Rascal 0.3*
 
- * [U-boot-2010.09 ELF][6] for loading via JTAG
+ * [U-boot-2010.09 ELF][6] (*717 kB*) for loading via JTAG
  * [U-boot-2010.09 binary][7] (*180 kB*) for writing into serial flash
 
 *For Rascal 0.4* (different Ethernet pinout from 0.3)
 
- * [U-boot-2010.09 ELF][8] for loading via JTAG
+ * [U-boot-2010.09 ELF][8] (*688 kB*) for loading via JTAG
  * [U-boot-2010.09 binary][9] (*188 kB*) for writing into serial flash
+ * [Rascal fork of U-boot][28] on Github
 
 ### Linux code and source for all Rascal versions ###
  * [Linux kernel 2.6.30 binary][10] (*1.7 MB*), [patches][11] (*377 kB*), and [config file][12] (*37 kB*) for [vanilla 2.6.30 kernel][13] (*57 MB*)
- * [Linux kernel 2.6.36 binary][27] (*1.9 MB*), patches and config file (coming soon) for [vanilla 2.6.36 kernel][30]
+ * [Linux kernel 2.6.36 binary][27] (*1.9 MB*), built from [the Rascal fork of the Linux kernel][29] (sorry this is a little sloppy at present)
  * [Angstrom Linux 2008.1 JFFS2 filesystem image][14] (*20.8 MB*)
+ * [Rascal fork of OpenEmbedded][30] for building an Angstrom filesystem image for a microSD card
 
 ### Mirror of relevant datasheets ###
  * [Atmel AT91SAM9G20 microcontroller][15] (*12 MB*)
@@ -61,7 +63,7 @@ For now, the hardware is under the [Creative Commons BY-SA license][33], and the
 [5]: http://rascalmicro.com/files/rascal-0.x/boot-rascal-serialflash2sdram.bin
 [6]: http://rascalmicro.com/files/rascal-0.3/u-boot.elf
 [7]: http://rascalmicro.com/files/rascal-0.3/u-boot.bin
-[8]: http://rascalmicro.com/files/rascal-0.3/u-boot.elf
+[8]: http://rascalmicro.com/files/rascal-0.4/u-boot.elf
 [9]: http://rascalmicro.com/files/rascal-0.4/u-boot.bin
 [10]: http://rascalmicro.com/files/rascal-0.x/linux-2.6.30.bin
 [11]: http://rascalmicro.com/files/rascal-0.x/rascal-linux-2.6.30-patchset.zip
@@ -81,7 +83,9 @@ For now, the hardware is under the [Creative Commons BY-SA license][33], and the
 [25]: http://rascalmicro.com/files/datasheets/TI%20TPS71710%20LDO%20regulator.pdf
 [26]: http://rascalmicro.com/files/rascal-0.3/at91bootstrap.bin
 [27]: http://rascalmicro.com/files/rascal-0.x/linux-2.6.36.bin
-[30]: http://www.kernel.org/pub/linux/kernel/v2.6/linux-2.6.36.tar.bz2
+[28]: https://github.com/rascalmicro/u-boot-rascal
+[29]: https://github.com/rascalmicro/linux-2.6
+[30]: https://github.com/rascalmicro/openembedded-rascal
 [31]: http://rascalmicro.com/files/rascal-0.4/rascal-0.4-schematic.pdf
 [32]: http://rascalmicro.com/files/rascal-0.4/rascal-0.4-pcb.pdf
 [33]: http://creativecommons.org/licenses/by-sa/3.0/us/
