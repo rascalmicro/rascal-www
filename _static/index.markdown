@@ -6,6 +6,8 @@ The Rascal is a small, open-source computer designed for connecting sensors, mot
 
 The Rascal is based around the Atmel AT91SAM9G20 microprocessor. This is an ARM processor from the ARM926EJ/S family. It's similar to, though slightly less powerful than, the ARM processors used in many smartphones.
 
+<img src="/img/pinout.png" alt="What's on each pin of the connectors on the Rascal">
+
 ## Software summary ##
 
 The Rascal runs the Linux operating system. If you're planning on using the Rascal in conventional ways, you won't need any of this software-- it's already installed on your Rascal when you get it. But, if you want to do something weird with the Rascal, you might want to change some of the details of how the software works, so we provide the code for tweaking. (At this point, the source code for the Angstrom Linux filesystem image is not included, as we're using the stock pre-compiled binary built by Atmel, who make the AT91 processors.)
@@ -48,6 +50,7 @@ For now, the hardware is under the [Creative Commons BY-SA license][33], and the
  * [Bel Fuse L829-1X1T-91 RJ45 jack][16] (*184 kB*)
  * [CTS 74x resistor arrays][17] (*191 kB*)
  * [JAE SJ107021 microSD card socket][18] (*138 kB*)
+ * [Fox FXO-HC73 oscillator][36] (*67 kB*)
  * [Macronix MX25L3205D 4 MB serial flash][19] (*3.2 MB*)
  * [Micrel KSZ8041TL Ethernet transceiver][20] (*430 kB*)
  * [Micron MT48LCxxMxxA2 SDRAM][21] (*2.5 MB*)
@@ -91,3 +94,4 @@ For now, the hardware is under the [Creative Commons BY-SA license][33], and the
 [33]: http://creativecommons.org/licenses/by-sa/3.0/us/
 [34]: http://rascalmicro.com/files/rascal-0.4/rascal-0.4-gerbers.zip
 [35]: http://rascalmicro.com/files/rascal-0.4/rascal-0.4-bom.xlsx
+[36]: http://rascalmicro.com/files/datasheets/Fox%20FXO-HC73%20oscillator.pdf
