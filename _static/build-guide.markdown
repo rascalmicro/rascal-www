@@ -70,6 +70,12 @@ You'll also need [git][8] installed. You might also want a graphical Git client,
 
 (need to add AT91Bootstrap 3.0 repo and build instructions)
 
+*Build the code* (BIN_SIZE and FROM_ADDR may be wrong)
+$$code(lang=bash)
+make CHIP=at91sam9g20 BOARD=at91sam9g20-ek ORIGIN=serialflash DESTINATION=sdram BIN_SIZE=0x30000 FROM_ADDR=0x10000 DEST_ADDR=0x23F00000 TRACE_LEVEL=5 clean all
+$$/code
+
+
 ## Building U-boot, the secondary bootloader ##
 You need to have $PATH and $CROSS_COMPILE defined from the ELDK install above.
 

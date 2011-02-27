@@ -22,7 +22,7 @@ The microSD card is a removable memory card identical to those found in cellphon
 
 When the Rascal's AT91SAM9G20 processor boots, it looks for a serial flash. When it finds one, it checks that the first 8 instructions are valid ARM interrupt vectors. If they do, it looks at the value in the sixth vector, and copies that many bytes from the start of the serial flash to its small chunk of internal RAM. On the Rascal, the start of the serial flash is AT91Bootstrap, which contains a sixth vector which is sized so that the rest of AT91Bootstrap is copied.
 
-The CPU then executes AT91Bootstrap, which, among other low-level initialization tasks, prepares the external RAM. AT91Bootstrap's last action is to load whatever it finds at 0x01 0000 in the serial flash to memory location 0x23F0 0000 in RAM, and then jump to execute that code. 0x01 0000 is where U-boot is stored, so U-boot starts executing.
+The CPU then executes AT91Bootstrap, which, among other low-level initialization tasks, prepares the external RAM. AT91Bootstrap's last action is to load the 0x30000 bytes it finds starting at 0x0001 0000 in the serial flash to memory location 0x23F0 0000 in RAM, and then jump to execute that code. 0x0001 0000 is where U-boot is stored, so U-boot starts executing.
 
 In the same pattern that we saw with AT91Bootstrap, U-boot reads 0x2F FFFF bytes from the serial flash starting at 0x10 0000, which is where the Linux kernel starts. Whatever code U-boot reads is copied to 0x2200 0000 and executed.
 
