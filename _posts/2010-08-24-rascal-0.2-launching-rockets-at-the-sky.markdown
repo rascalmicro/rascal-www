@@ -8,7 +8,7 @@ draft: False
 ---
 The second revision of the Rascal arrived in mid-August. After a little mucking about with a JTAG pod, it can execute code.
 
-<img src="http://69.164.219.36/img/950px-rascal-0.2.jpg">
+<img src="http://rascalmicro.com/img/950px-rascal-0.2.jpg">
 
 A lot of my friends have been asking me whether the Rascal is ready for action now. The hardware is in good shape-- it's not flawless, but it's somewhere above 95% operational. The remaining work is the software, which seems easy, maybe because it's made of electrons. It's not actually easy, so I thought I should explain some of the details.
 

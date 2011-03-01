@@ -11,7 +11,7 @@ The first batch of Rascals arrived fresh from the assembler a few days ago (July
 After the regulator was working, I connected to the processor using the JTAG connector (that big gray thing) and was able to download and
 execute code. I believe this instilled exultation at the time.
 
-<img src="http://69.164.219.36/img/rascal-0.1-2010-07-28.jpg" width="950px" alt="Picture of Rascal 0.1">
+<img src="http://rascalmicro.com/img/rascal-0.1-2010-07-28.jpg" width="950px" alt="Picture of Rascal 0.1">
 
 Then, I was able to locate more precisely the limits of my soldering capabilities – I verified that I am not able to solder arrays of 4 x 0402 resistors without bridging adjacent traces. As I was investigating the effects of this on the memory buses, I noticed that I had also invented a new
 method of counting to eight: 1, 2, 3, 4, 5, 7, 6, 8. The results of this novel method were that two of the bus lines were swapped for all

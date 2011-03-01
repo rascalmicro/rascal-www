@@ -10,7 +10,7 @@ On the last revision, the only known problems were that the serial flash couldn'
 
 I'll send out details about how to get a beta unit shortly. If you're interested, you can join the mailing list on the [front page][2].
 
-<a href="http://rascalmicro.com/img/rascal-0.6-beta-pcb.jpg"><img src="http://rascalmicro.com/img/rascal-0.6-beta-pcb.jpg" width="900px"></a>
+<a href="http://rascalmicro.com/img/rascal-0.6-beta-pcb.jpg"><img src="http://rascalmicro.com/img/rascal-0.6-beta-pcb.jpg" width="950px"></a>
 
 [1]: http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=China+Guangdong+Shenzhen+Bao+An+Qu&sll=22.553393,113.884293&sspn=0.368747,0.574036&z=12
 [2]: http://rascalmicro.com
