@@ -1,24 +1,38 @@
-## Building the Rascal code ##
+# Building the Rascal code #
 
-If you're particularly enthusiastic, and you have access to a computer that can run Linux (perhaps in a VM), you can build all of the code for the Rascal yourself.
-
-(It's probably possible to build all of the code on Windows or OS X, but it hasn't been done yet. All you need is a compiler that can generate code for the ARM architecture. For Windows, a good start would be the free CodeSourcery Lite toolchain.)
+If you're particularly enthusiastic, and you have access to a computer that can run Linux (perhaps in a VM), you can build all of the code for the Rascal yourself. The rest of this page assumes you're using Linux. (It's probably possible on Windows or OS X. All you need is a compiler that can generate code for the ARM architecture. For Windows, a good start would be the free CodeSourcery Lite toolchain.)
 
 The code is stored in [Git repositories][5] on Github.com. Before you try building anything, you'll want to understand the basic layout of the software on the Rascal. Take a look at the Git repositories and read over where all the code belongs on the Rascal, as detailed on the [software guts][6] page.
 
 ## Software setup ##
 
-First, you need a compiler and a few related build tools. You'll need to install the [Embedded Linux Development Kit][4], which is a precompiled collection of build tools--a compiler (GCC), make, and so forth-- maintained by Denx, the folks who make U-boot. You'll also need to install git.
+First, you need a compiler (or possibly two) and a few related build tools. The primary bootloader requires a compiler (arm-none-eabi-gcc) that can run on a bare processor; the rest of the code uses the Linux ABI, so it uses a different version of GCC (arm-linux-gcc). The installations are not particularly arduous; installing both compilers is fine.
+
+For the first compiler, you'll need a tarball from CodeSourcery. For the second compiler, you'll need to install the [Embedded Linux Development Kit][4], which is a precompiled collection of build tools--a compiler (GCC), make, and so forth-- maintained by Denx, the folks who make U-boot. You'll also need to install the source code management software [git][8]. Strictly speaking, you could get by without git, but git simplifies the instructions, and it's a great tool worth learning.
+
+## Installing the CodeSourcery toolchain ##
+
+To build the bootloader, use the [2010q1 release of the CodeSourcery arm-none-eabi toolchain][13]. The "none" means that the binary is being built for use without an operating system; the "eabi" means that the executable will use the [standard compilation conventions][14] for ARM processors.
+
+Unpack the tools where you like; I've put them in /opt/cs.
+$$code(lang=bash)
+cd /opt
+wget http://www.codesourcery.com/sgpp/lite/arm/portal/package6493/public/arm-none-eabi/arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
+tar xjvf arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
+mv arm-2010q1 /opt/cs
+rm arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
+$$/code
 
 ## Installing the ELDK build tools on Linux ##
-The ELDK uses its own copy of the Redhat Package Manager (RPM) to install itself. The simplest approach is to burn a copy of the 4.2 release [arm-2008-11-24.iso][12] to CD and install from that.
+The ELDK uses its own copy of the Redhat Package Manager (RPM) to install itself. The simplest approach is to burn a copy of the 4.2 release [arm-2008-11-24.iso][12] to CD and install from that. If you know how, you could also mount the .iso file directly and install from that.
 
 *Install the ELDK*
 $$code(lang=bash)
-brandon@milo:~$ sudo mkdir /opt/eldk
-brandon@milo:~$ sudo chmod a+rwx /opt/eldk/
-brandon@milo:~$ cd /media/arm-2008-11-24/
-brandon@milo:/media/arm-2008-11-24$ ./install -d /opt/eldk arm
+cd /opt
+sudo mkdir eldk
+sudo chmod a+rwx /opt/eldk/
+cd /media/arm-2008-11-24/
+./install -d /opt/eldk arm
 Do you really want to install into /opt/eldk directory[y/n]?: y
 Creating directories
 Done
@@ -37,7 +51,7 @@ $$/code
 
 ## Installing git ##
 
-You'll also need [git][8] installed. You might also want a graphical Git client, but you only need two git commands (clone and checkout), so it's not required. Installing git is a straightforward process by now, and the fine people at Github have produced a series of guides that explain how to do it.
+Next, install git. You might also want a graphical Git client, but to build the code, you only need two git commands (clone and checkout), so it's not required. Installing git is a straightforward process by now, and the fine people at Github have produced a series of guides that explain how to do it.
 
  * [Installing git on Ubuntu Linux][9]
  * [Installing git on OS X][10]
@@ -45,55 +59,68 @@ You'll also need [git][8] installed. You might also want a graphical Git client,
 
 ## Test your tools ##
 
-After installation, you need to set a few environment variables to make sure your OS can find your build tools. On Linux, these commands will do the trick, assuming you installed the ELDK to /opt/eldk. 
+After installation, you need to set a few environment variables to make sure your OS can find your build tools. On Linux, these commands will do the trick, assuming you installed the ELDK to /opt/eldk and the CodeSourcery toolchain to /opt/cs. 
 $$code(lang=bash)
 export CROSS_COMPILE=arm-linux-
-PATH=$PATH:/opt/eldk/usr/bin:/opt/eldk/bin
+PATH=$PATH:/opt/eldk/usr/bin:/opt/eldk/bin:/opt/cs/bin
 $$/code
 
-Now you should be able to test your ARM compiler and git. Here's what a successful test looks like.
+Now you should be able to test your ARM compiler and git. Here's what successful tests look like.
 
-*Check git*
+*Check that git is installed*
 $$code(lang=bash)
-brandon@milo:~$ git help
-usage: git [--version] [--exec-path[=GIT_EXEC_PATH]] [--html-path]
-           [-p|--paginate|--no-pager] [--no-replace-objects]
-           [--bare] [--git-dir=GIT_DIR] [--work-tree=GIT_WORK_TREE]
-           [--help] COMMAND [ARGS]
-The most commonly used git commands are:
-   add        Add file contents to the index
-   bisect     Find by binary search the change that introduced a bug
-...
-<list of commands snipped>
-...
-See 'git help COMMAND' for more information on a specific command.
-brandon@milo:~$ 
+brandon@milo:~$ git --version
+git version 1.7.1 # You don't necessarily need the same version of git.
 $$/code
 
-*Check arm-linux-gcc*
+*Check that arm-linux-gcc is installed*
 $$code(lang=bash)
 brandon@milo:~$ which arm-linux-gcc
 /opt/eldk/usr/bin/arm-linux-gcc
 $$/code
 
-(Need to add a test here that tests that $CROSS_COMPILE is set correctly.)
-
-## Building AT91Bootstrap, the primary bootloader ##
-
-(Need to add AT91Bootstrap 3.0 repo and build instructions)
-
-*Build the code* (BIN_SIZE and FROM_ADDR may be wrong)
+*Check that cross-compiling will work*
 $$code(lang=bash)
-make CHIP=at91sam9g20 BOARD=at91sam9g20-ek ORIGIN=serialflash DESTINATION=sdram BIN_SIZE=0x30000 FROM_ADDR=0x10000 DEST_ADDR=0x23F00000 TRACE_LEVEL=5 clean all
+brandon@milo:~$ eval ${CROSS_COMPILE}gcc --version
+arm-linux-gcc (GCC) 4.2.2
+Copyright (C) 2007 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 $$/code
 
+*Check that the CodeSourcery tools are installed*
+$$code(lang=bash)
+brandon@milo:~$ which arm-none-eabi-gcc
+/opt/cs/bin/arm-none-eabi-gcc
+$$/code
+
+## Building AT91Bootstrap, the primary bootloader ##
+You need to have the CodeSourcery tools on your PATH.
+
+*Download the code*
+$$code(lang=bash)
+git clone git://github.com/rascalmicro/at91bootstrap-rascal.git
+cd at91bootstrap-rascal
+git checkout rascal # Switches to the Rascal branch
+$$/code
+
+Atmel provides a peculiar build script in the software package-- even though the package is specific to the AT91SAM9G20, it builds binaries for a long list of Atmel processors. The script is aptly named "make_all." To build the bootloader for the Rascal, you can customize this script, but I found it easier to just copy out the command used to build the Rascal code and forget the rest. The structure of the build command is: *make [lots of flags to the compiler] clean all*, which basically means "clean out the old binaries and make new ones with these options."
+
+*Build the code*
+$$code(lang=bash)
+cd at91bootstrap
+make CHIP=at91sam9g20 BOARD=at91sam9g20-ek ORIGIN=serialflash DESTINATION=sdram \\
+BIN_SIZE=0x30000 FROM_ADDR=0x10000 DEST_ADDR=0x23F00000 TRACE_LEVEL=5 clean all
+$$/code
+
+If this works, you'll find the binary for loading onto the serial flash with SAM-BA at at91bootstrap-rascal/at91bootstrap/bin/boot-at91sam9g20-ek-serialflash2sdram.bin. For executing the code in RAM with JTAG, you'll want to use at91bootstrap-rascal/at91bootstrap/bin/boot-at91sam9g20-ek-serialflash2sdram.elf instead.
 
 ## Building U-boot, the secondary bootloader ##
 You need to have $PATH and $CROSS_COMPILE defined from the ELDK install above.
 
 *Download the code*
 $$code(lang=bash)
-git clone git@github.com:rascalmicro/u-boot-rascal.git
+git clone git://github.com/rascalmicro/u-boot-rascal.git
 cd u-boot-rascal
 git checkout rascal # switches to the Rascal branch
 $$/code
@@ -109,37 +136,43 @@ Configuring for rascal board...
 brandon@milo:~/u-boot-2010.06$ make all
 $$/code
 
+If the build works, you'll find the binary for loading onto the serial flash with SAM-BA in u-boot-rascal/u-boot.bin. For executing the code in RAM with JTAG, you'll want to use u-boot-rascal/u-boot, which is actually an ELF file.
+
 ## Building the Linux kernel ##
+You need to have $PATH and $CROSS_COMPILE defined from the ELDK install above.
 
 *Download the code*
 $$code(lang=bash)
-git clone git@github.com:rascalmicro/linux-2.6.git
+git clone git://github.com/rascalmicro/linux-2.6.git
 cd linux-2.6
-git checkout rascal # switches to the Rascal branch
+git checkout rascal # Switches to the Rascal branch
 $$/code
 
 *Build the code*
 $$code(lang=bash)
-make ARCH=arm uImage
+make ARCH=arm uImage # Note that case matters here. "arch=ARM" won't work.
 $$/code
 
 If the toolchain builds the kernel successfully, you'll find the kernel image at arch/arm/boot/uImage.
 
 ## Building OpenEmbedded filesystem image ##
-*Download the code*
-$$code(lang=bash)
-git clone git@github.com:rascalmicro/openembedded-rascal.git
-cd openembedded-rascal
-git checkout rascal # switches to the Rascal branch
-$$/code
 
-(There are some steps missing here. Need bitbake and env.sh script. TODO: Fix this.)
+*Download the Rascal fork of the OpenEmbedded code and Bitbake*
+$$code(lang=bash)
+git clone git://github.com/rascalmicro/openembedded-rascal.git
+cd openembedded-rascal
+git checkout rascal # Switches to the Rascal branch
+git clone git://openembedded.org/bitbake.git # Downloads Bitbake inside OpenEmbedded directory
+$$/code
 
 *Build the code*
 $$code(lang=bash)
-source env.sh # sets some environment variables, like BBPATH
+source env.sh # Sets some environment variables, like BBPATH
+bitbake --version # Tests that the bitbake to be called is version 1.10.2 or higher.
 bitbake rascal-image
 $$/code
+
+# Loading code onto the Rascal #
 
 ## Hardware setup ##
 For development, you need 4 connections to the Rascal.
@@ -261,3 +294,5 @@ $$/code
 [10]: http://help.github.com/mac-git-installation/
 [11]: http://help.github.com/win-git-installation/
 [12]: http://ftp.denx.de/pub/eldk/4.2/arm-linux-x86/iso/
+[13]: http://www.codesourcery.com/sgpp/lite/arm/portal/release1294
+[14]: http://en.wikipedia.org/wiki/Application_binary_interface
