@@ -113,7 +113,7 @@ make CHIP=at91sam9g20 BOARD=at91sam9g20-ek ORIGIN=serialflash DESTINATION=sdram 
 BIN_SIZE=0x30000 FROM_ADDR=0x10000 DEST_ADDR=0x23F00000 TRACE_LEVEL=5 clean all
 $$/code
 
-If this works, you'll find the binary for loading onto the serial flash with SAM-BA at at91bootstrap-rascal/at91bootstrap/bin/boot-at91sam9g20-ek-serialflash2sdram.bin. For executing the code in RAM with JTAG, you'll want to use at91bootstrap-rascal/at91bootstrap/bin/boot-at91sam9g20-ek-serialflash2sdram.elf instead.
+The build should take just a minute or two. If this works, you'll find the binary for loading onto the serial flash with SAM-BA at at91bootstrap-rascal/at91bootstrap/bin/boot-at91sam9g20-ek-serialflash2sdram.bin. For executing the code in RAM with JTAG, you'll want to use at91bootstrap-rascal/at91bootstrap/bin/boot-at91sam9g20-ek-serialflash2sdram.elf instead.
 
 ## Building U-boot, the secondary bootloader ##
 You need to have $PATH and $CROSS_COMPILE defined from the ELDK install above.
@@ -127,16 +127,12 @@ $$/code
 
 *Build the code*
 $$code(lang=bash)
-brandon@milo:~/u-boot-2010.06$ make distclean
-Generating include/autoconf.mk
-Generating include/autoconf.mk.dep
-brandon@milo:~/u-boot-2010.06$ make rascal_config
-... 9G20 Variant
-Configuring for rascal board...
-brandon@milo:~/u-boot-2010.06$ make all
+make distclean
+make rascal_config
+make all
 $$/code
 
-If the build works, you'll find the binary for loading onto the serial flash with SAM-BA in u-boot-rascal/u-boot.bin. For executing the code in RAM with JTAG, you'll want to use u-boot-rascal/u-boot, which is actually an ELF file.
+The build should take 1-10 minutes, depending on your build computer. If the build works, you'll find the binary for loading onto the serial flash with SAM-BA in u-boot-rascal/u-boot.bin. For executing the code in RAM with JTAG, you'll want to use u-boot-rascal/u-boot, which is actually an ELF file.
 
 ## Building the Linux kernel ##
 You need to have $PATH and $CROSS_COMPILE defined from the ELDK install above.
