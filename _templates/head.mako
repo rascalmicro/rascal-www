@@ -1,5 +1,6 @@
-  <head>
+    <head>
         <meta charset="utf-8" />
+        <meta name="description" content="Small computers for art and science" />
         <title>${bf.config.blog_name}</title>
         <link rel="stylesheet/less" href="/style.less" type="text/css" />
         <script src="/less-1.0.35.min.js"></script>
