@@ -16,7 +16,9 @@
                     <form action="http://rascalmicro.us1.list-manage.com/subscribe/post?u=1b1bbc0cef4aee1d788f8423d&amp;id=f8f38179b4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
                         <div class="mc-field-group">
                             <input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                            <input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="btn" alt="Keep me posted">
+                            <button type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="large red awesome" alt="Keep me posted">
+                                Keep me posted
+                            </button>
 	                        <div class="response" id="mce-error-response" style="display:none"></div>
 	                        <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>
