@@ -14,10 +14,6 @@
 }
 
 body {
-    padding: 0;
-}
-
-body {
     font-family: "Molengo","URW Gothic L",sans-serif;
     font-size: 1em;
     line-height: 1.4em;
@@ -104,22 +100,13 @@ img {
     margin-left: -9px;
 }
 
-#mc-embedded-subscribe {
-    background: url(/img/keep-me-posted.png) no-repeat;
-    cursor: pointer;
-    width: 179px;
-    height: 58px;
-    border: none;
-    vertical-align: top;
-}
-
 #mce-EMAIL {
     width: 220px;
     height: 30px;
     font-family: "Molengo","URW Gothic L",sans-serif;
     font-size: 1em;
     vertical-align: top;
-    margin-top: 13px;
+    margin-right: 10px;
 }
 
 #righttorso img {
@@ -167,6 +154,21 @@ h4 {
 
 /* links */
 
+a {
+    color: @rascal-dark;
+    font-weight: bold;
+}
+
+a:visited {
+    color: @rascal-dark;
+    font-weight: bold;
+}
+
+a:hover {
+    color: @rascal-main;
+    font-weight: bold;
+}
+
 #header a {
     color: @rascal-main;
     text-decoration: none;
@@ -178,21 +180,6 @@ h4 {
 
 #header a:hover {
     color: @rascal-extra-light;
-}
-
-#torso a {
-    color: @rascal-dark;
-    font-weight: bold;
-}
-
-#torso a:visited {
-    color: @rascal-dark;
-    font-weight: bold;
-}
-
-#torso a:hover {
-    color: @rascal-main;
-    font-weight: bold;
 }
 
 #footer a {
@@ -288,4 +275,51 @@ ul.topiclist li.row:hover {
 }
 
 /* end blogofile styles */
+
+/* Zurb awesome buttons */
+.awesome, .awesome:visited {
+	display: inline-block;
+    font-size: 16px;
+    padding: 8px 14px 9px;
+	color: #fff;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+    border-style: none;
+	position: relative;
+	cursor: pointer;
+}
+
+.awesome:hover {
+    background-color: #111; color: #fff;
+}
+
+.awesome:active {
+    top: 1px;
+}
+
+.small.awesome, .small.awesome:visited {
+    font-size: 11px;
+
+}
+.medium.awesome, .medium.awesome:visited {
+    font-size: 13px; font-weight: bold; line-height: 1; text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+
+.large.awesome, .large.awesome:visited {
+    font-size: 16px; padding: 8px 14px 9px;
+}
+
+.red.awesome, .red.awesome:visited {
+    background-color: #EF4A42;
+}
+
+.red.awesome:hover {
+    background-color: #872300;
+}
+/* end Zurb awesome buttons */
 
