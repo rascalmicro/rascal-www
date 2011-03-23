@@ -4,8 +4,9 @@
                 <p>"He who receives an idea from me, receives instruction himself without lessening mine;<br>as he who lights his taper at mine, receives light without darkening me."<br>&ndash;Tom Jefferson</p> 
             </div> 
             <div id="bottombar"> 
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://creativecommons.org/images/public/somerights20.png" /></a><br />This site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
-            </div> 
+            <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://creativecommons.org/images/public/somerights20.png" /></a><br />This site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a> except where otherwise noted.</p>
+            <p><a href="http://rascalmicro.com/docs/privacy.html">Privacy policy</a></p>
+            </div>
         </div>
         <script type="text/javascript">
 
