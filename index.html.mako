@@ -14,4 +14,4 @@
 <a href="${next_link}">Next Page »</a>
 % endif
 
-Feeds for <a href="${bf.util.site_path_helper(bf.config.blog_path,'feed')}">entries</a></p>
+Feeds for <a href="${bf.util.site_path_helper(bf.config.blog.path,'feed')}">entries</a></p>

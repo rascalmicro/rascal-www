@@ -1,4 +1,4 @@
-<%inherit file="_templates/site.mako" />
+<%inherit file="site.mako" />
 
 <%def name="filter(chain)">
     ${bf.filter.run_chain(chain, capture(caller.body))}
