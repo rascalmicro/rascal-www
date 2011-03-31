@@ -2,7 +2,8 @@
     <div id="torso">
         <div class="rascalcontent">
             <div id="torso">
-                <p>The Rascal is still under development, so you can't buy one yet. If you're interested in hearing the details as the Rascal is developed, stick your email address in the box below and click the button. So far, this means emails about once every 5 weeks.</p>
+                <p>The Rascal is still under development. As of April 2011, the first batch of 19 beta units is being tested. When someone builds something cool, we'll post the details on the blog.</p>
+                <p>If you're interested in buying one of the beta units, or you want to know when we release production units, stick your email address in the box below and click the button. We'll keep you posted; you can always unsubscribe.</p>
                 <!-- Begin MailChimp Signup Form -->
                 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
                 <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.validate.js"></script>
@@ -26,7 +27,7 @@
                 </div>
                 <script type="text/javascript" src="http://rascalmicro.com/mailchimp-signup.js"></script>
                 <!--End mc_embed_signup-->
-                <p>Eventually, there will be a store here. Keep collecting coins!</p>
+                <p>If you are one of the beta testers and you know your beta access code, click through to the <a href="http://store.rascalmicro.com">store</a>.</p>
             </div>
         </div>
     </div>
