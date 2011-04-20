@@ -37,6 +37,7 @@ blog.enabled = True
 #  "http://www.yoursite.com/~ryan/blog"
 #  Leave blank "" to set to the root of site_url
 blog.path = "/blog"
+blog.url = "http://rascalmicro.com/blog"
 
 ## blog_name -- Your Blog's name.
 # This is used repeatedly in default blog templates

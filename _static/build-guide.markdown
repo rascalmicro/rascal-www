@@ -161,6 +161,8 @@ git checkout rascal # Switches to the Rascal branch
 git clone git://openembedded.org/bitbake.git # Downloads Bitbake inside OpenEmbedded directory
 $$/code
 
+(Will need to do 'sudo ln -s i386-linux-gnu/ i686-linux-gnu' if on x86 with Ubuntu 11.04+.) 
+
 *Build the code*
 $$code(lang=bash)
 source env.sh # Sets some environment variables, like BBPATH
