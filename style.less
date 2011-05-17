@@ -42,6 +42,7 @@ body {
     clear: both;
     background: @rascal-gray;
     color: @rascal-light;
+    height: 100px;
     padding-bottom: 20px;
 }
 
@@ -167,12 +168,7 @@ h4 {
 
 /* links */
 
-a {
-    color: @rascal-dark;
-    font-weight: bold;
-}
-
-a:visited {
+a, a:visited, a:link, {
     color: @rascal-dark;
     font-weight: bold;
 }
@@ -231,12 +227,25 @@ a:hover {
     font-size: 0.875em;
 }
 
-.navbar, .forumbg, .forabg {
-    background-color: @rascal-forum-bg;
+dt a { /* links to authors' names */
+    color: @rascal-dark !important; /* prevent admin name links from looking different */
+    font-weight: bold;
 }
 
-.username-coloured {
-    color: #475373 !important; /* forces override of inline style */
+.postlink, .post:target h3 a { /* links in forum posts and sigs */
+    color: @rascal-dark !important;
+    font-weight: bold;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+.postlink:hover, .post:target h3 a:hover { /* links in forum posts and sigs */
+    color: @rascal-main !important;
+    text-decoration: underline !important;
+}
+
+.navbar, .forumbg, .forabg {
+    background-color: @rascal-forum-bg;
 }
 
 html, body { /* counteracting phpBB's attempt to force a vertical scroll bar */
