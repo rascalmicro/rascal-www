@@ -248,7 +248,7 @@ $$code(lang=bash)
 brandon@milo:/oe$ sudo -s # become the superuser.
 [sudo] password for brandon: 
 root@milo:/oe# umount /dev/sdb1 # unmount the card
-root@milo:/oe# mkfs.ext3 -L transcend-ext3 /dev/sdb1 # wipe everything and make a new EXT3 filesystem
+root@milo:/oe# mkfs.ext3 -L rascal-beta /dev/sdb1 # wipe everything and make a new EXT3 filesystem
 mke2fs 1.41.12 (17-May-2010)
 Filesystem label=transcend-ext3
 OS type: Linux
@@ -276,9 +276,16 @@ Now, pull the card out and reinsert it so that it gets remounted.
 Then:
 $$code(lang=bash)
 root@milo:/oe# ls /media # check that the card is mounted
-transcend-ext3
-root@milo:/oe# cp -r /oe/tmp/rootfs/* /media/transcend-ext3/ # copy the filesystem onto the card
+rascal-beta
+cp /home/brandon/rascal-repos/openembedded-rascal/tmp/deploy/glibc/images/at91sam9g20ek/Angstrom-rascal-image-glibc-ipk-2010.7-test-20110428-at91sam9g20ek.rootfs.tar.bz2 /media/rascal-beta/
+cd /media/rascal-beta
+sudo tar xjf Angstrom-rascal-image-glibc-ipk-2010.7-test-20110428-at91sam9g20ek.rootfs.tar.bz2 # extract the filesystem
+rm Angstrom-rascal-image-glibc-ipk-2010.7-test-20110428-at91sam9g20ek.rootfs.tar.bz2 # delete the tarball
+sync # make sure all the data is committed to the card
+exit # relinquishes root privileges
 $$/code
+
+Last, pull out the card and put it back into the Rascal.
 
 [1]: http://www.sparkfun.com/products/718
 [2]: http://dangerousprototypes.com/bus-pirate-manual/
