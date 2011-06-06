@@ -2,7 +2,7 @@
 
 ## Agreement between you and Rascal Micro LLC and its affiliates (referred to as "Rascal Micro" or "we") ##
 
-This web site and other sites operated under the direction of Rascal Micro, such as Shopify's store.rascalmicro.com (collectively known as the "Rascal Micro sites" or "sites") are offered to you on the condition that you agree to abide by, without modification, both the terms, conditions, and notices on this page (collectively, the "Terms of Use"), and the other legal statements found on the Rascal Micro sites. These include, but are not limited to, Rascal Micro's privacy policy, the forum guidelines, the liability disclaimer, and the store policies.
+This web site and other sites operated under the direction of Rascal Micro, such as Shopify's [store.rascalmicro.com][1] (collectively known as the "Rascal Micro sites" or "sites") are offered to you on the condition that you agree to abide by, without modification, both the terms, conditions, and notices on this page (collectively, the "Terms of Use"), and the other legal statements found on the Rascal Micro sites. These include, but are not limited to, Rascal Micro's [privacy policy][2], the [forum guidelines][3], the [liability disclaimer][4], and the [store policies][5].
 
 If you don't agree with all of the Terms of Use, you can't use the Rascal Micro sites. Your use of any Rascal Micro site constitutes your agreement to the Terms of Use. Seriously, these are the terms; if you don't like them, leave.
 
@@ -10,7 +10,7 @@ In the event that these Terms of Use conflict with other terms and guidelines co
 
 ## Ownership and use limitations ##
 
-Except where otherwise specified, the Rascal Micro sites are provided under the terms of the Attribution-ShareAlike 3.0 Unported variant of the Creative Commons Public License ("CCPL" or "License"). The sites are protected by copyright and/or other applicable law. Any use of the sites other than as authorized under this license or copyright law is prohibited.
+Except where otherwise specified, the Rascal Micro sites are provided under the terms of [the Attribution-ShareAlike 3.0 Unported variant of the Creative Commons Public License][6] ("CCPL" or "License"). The sites are protected by copyright and/or other applicable law. Any use of the sites other than as authorized under this license or copyright law is prohibited.
 
 Here's a partial list of the site elements that are *not* available under the Creative Commons Public License:
 
@@ -18,9 +18,9 @@ Here's a partial list of the site elements that are *not* available under the Cr
 
 2. The Shopify web store at store.rascalmicro.com is the property of Shopify and not covered by the Creative Commons Public License.
 
-3. The forum software, PHPBB, is licensed under the GNU General Public License, version 2. (The posts in the forum are available under the Creative Commons Public License.)
+3. The forum software, [PHPBB][7], is licensed under the [GNU General Public License, version 2][8]. (The posts in the forum are available under the Creative Commons Public License.)
 
-4. The software available for download for use on the Rascal hardware is all available under various open source licenses. Full license information and source code downloads are available using the free OpenEmbedded build environment. See the Rascal software build guide for more information.
+4. The software available for download for use on the Rascal hardware is all available under various open source licenses. Full license information and source code downloads are available using the free OpenEmbedded build environment. See the Rascal [software build guide][9] for more information.
 
 ## Links to other sites ##
 
@@ -69,3 +69,13 @@ These Terms of Use constitute the entire agreement between you and Rascal Micro 
 ## Contact info ##
 
 Contact milo at rascalmicro dot com with questions about any Rascal Micro site.
+
+[1]: http://store.rascalmicro.com
+[2]: http://rascalmicro.com/docs/privacy.html
+[3]: http://rascalmicro.com/docs/forum-rules.html
+[4]: http://rascalmicro.com/docs/liability-disclaimer.html
+[5]: http://rascalmicro.com/docs/store-policies.html
+[6]: http://creativecommons.org/licenses/by-sa/3.0/
+[7]: http://www.phpbb.com
+[8]: http://www.phpbb.com/downloads/license/
+[9]: http://rascalmicro.com/docs/build-guide.html
