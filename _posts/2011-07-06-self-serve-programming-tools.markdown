@@ -14,14 +14,17 @@ In the long run, you can put whatever you want on the Rascal webserver, but it s
 
 The editor still needs work, but here's an early screenshot.
 
-<a href="http://rascalmicro.com/img/proto-web-editor-2011-06-21.png"><img src="http://rascalmicro.com/img/proto-web-editor-2011-06-21.png" width="900px"></a>
+<a href="http://rascalmicro.com/img/proto-web-editor-2011-06-21.png"><img src="http://rascalmicro.com/img/proto-web-editor-2011-06-21.png" width="950px"></a>
 
 In the open source tradition, I didn't write the editor from scratch. The text window itself uses [Codemirror][1]; the file tree uses [jQuery with a file tree plugin][2], and the whole application uses [Flask][3]. Eventually, my code will be properly released under the GPL. In the meantime, the [source][4] to the demo is on Github.
 
-If any other developers want to pick this code up, I'd be glad to have it running on more than one platform, as I have no desire to fall into the "maintain your own IDE" trap that so many compiler vendors fell into before Eclipse came along. I've seen that one of the Beagleboard guys, Jason Kridner, is [treading the same path I am][5], but with the Cloud9 IDE. I originally did my first prototypes of the Rascal system using Bespin, which was eventually merged into Cloud9, but my impression is that Cloud9 is too big for what I want. My impression is that Jason's Cloud9 stuff is just an experiment, but it would be great if the Beagleboard started shipping with a web IDE-- I'd love to have TI's help pulling the bandwagon.
+If any other developers want to pick this code up, I'd be glad to have it running on more than one platform, as I have no desire to fall into the "maintain your own IDE" trap that so many compiler vendors fell into before Eclipse came along. I've seen that one of the Beagleboard guys, Jason Kridner, is [treading the same path I am][5], but with the Cloud9 IDE. I originally did my first prototypes of the Rascal system using Bespin, which was eventually merged into Cloud9, but my impression is that Cloud9 is too big for what I want. It looks like Jason's Cloud9 stuff is just an experiment, but it would be great if the Beagleboard started shipping with a web IDE-- I'd love to have TI's help pulling the bandwagon.
+
+If you are so inclined, [discuss this post on the forums][6].
 
 [1]: http://codemirror.net/
 [2]: http://abeautifulsite.net/blog/2008/03/jquery-file-tree/
 [3]: http://flask.pocoo.org/
 [4]: https://github.com/rascalmicro/control-freak/blob/master/templates/editor.html
 [5]: http://blog.hangerhead.com/2011/03/nodejs-based-cloud9-javascript-ide.html
+[6]: http://rascalmicro.com/forum/viewtopic.php?f=7&t=33
