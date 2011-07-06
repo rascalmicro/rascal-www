@@ -10,7 +10,9 @@ The Rascal is based around the Atmel AT91SAM9G20 microprocessor. This is an ARM 
 
 ## Software summary ##
 
-The Rascal runs the Linux operating system. If you're planning on using the Rascal in conventional ways, you won't need any of this software-- it's already installed on your Rascal when you get it. But, if you want to do something weird with the Rascal, you might want to change some of the details of how the software works, so we provide the code for tweaking. (At this point, the source code for the Angstrom Linux filesystem image is not included, as we're using the stock pre-compiled binary built by Atmel, who make the AT91 processors.)
+The Rascal runs the Linux operating system. If you're planning on using the Rascal in conventional ways, you won't need to mess with any of this software-- it's already installed on your Rascal when you get it. But, if you want to do something weird with the Rascal, you might want to change some of the details of how the software works, so we provide the code for tweaking.
+
+If you want more details about how the code fits together, take a look at the [software guts][37] page. If you are one of the beta testers who wants to build a new system image, look at the [build guide][38]. Note that the build guide will be outdated soon, when we pull the building of the Linux kernel and the bootloaders into OpenEmbedded.
 
 ## Source documents ##
 
@@ -95,3 +97,5 @@ For now, the hardware is under the [Creative Commons BY-SA license][33], and the
 [34]: http://rascalmicro.com/files/rascal-0.4/rascal-0.4-gerbers.zip
 [35]: http://rascalmicro.com/files/rascal-0.4/rascal-0.4-bom.xlsx
 [36]: http://rascalmicro.com/files/datasheets/Fox%20FXO-HC73%20oscillator.pdf
+[37]: http://rascalmicro.com/docs/software-guts.html
+[38]: http://rascalmicro.com/docs/build-guide.html

@@ -30,4 +30,4 @@ The total boot process takes around 30 seconds. Most of that time is spent booti
 
 If this all sounds exciting and you want to try your hand at building some of the code, take a look at the [build guide][1].
 
-[1]: http://rascalmicro.com/doc/build-guide.html
+[1]: http://rascalmicro.com/docs/build-guide.html
