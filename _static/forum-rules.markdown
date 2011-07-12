@@ -1,6 +1,6 @@
 # Forum rules #
 
-By accessing the Rascal Micro forums, (hereinafter “we”, “the forums”), you agree to be legally bound by the following terms. If you do not agree to be legally bound by all of the following terms then do not access and/or use the forums. We may change these at any time, so it would be prudent to review this regularly yourself. Your continued usage of the forums after changes means you agree to be legally bound by these terms as they are updated and/or amended.
+By accessing the Rascal Micro forums, (hereinafter "we," the "forums"), you agree to be legally bound by the following terms. If you do not agree to be legally bound by all of the following terms then do not access and/or use the forums. We may change these at any time, so it would be prudent to review this regularly yourself. Your continued usage of the forums after changes means you agree to be legally bound by these terms as they are updated and/or amended.
 
 ## Don't be a jerk ##
 

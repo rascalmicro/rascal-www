@@ -183,14 +183,14 @@ For development, you need 4 connections to the Rascal.
 
 4. JTAG: You also don't *really* need JTAG, but it makes writing new code into the serial flash less risky. You can, in theory, use U-boot to rewrite the serial flash, but if you screw it up, only a JTAG connection can fix the problem. JTAG is also great for debugging, as it can pause the processor while it's running. The only disadvantage to JTAG is the cost-- it requires a Segger JTAG pod, plus a special adapter to connect to the Secret JTAG Port on the bottom of the Rascal.
 
-I’ll document the setup that I’m using, but it’s not optimal, as I’m using two computers, and the GDB server is a little clumsy. But, it’s all I’ve been able to get to work so far.
+I'll document the setup that I'm using, but it's not optimal, as I'm using two computers, and the GDB server is a little clumsy. But, it's all I've been able to get to work so far.
 The first machine is running Windows 7, but it could in theory be running Linux or Windows XP. The following software is installed on it:
 
  * The drivers for the Atmel SAM-ICE JTAG pod
  * Segger J-Link GDB server
  * All of the binaries that will be loaded via JTAG, namely AT91Bootstrap and U-boot
 
-The GDB server talks to the Rascal through the JTAG pod, which is plugged into one of the Windows machine’s USB ports and into the Rascal’s JTAG connector. The server gets its commands from a GDB client, which I was running on a Linux machine, but it could be anywhere.
+The GDB server talks to the Rascal through the JTAG pod, which is plugged into one of the Windows machine's USB ports and into the Rascal's JTAG connector. The server gets its commands from a GDB client, which I was running on a Linux machine, but it could be anywhere.
 
 The second machine is running Ubuntu Linux 10.04. The following software is installed on it:
 
@@ -200,7 +200,7 @@ The second machine is running Ubuntu Linux 10.04. The following software is inst
 
 ## Loading the Linux kernel via TFTP ##
 
-You can use U-boot to load the Linux kernel via TFTP. The address 0x2200 0000 is arbitrary-- RAM starts at 0x2000 0000. I don’t know where U-boot resides, but 0x2200 0000 is safe, at least for a 1.7 MB kernel.
+You can use U-boot to load the Linux kernel via TFTP. The address 0x2200 0000 is arbitrary-- RAM starts at 0x2000 0000. I don't know where U-boot resides, but 0x2200 0000 is safe, at least for a 1.7 MB kernel.
 $$code(lang=bash)
 U-Boot> tftpboot 0x22000000 linux-2.6.30.bin
 macb0: Starting autonegotiation...
@@ -218,7 +218,7 @@ $$/code
 
 ## Loading Linux via Kermit ##
 
-If TFTP isn’t working for some reason, you can load Linux over the DBGU port with Kermit. Here’s an example. Note the somewhat weird way that Kermit works-- after issuing the loadb command to U-boot, you type Ctrl-\C (that’s Ctrl-\ followed by C) to return to the machine running Kermit. Then, you send the file, wait for it to transfer, and type connect again to return to U-boot.
+If TFTP isn't working for some reason, you can load Linux over the DBGU port with Kermit. Here's an example. Note the somewhat weird way that Kermit works-- after issuing the loadb command to U-boot, you type Ctrl-\C (that's Ctrl-\ followed by C) to return to the machine running Kermit. Then, you send the file, wait for it to transfer, and type connect again to return to U-boot.
 Loading the kernel this way takes around 4 minutes for a 1.7 MB kernel.
 $$code(lang=bash)
     U-Boot> loadb 0x20200000 115200
