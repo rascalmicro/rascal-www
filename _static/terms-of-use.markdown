@@ -30,7 +30,7 @@ Rascal Micro believes, but does not warrant or represent, that people who make i
 
 ## No security representations or warranties are made ##
 
-Rascal Micro doesn't make any representations or warranties as to the security of any information (including, without limitation, credit card and other personal information) which are requested to give any third party or that the site is free from viruses or other potentially damaging programs. We obviously have a very strong interest in partnering with web stores and distributors who will treat your information securely, but just us wanting it doesn't make it so.
+Rascal Micro doesn't make any representations or warranties as to the security of any information (including, without limitation, credit card and other personal information) which is requested to given to any third party or that the site is free from viruses or other potentially damaging programs. We obviously have a very strong interest in partnering with web stores and distributors who will treat your information securely, but just us wanting it doesn't make it so.
 
 ## Access restriction ##
 
@@ -38,7 +38,7 @@ Rascal Micro reserves the right to deny at its sole discretion any user access t
 
 ## No unlawful or prohibited use ##
 
-As a condition of your use of the Rascal Micro sites, you won't use any Rascal Micro site for any purpose that is unlawful or prohibited by these Terms of Use. You may not use the Rascal Micro sites in any manner that could overburden or impair any Rascal Micro server, or the network(s) connected to any Rascal Micro server, or interfere with any other party's use and enjoyment of any of the Rascal Micro sites or services thereunder. You may not attempt to gain unauthorized access to any non-public portion of the Rascal Micro sites, through hacking or any other means. You may not obtain or attempt to obtain access to any information not intentionally made available to the public through the Rascal Micro sites except as authorized by Rascal Micro.
+As a condition of your use of the Rascal Micro sites, you won't use any Rascal Micro site for any purpose that is unlawful or prohibited by these Terms of Use. You may not use the Rascal Micro sites in any manner that could overburden or impair any Rascal Micro server, or the network(s) connected to any Rascal Micro server, or interfere with any other party's use and enjoyment of any of the Rascal Micro sites or services thereunder. You may not attempt to gain unauthorized access to any non-public portion of the Rascal Micro sites. You may not obtain or attempt to obtain access to any information not intentionally made available to the public through the Rascal Micro sites except as authorized by Rascal Micro.
 
 ## Feedback and confidential information ##
 
@@ -46,11 +46,17 @@ Rascal Micro does not want to receive confidential or proprietary information fr
 
 ## Indemnity ##
 
-As a condition of use of any Rascal Micro site, you agree to indemnify, protect, defend, and hold Rascal Micro harmless from  all liabilities, expenses (including attorneys' fees), and damages arising out of claims resulting from the use of any Rascal Micro site by you, your customers, associates, or random people you don't know.
+Rascal Micro makes no representations about the suitability, reliability, timeliness, or accuracy of the information contained on any Rascal Micro site for any purpose. All such information is provided "as is" without warranty of any kind. Rascal Micro hereby disclaims all warranties and conditions with regard to the information, including all implied warranties and conditions of security, merchantability, fitness for a particular purpose, title, and non-infringement.
+
+Rascal Micro makes no warranty that (1) any Rascal Micro site will meet your requirements, (2) the information on any Rascal Micro site will be timely or error-free, (3) the quality of any products, services, information, or other material purchased or obtained by you through any Rascal Micro site will meet your expectations, and (4) any errors in any Rascal Micro site will be corrected.
+
+In no event shall Rascal Micro be liable for any direct, indirect, punitive, incidental, special, or consequential damages or any damages whatsoever including, without limitation, damages for loss of use, data, or profits, arising out of or in any way connected with (i) the improper and/or illegal use of products purchased through the Rascal Micro site or (ii) modifications made to products purchased through the Rascal Micro site or (iii) the use or performance of any Rascal Micro site; (iv) the delay or inability to use any Rascal Micro site; (v) the provision of or failure to provide any service; (vi) the information, software, products, or services obtained through any Rascal Micro site, (vii) any Rascal Micro site or otherwise arising out of the use of any Rascal Micro site, whether based on contract, tort, strict liability, or otherwise, even if Rascal Micro or any of its suppliers has been advised of the possibility of damages.
+
+Because some states or jurisdictions do not allow the exclusion or limitation of liability for consequential or incidental damages, the above limitation may not apply to you. If you are dissatisfied with any portion of any Rascal Micro site, or with any of these terms of use, your sole and exclusive remedy is to discontinue using such Rascal Micro site.
 
 ## Modification of these terms of use ##
 
-Rascal Micro reserves the right to change these Terms of Use at any time by revising the terms and conditions herein. All changes to these Terms of Use and the Rascal Micro sites shall be effective immediately. You are responsible for regularly reviewing these Terms of Use. Continued use of any Rascal Micro site following changes shall constitute your acceptance of the changes.
+Rascal Micro reserves the right to change these Terms of Use at any time. All changes to these Terms of Use and the Rascal Micro sites shall be effective immediately. You are responsible for regularly reviewing these Terms of Use. Continued use of any Rascal Micro site following changes shall constitute your acceptance of the changes.
 
 ## General ##
 
@@ -64,7 +70,7 @@ Of course, Rascal Micro's obligations under these Terms of Use is subject to exi
 
 If any part of these Terms of Use is determined to be invalid or unenforceable pursuant to applicable law including, but not limited to, the warranty disclaimers and liability limitations set forth above, then the invalid or unenforceable provision will be deemed superseded by a valid, enforceable provision that most closely matches the intent of the original provision and the remainder of these Terms of Use shall continue in effect.
 
-These Terms of Use constitute the entire agreement between you and Rascal Micro with respect to the Rascal Micro sites and it supersedes all prior or contemporaneous communications and proposals between the you and Rascal Micro with respect to the Rascal Micro sites.
+These Terms of Use and the documents linked in the opening constitute the entire agreement between you and Rascal Micro with respect to the Rascal Micro sites. They supersedes all prior or contemporaneous communications and proposals between the you and Rascal Micro.
 
 ## Contact info ##
 

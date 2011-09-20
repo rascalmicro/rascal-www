@@ -1,6 +1,6 @@
-# Disclaimer #
+# Disclaimer of liability #
 
-The Rascal is designed for you to connect weird stuff to the internet. By itself, the Rascal is pretty safe-- it's like any other low voltage appliance that you plug into the wall. But, because the Rascal is intended to be a component in a larger system, using the Rascal usually involves working with electricity, wires, tools, robots, and the like. This can range from safe to extremely dangerous. Before using the Rascal, you should make sure that whatever you are attempting to do will be safe. If you can't do it safely, you shouldn't just do it anyway and hope to get away with it; you should come up with a safe plan.
+The Rascal is designed for you to connect weird stuff to the internet, but you need some technical expertise to use it. By itself, the Rascal is pretty safe-- it's like any other low voltage device that you plug into the wall. But, because the Rascal is intended to be a component in a larger system, using the Rascal usually involves working with electricity, wires, tools, robots, and the like. This can range from safe to extremely dangerous. Before using the Rascal, you should make sure that whatever you are attempting to do will be safe. If you can't do it safely, you should *not* just do it anyway and hope to get away with it. You should stop and come up with a safe plan.
 
 ## Electricity is dangerous ##
 
@@ -16,4 +16,10 @@ Modern microcontroller systems like the Rascal are complex, as are global comput
 
 ## Be safe ##
 
-To repeat: please be safe. If you can't do what you want safely, you should come up with a safe plan. To the extent that you try to attach dangerous things to the Rascal, we can't be held responsible.
+To repeat: please be safe. If you can't do what you want safely, you should stop and come up with a safe plan.
+
+By using the Rascal, you're on the cutting edge of open source hardware development-- you're one of the pioneers of a new era. Part of being a pioneer is accepting liability for the risks that you're taking. To the extent that you try to attach dangerous things to the Rascal, we can't be held responsible.
+
+To put in the legal terms that lawyers prefer: the Rascal and related products are provided to you "as is" without warranty of any kind. We hereby disclaim all warranties and conditions with regard to the information, software, products, and services you receive from Rascal Micro, including all implied warranties and conditions of security, merchantability, fitness for a particular purpose, title, and non-infringement.
+
+Because some states or jurisdictions do not allow the exclusion or limitation of liability for consequential or incidental damages, the above limitation may not apply to you. If you are dissatisfied with these terms, your sole and exclusive remedy is to discontinue using the Rascal.
