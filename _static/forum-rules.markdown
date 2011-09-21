@@ -20,7 +20,7 @@ You acknowledge that all forums are public and not private communications. Rasca
 
 ## Licensing of forum posts ##
 
-By posting messages, uploading files, inputting data, or engaging in any other form of communication through any Rascal Micro Site, you are granting Rascal Micro permission to:
+By posting messages, uploading files, inputting data, or engaging in any other form of communication through any Rascal Micro site, you are granting Rascal Micro permission to:
 1.	Use, modify, copy, distribute, transmit, publicly display, publicly perform, reproduce, publish, sublicense, create derivative works from, transfer, or sell any such communication; and
 2.	Sublicense to third parties the unrestricted right to exercise any of the listed activities.
 

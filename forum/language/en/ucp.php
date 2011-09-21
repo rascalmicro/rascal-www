@@ -37,11 +37,40 @@ if (empty($lang) || !is_array($lang))
 
 // Privacy policy and T&C
 $lang = array_merge($lang, array(
-	'TERMS_OF_USE_CONTENT'	=> 'By accessing “%1$s” (hereinafter “we”, “us”, “our”, “%1$s”, “%2$s”), you agree to be legally bound by the following terms. If you do not agree to be legally bound by all of the following terms then please do not access and/or use “%1$s”. We may change these at any time and we’ll do our utmost in informing you, though it would be prudent to review this regularly yourself as your continued usage of “%1$s” after changes mean you agree to be legally bound by these terms as they are updated and/or amended.<br />
-	<br />
-	Our forums are powered by phpBB (hereinafter “they”, “them”, “their”, “phpBB software”, “www.phpbb.com”, “phpBB Group”, “phpBB Teams”) which is a bulletin board solution released under the “<a href="http://opensource.org/licenses/gpl-license.php">General Public License</a>” (hereinafter “GPL”) and can be downloaded from <a href="http://www.phpbb.com/">www.phpbb.com</a>. The phpBB software only facilitates internet based discussions, the phpBB Group are not responsible for what we allow and/or disallow as permissible content and/or conduct. For further information about phpBB, please see: <a href="http://www.phpbb.com/">http://www.phpbb.com/</a>.<br />
-	<br />
-	You agree not to post any abusive, obscene, vulgar, slanderous, hateful, threatening, sexually-orientated or any other material that may violate any laws be it of your country, the country where “%1$s” is hosted or International Law. Doing so may lead to you being immediately and permanently banned, with notification of your Internet Service Provider if deemed required by us. The IP address of all posts are recorded to aid in enforcing these conditions. You agree that “%1$s” have the right to remove, edit, move or close any topic at any time should we see fit. As a user you agree to any information you have entered to being stored in a database. While this information will not be disclosed to any third party without your consent, neither “%1$s” nor phpBB shall be held responsible for any hacking attempt that may lead to the data being compromised.
+    'TERMS_OF_USE_CONTENT'	=>'By accessing the Rascal Micro forums, (hereinafter "we," the "forums"), you agree to be legally bound by the following terms. If you do not agree to be bound by these terms, do not use the forums. We may change these terms at any time, so it would be prudent to review this regularly. Your continued usage of the forums after changes means you agree to be legally bound by these terms as they are updated and/or amended.
+
+<h2>Don\'t be a jerk</h2>
+
+You agree to use the forums only to send and receive information that is proper and related to the particular forum. By way of example, and not as a limitation, you agree that when using the forums, you shall not:
+<ul>
+    <li>Defame, abuse, harass, stalk, threaten, or otherwise violate the legal rights (such as rights of privacy) of others.</li>
+    <li>Publish, post, upload, distribute, or disseminate any inappropriate, profane, defamatory, infringing, obscene, indecent, or unlawful information.</li>
+    <li>Upload files that contain software or other material protected by intellectual property laws (or by rights of privacy) unless you own the rights thereto or have received the necessary licenses.</li>
+    <li>Upload viruses, corrupted files, or any other similar software that may damage another\'s computer.</li>
+    <li>Download any file posted by another user of the forums that you reasonably should know cannot be legally distributed in such a manner.</li>
+    <li>Falsify or delete any author attributions, legal, or other licenses or proprietary designations or labels of the source of software or other material contained in posted materials.</li>
+    <li>Restrict or inhibit any other user from using and enjoying the forums.</li>
+</ul>
+
+Rascal Micro reserves the right to terminate your access to any or all of the forums, at any time, without notice for any reason whatsoever. We also reserve the right to modify or delete posts at any time, without notice for any reason whatsoever. We are looking forward to exercising this power.
+You acknowledge that all forums are public and not private communications. Rascal Micro specifically disclaims any liability with regard to the forums and any actions resulting from your participation in any forum. Seriously, people post all sorts of weird stuff on the internet. Forum moderators are not authorized Rascal Micro spokespersons, and their views do not necessarily reflect those of Rascal Micro.
+
+<h2>Licensing of forum posts</h2>
+
+By posting messages, uploading files, inputting data, or engaging in any other form of communication through any Rascal Micro site, you are granting Rascal Micro permission to:
+<ol>
+    <li>Use, modify, copy, distribute, transmit, publicly display, publicly perform, reproduce, publish, sublicense, create derivative works from, transfer, or sell any such communication; and</li>
+    <li>Sublicense to third parties the unrestricted right to exercise any of the listed activities.</li>
+</ol>
+In practice, this means that all the posts in the forums, like the rest of the website, will be made available to the world under the terms of <a href="http://creativecommons.org/licenses/by-sa/3.0/">the Attribution-ShareAlike 3.0 Unported variant of the Creative Commons Public License</a>. This means that other people (including you) will be welcome to copy the content of the posts and remix them into whatever they like, provided they give attribution with a line like "Based on a post by RascalZealot26 in the Rascal Micro forums" and share their remixes under the same license. Read the linked license for the details.
+
+<h2>Safety</h2>
+
+A lot of what we talk about on the forums (and the rest of rascalmicro.com) involves building crazy electronic contraptions heretofore unknown to man or beast. This is an inherently dangerous activity, so you have to take responsibility for your own safety. Many of us on the forums have a lot of experience working with electricity, so we leave out basic safety procedures that are obvious to experts, but dangerous to beginners (c.f. "When I said to connect those nine 120 Ah batteries in series, I didn\'t mean you should complete the circuit," the Battery Pack Incident, J. Tam, circa 1998, 525 Stock Farm Road, Palo Alto, CA, USA).
+
+<h2>Be careful</h2>
+
+Wear safety glasses, remember Ohm\'s law, and proceed with great caution. If you\'re not sure if what you\'re doing is safe, get someone who knows what they\'re doing to help you; do not trust a forum post on some random website, even if it\'s rascalmicro.com.
 	',
 
 	'PRIVACY_POLICY'		=> 'This policy explains in detail how “%1$s” along with its affiliated companies (hereinafter “we”, “us”, “our”, “%1$s”, “%2$s”) and phpBB (hereinafter “they”, “them”, “their”, “phpBB software”, “www.phpbb.com”, “phpBB Group”, “phpBB Teams”) use any information collected during any session of usage by you (hereinafter “your information”).<br />
