@@ -1,6 +1,9 @@
 
 # Blogofile
 _site/
+licenses
+packages
+sources
 
 # Python executables
 *.pyc
