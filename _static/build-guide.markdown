@@ -1,3 +1,5 @@
+Note that the build guide will be outdated soon, when we pull the building of the Linux kernel and the bootloaders into OpenEmbedded.
+
 # Building the Rascal code #
 
 If you're particularly enthusiastic, and you have access to a computer that can run Linux (perhaps in a VM), you can build all of the code for the Rascal yourself. The rest of this page assumes you're using Linux. (It's probably possible on Windows or OS X. All you need is a compiler that can generate code for the ARM architecture. For Windows, a good start would be the free CodeSourcery Lite toolchain.)

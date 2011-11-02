@@ -2,22 +2,42 @@
 
 The Rascal is a small, open-source computer designed for connecting sensors, motors, and whatever else you can build to the internet. It's about 5 cm x 10 cm (2 inches by 4 inches).
 
-## Hardware summary ##
-
-The Rascal is based around the Atmel AT91SAM9G20 microprocessor. This is an ARM processor from the ARM926EJ/S family. It's similar to, though slightly less powerful than, the ARM processors used in many smartphones.
-
-<img src="/img/pinout.png" alt="What's on each pin of the connectors on the Rascal">
-
-## Software summary ##
+The Rascal is based around the Atmel AT91SAM9G20 microprocessor, an ARM processor from the 926EJ/S family. It's similar to the ARM processors used in many smartphones.
 
 The Rascal runs the Linux operating system. If you're planning on using the Rascal in conventional ways, you won't need to mess with any of this software-- it's already installed on your Rascal when you get it. But, if you want to do something weird with the Rascal, you might want to change some of the details of how the software works, so we provide the code for tweaking.
 
-If you want more details about how the code fits together, take a look at the [software guts][1] page. If you are one of the beta testers who wants to build a new system image, look at the [build guide][2]. Note that the build guide will be outdated soon, when we pull the building of the Linux kernel and the bootloaders into OpenEmbedded.
+<img src="http://rascalmicro.com/img/rascal-0.6-beta-2011-02-26.jpg" alt="The Rascal">
+
+## Basic tutorials: building stuff with the Rascal ##
+
+These are a good place to start if you are new to the Rascal.
+
+* [Getting started][4]: plugging the Rascal in and using its built-in web editor
+* [Digital control][7]: turning stuff on and off through the web
+* [Serial communication][8]: sending messages out the serial port
+* [Reading sensors][9]: connecting a temperature sensor to the Rascal
+* [Controlling motors][10]: using the I<sup>2</sup>C shield from Seeed Studio
+
+## Advanced tutorials: how the Rascal works under the hood ##
+
+If you understand the basic usage of the Rascal, you might want to know how it works inside. The list below contains highly technical documents that are not intended for normal people. If you think you're trying to do something simple with the Rascal, they will likely be useless to you. On the other hand, if you're intending to soar over the mountains, pursuing things unattempted yet in Python or Ruby, we hide nothing from view.
+
+* [Guts of the software][1]
+* [Build a new system image][2]
+* Blog post: [Toggling pins on the AT91SAM9G20 with U-boot][5]
+* Blog post: [Reprogramming the Rascal's serial flash with JTAG][6]
 
 ## Hardware and software sources ##
 
-All of the Rascal hardware and software is open source. For more details, check the [sources][3] page.
+All of the Rascal hardware and software is open source. For the code, hardware design files, and some precompiled binaries, check the [sources][3] page.
 
 [1]: http://rascalmicro.com/docs/software-guts.html
 [2]: http://rascalmicro.com/docs/build-guide.html
 [3]: http://rascalmicro.com/docs/sources.html
+[4]: http://rascalmicro.com/docs/basic-tutorial-getting-started.html
+[5]: http://rascalmicro.com/blog/2011/01/07/toggling-pins-on-the-at91sam9g20-with-u-boot/
+[6]: http://rascalmicro.com/blog/2010/09/28/rascal-0.3-in-the-works/
+[7]: http://rascalmicro.com/docs/basic-tutorial-digital-control.html
+[8]: http://rascalmicro.com/docs/basic-tutorial-serial-communication.html
+[9]: http://rascalmicro.com/docs/basic-tutorial-reading-sensors.html
+[10]: http://rascalmicro.com/docs/basic-tutorial-controlling-motors.html
