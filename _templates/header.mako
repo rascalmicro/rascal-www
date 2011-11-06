@@ -3,7 +3,7 @@
             <div id="topbar"> 
                 <a href="/"><img src="/img/rascallogo.png" id="rascallogo" alt="Rascal Micro logo"></a> 
                 <ul id="nav"> 
-                  <li><a href="/store">Store</a></li> 
+                  <li><a href="http://store.rascalmicro.com">Store</a></li> 
                   <li><a href="/blog">Blog</a></li> 
                   <li><a href="/forum">Forum</a></li> 
                   <li><a href="/docs">Docs</a></li> 
