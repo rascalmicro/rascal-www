@@ -1,6 +1,6 @@
 ---
 format: markdown
-date: 2011/11/05 00:00:00
+date: 2011/11/03 00:00:00
 title: The first Rascals are up for sale
 categories: business, rascal
 ---
