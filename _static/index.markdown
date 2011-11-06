@@ -13,6 +13,7 @@ The Rascal runs the Linux operating system. If you're planning on using the Rasc
 These are a good place to start if you are new to the Rascal.
 
 * [Getting started][4]: plugging the Rascal in and using its built-in web editor
+* [Getting started, even more][14]: writing Python scripts that make the Rascal dance
 * [Digital control][7]: turning stuff on and off through the web
 * [Serial communication][8]: sending messages out the serial port
 * [Reading sensors][9]: connecting a temperature sensor to the Rascal
@@ -24,8 +25,16 @@ If you understand the basic usage of the Rascal, you might want to know how it w
 
 * [Guts of the software][1]
 * [Build a new system image][2]
+* [Putting a new filesystem onto a microSD card][12]
 * Blog post: [Toggling pins on the AT91SAM9G20 with U-boot][5]
 * Blog post: [Reprogramming the Rascal's serial flash with JTAG][6]
+
+## Reference documents ##
+
+Reference documents are the crack cocaine of documentation-- pure facts flooding directly to your brain.
+
+* [Pytronics code reference][11]
+* [Rascal pinout][13]
 
 ## Hardware and software sources ##
 
@@ -41,3 +50,7 @@ All of the Rascal hardware and software is open source. For the code, hardware d
 [8]: http://rascalmicro.com/docs/basic-tutorial-serial-communication.html
 [9]: http://rascalmicro.com/docs/basic-tutorial-reading-sensors.html
 [10]: http://rascalmicro.com/docs/basic-tutorial-controlling-motors.html
+[11]: http://rascalmicro.com/docs/pytronics-code-reference.html
+[12]: http://rascalmicro.com/docs/advanced-tutorial-new-filesystem-onto-microsd-card.html
+[13]: http://rascalmicro.com/docs/pinout.html
+[14]: http://rascalmicro.com/docs/basic-tutorial-getting-started-even-more.html

@@ -238,57 +238,6 @@ $$code(lang=bash)
     ## Start Addr      = 0x20200000
 $$/code
 
-## Wiping microSD card and copying on OpenEmbedded image ##
-
-First, you have to figure out the name of the card that you want to wipe in your device hierarchy. To do this, check dmesg, insert the card, and then check dmesg again. The new text that shows up at the end should tell you where the card you inserted was mounted-- it's often something like /dev/sdb1.
-
-(Note [cautionary tale][7] about accidentally wiping hard drive's boot sector at the end of blog post.)
-
-*Wipe the card clean*
-(Warning: this, uh, wipes the card clean.)
-$$code(lang=bash)
-brandon@milo:/oe$ sudo -s # become the superuser.
-[sudo] password for brandon: 
-root@milo:/oe# umount /dev/sdb1 # unmount the card
-root@milo:/oe# mkfs.ext3 -L rascal-beta /dev/sdb1 # wipe everything and make a new EXT3 filesystem
-mke2fs 1.41.12 (17-May-2010)
-Filesystem label=transcend-ext3
-OS type: Linux
-Block size=4096 (log=2)
-Fragment size=4096 (log=2)
-Stride=0 blocks, Stripe width=0 blocks
-246512 inodes, 984320 blocks
-49216 blocks (5.00%) reserved for the super user
-First data block=0
-Maximum filesystem blocks=1010827264
-31 block groups
-32768 blocks per group, 32768 fragments per group
-7952 inodes per group
-Superblock backups stored on blocks: 
-    32768, 98304, 163840, 229376, 294912, 819200, 884736
-Writing inode tables: done
-Creating journal (16384 blocks): done
-Writing superblocks and filesystem accounting information: done
-This filesystem will be automatically checked every 29 mounts or
-180 days, whichever comes first.  Use tune2fs -c or -i to override.
-$$/code
-
-Now, pull the card out and reinsert it so that it gets remounted.
-
-Then:
-$$code(lang=bash)
-root@milo:/oe# ls /media # check that the card is mounted
-rascal-beta
-cp /home/brandon/rascal-repos/openembedded-rascal/tmp/deploy/glibc/images/at91sam9g20ek/Angstrom-rascal-image-glibc-ipk-2010.7-test-20110428-at91sam9g20ek.rootfs.tar.bz2 /media/rascal-beta/
-cd /media/rascal-beta
-sudo tar xjf Angstrom-rascal-image-glibc-ipk-2010.7-test-20110428-at91sam9g20ek.rootfs.tar.bz2 # extract the filesystem
-rm Angstrom-rascal-image-glibc-ipk-2010.7-test-20110428-at91sam9g20ek.rootfs.tar.bz2 # delete the tarball
-sync # make sure all the data is committed to the card
-exit # relinquishes root privileges
-$$/code
-
-Last, pull out the card and put it back into the Rascal.
-
 [1]: http://www.sparkfun.com/products/718
 [2]: http://dangerousprototypes.com/bus-pirate-manual/
 [3]: https://github.com/mgoelzer/RascalDevShield
