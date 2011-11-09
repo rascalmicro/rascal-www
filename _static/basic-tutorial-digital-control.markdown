@@ -31,7 +31,11 @@ $$code(lang=html)
 <input id="sprinkler-off" type="button" value="OFF" class="large red awesome" alt="OFF">
 $$/code
 
-Then, I'll add two Javascript functions that will use jQuery to send requests to the Rascal when the buttons are clicked. The two functions are identical, except for the "on" and "off" parts. There are three interesting parts of the function.
+Here's what the page looks like. The <code>class="large red awesome"</code> uses CSS classes to style the buttons like the [Zurb "Awesome Buttons"][7]. If you wanted, you could tweak the CSS in <code>static/demo.css</code> to change the color or size of the buttons.
+
+<img src="http://rascalmicro.com/img/sprinkler-control-screenshot.png">
+
+Next, I'll add two Javascript functions that will use jQuery to send requests to the Rascal when the buttons are clicked. The two functions are identical, except for the "on" and "off" parts. There are three interesting parts of the function.
 
 1. <code>$("#sprinkler-on").click(</code> tells your browser to listen for clicks on the page element with the id "sprinkler-on".
 2. The second line of the function, which is the code that gets executed when the listened-for click is received. <code>$.post</code> makes your browser send a POST request to the path <code>/sprinkler</code> on the Rascal.
@@ -107,3 +111,4 @@ If you find errors in this tutorial, please drop a note in the [forums][4], and 
 [4]: http://rascalmicro.com/forum/
 [5]: http://rascalmicro.com/docs/pytronics-code-reference.html
 [6]: http://rascalmicro.com/docs/pinout.html
+[7]: http://www.zurb.com/blog_uploads/0000/0617/buttons-03.html
