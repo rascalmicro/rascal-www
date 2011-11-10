@@ -18,6 +18,7 @@ These are a good place to start if you are new to the Rascal.
 * [Serial communication][8]: sending messages out the serial port
 * [Reading sensors][9]: connecting a temperature sensor to the Rascal
 * [Controlling motors][10]: using the I<sup>2</sup>C shield from Seeed Studio
+* [Text messages and tri-color LEDs][15]: Twilio, I<sup>2</sup>C to a BlinkM, and the Rascal
 
 ## Advanced tutorials: how the Rascal works under the hood ##
 
@@ -54,3 +55,4 @@ All of the Rascal hardware and software is open source. For the code, hardware d
 [12]: http://rascalmicro.com/docs/advanced-tutorial-new-filesystem-onto-microsd-card.html
 [13]: http://rascalmicro.com/docs/pinout.html
 [14]: http://rascalmicro.com/docs/basic-tutorial-getting-started-even-more.html
+[15]: http://rascalmicro.com/docs/basic-tutorial-responding-to-text-messages.html
