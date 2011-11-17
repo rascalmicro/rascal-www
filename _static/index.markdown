@@ -2,10 +2,6 @@
 
 The Rascal is a small, open-source computer designed for connecting sensors, motors, and whatever else you can build to the internet. It's about 5 cm x 10 cm (2 inches by 4 inches).
 
-The Rascal is based around the Atmel AT91SAM9G20 microprocessor, an ARM processor from the 926EJ/S family. It's similar to the ARM processors used in many smartphones.
-
-The Rascal runs the Linux operating system. If you're planning on using the Rascal in conventional ways, you won't need to mess with any of this software-- it's already installed on your Rascal when you get it. But, if you want to do something weird with the Rascal, you might want to change some of the details of how the software works, so we provide the code for tweaking.
-
 <img src="http://rascalmicro.com/img/rascal-0.6-beta-2011-02-26.jpg" alt="The Rascal">
 
 ## Basic tutorials: building stuff with the Rascal ##
@@ -16,7 +12,7 @@ These are a good place to start if you are new to the Rascal.
 * [Getting started, even more][14]: writing Python scripts that make the Rascal dance
 * [Digital control][7]: turning stuff on and off through the web
 * [Serial communication][8]: sending messages out the serial port
-* [Reading sensors][9]: connecting a temperature sensor to the Rascal
+* [Graphing analog sensor data][9]: connecting a temperature sensor to the Rascal
 * [Controlling motors][10]: using the I<sup>2</sup>C shield from Seeed Studio
 * [Text messages and tri-color LEDs][15]: Twilio, I<sup>2</sup>C to a BlinkM, and the Rascal
 

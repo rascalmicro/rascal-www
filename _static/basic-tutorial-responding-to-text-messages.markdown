@@ -1,4 +1,4 @@
-## Making the Rascal dance with text messages ##
+## Basic tutorial: making the Rascal dance with text messages ##
 
 Twilio is a web service that allows you to send and receive phone calls and text messages through the internet. I'm working on a larger Rascal-Twilio project that's still developing, but I wanted to demonstrate one element of it now, because it's cool. Using Twilio, I've set up a Rascal such that if I text the name of a color, like "blue," to a certain number, the Rascal will receive that text and change a BlinkM LED to the color sent.
 
