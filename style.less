@@ -1,7 +1,8 @@
-@rascal-main: #C6433C;
-@rascal-light: @rascal-main + #222;
-@rascal-extra-light: @rascal-main + #444;
-@rascal-dark: @rascal-main - #222;
+@rascal-red: #C6433C;
+@rascal-red-light: @rascal-red + #222;
+@rascal-red-extra-light: @rascal-red + #444;
+@rascal-red-super-light: #FFC7C0;
+@rascal-dark: @rascal-red - #222;
 @rascal-gray: #414243;
 @rascal-white: #E7E8E9;
 @rascal-complement: #51A8CB;
@@ -41,7 +42,7 @@ body {
 #footer {
     clear: both;
     background: @rascal-gray;
-    color: @rascal-light;
+    color: @rascal-red-light;
     height: 100px;
     padding-bottom: 20px;
 }
@@ -106,6 +107,7 @@ img {
 }
 
 code {
+    font-size: 1.2em;
     color: #272822; /* from pygments-monokai */
     padding: 3px;
 }
@@ -145,7 +147,7 @@ ul, ol {
 
 /* headings */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 { /* h5 used for title bars in Pytronics API */
     font-family: "Trebuchet MS",Verdana,sans-serif;
     padding-top: 15px;
     font-weight: bold;
@@ -171,6 +173,17 @@ h4 {
     color: @rascal-gray;
 }
 
+h5 {
+    font-size: 1.3em;
+    font-family: monospace;
+    font-weight: normal;
+    background-color: @rascal-red-super-light;
+    color: @rascal-gray;
+    border-bottom: 2px solid @rascal-red;
+    margin: 20px 0px 10px 0px;
+    padding: 3px 10px 3px 10px;
+}
+
 /* links */
 
 a, a:visited, a:link, {
@@ -179,21 +192,21 @@ a, a:visited, a:link, {
 }
 
 a:hover {
-    color: @rascal-main;
+    color: @rascal-red;
     font-weight: bold;
 }
 
 #header a {
-    color: @rascal-main;
+    color: @rascal-red;
     text-decoration: none;
 }
 
 #header a:visited {
-    color: @rascal-main;
+    color: @rascal-red;
 }
 
 #header a:hover {
-    color: @rascal-extra-light;
+    color: @rascal-red-extra-light;
 }
 
 #footer a {
@@ -245,7 +258,7 @@ dt a { /* links to authors' names */
 }
 
 .postlink:hover, .post:target h3 a:hover { /* links in forum posts and sigs */
-    color: @rascal-main !important;
+    color: @rascal-red !important;
     text-decoration: underline !important;
 }
 
@@ -371,7 +384,7 @@ td, th {
 }
 
 th {
-    background-color: @rascal-main;
+    background-color: @rascal-red;
     font-weight: normal;
 }
 
