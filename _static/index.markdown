@@ -9,12 +9,9 @@ The Rascal is a small, open-source computer designed for connecting sensors, mot
 These are a good place to start if you are new to the Rascal.
 
 * [Getting started][4]: plugging the Rascal in and using its built-in web editor
-* [Getting started, even more][14]: writing Python scripts that make the Rascal dance
-* [Pytronics][16]: The Python library that controls the Rascal's hardware
 * [Digital control][7]: turning stuff on and off through the web
 * [Serial communication][8]: sending messages out the serial port
 * [Graphing analog sensor data][9]: connecting a temperature sensor to the Rascal
-* [Controlling motors][10]: using the I<sup>2</sup>C shield from Seeed Studio
 * [Text messages and tri-color LEDs][15]: Twilio, I<sup>2</sup>C to a BlinkM, and the Rascal
 
 ## Advanced tutorials: how the Rascal works under the hood ##
