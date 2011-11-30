@@ -16,7 +16,7 @@ I learned a few interesting lessons. I definitely need a big sign that says "Con
 
 Yesterday, I picked up some cheap used webcams and a massive linear stage at the MIT flea market, so Rascal's next appearance, likely at the [Detroit Maker Faire][5] on July 30th, should have a new demo that requires less sophistication to understand.
 
-<img src="http://rascalmicro.com/img/cambridge-maker-faire-2011-brandon-with-rascals-680px.jpg">
+<img src="/img/cambridge-maker-faire-2011-brandon-with-rascals-680px.jpg">
 
 [1]: http://chrisconnors.com/
 [2]: http://www.youtube.com/watch?v=T2fZ2EhaNLg

@@ -1,20 +1,13 @@
 <%inherit file="base.mako" /><!DOCTYPE html>
 <html lang="en">${self.head()}
     <body>
-        <div class="content">
-            ${self.header()}
-            <div id="torso">
-                <div class="rascalcontent">
-                    <div id="main_block">
-                        <div id="prose_block">${next.body()}
-                        </div><!-- end prose block -->
-                    </div><!-- end main block -->
-                </div>
+        ${self.header()}
+        <div class="container">
+            <div class="hero-unit">
+            ${next.body()}
             </div>
-            <div id="footer">
-                ${self.footer()}
-            </div> <!-- end footer -->
-        </div> <!-- end content -->
+        </div>
+        ${self.footer()}
     </body>
 </html>
 <%def name="head()">

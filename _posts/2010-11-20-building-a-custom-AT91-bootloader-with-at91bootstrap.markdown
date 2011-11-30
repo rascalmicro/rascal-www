@@ -76,4 +76,4 @@ If you want to comment on this post, use [this post][6] on the forums.
 [3]: http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Atmel+Europe,+Montigny-le-Bretonneux,+France&sll=48.79239,2.037964&sspn=0.59349,1.83609&ie=UTF8&hq=Atmel+Europe,&hnear=Montigny-le-Bretonneux,+Yvelines,+Ile-de-France,+France&ll=48.792164,2.035904&spn=0.074187,0.229511&t=h&z=13&layer=c&cbll=48.792243,2.035943&panoid=1V_zVDQapbFPad8XBsE4Sw&cbp=12,126.27,,1,8.4
 [4]: http://www.codesourcery.com/sgpp/lite/arm/portal/release1294
 [5]: http://en.wikipedia.org/wiki/Application_binary_interface
-[6]: http://rascalmicro.com/forum/viewtopic.php?f=7&t=15
+[6]: /forum/viewtopic.php?f=7&t=15

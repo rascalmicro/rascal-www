@@ -35,4 +35,4 @@ If you want to comment on this post, use [this post][7] on the forums.
 [4]: http://nmap.org/
 [5]: http://www.zeroconf.org/
 [6]: http://www.wireshark.org/
-[7]: http://rascalmicro.com/forum/viewtopic.php?f=7&t=14
+[7]: /forum/viewtopic.php?f=7&t=14

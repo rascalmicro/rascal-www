@@ -41,4 +41,4 @@ If you find errors in this tutorial, please drop a note in the [forums][6], and 
 [3]: http://pypi.python.org/pypi/webcolors/
 [4]: http://xilize.sourceforge.net/Reference/colorref.html
 [5]: https://github.com/scottellis/overo-blinkm
-[6]: http://rascalmicro.com/forum/
+[6]: /forum/

@@ -31,4 +31,4 @@ Detonate the fireworks now,
 Brandon
 
 [1]: http://store.rascalmicro.com/
-[2]: http://rascalmicro.com/docs/basic-tutorial-getting-started.html
+[2]: /docs/basic-tutorial-getting-started.html

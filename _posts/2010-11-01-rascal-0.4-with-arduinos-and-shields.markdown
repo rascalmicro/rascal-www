@@ -16,4 +16,4 @@ The combination of the two is powerful-- the Rascal acts as the interface to the
 
 That's the concept for how the devices work together. The mechanical interaction is shown below. The Arduino plugs in underneath the Rascal. Shields can attach in two places-- in the left position, they connect to the Rascal; in the right, they connect to the Arduino.
 
-<img src="http://rascalmicro.com/img/rascal-0.4-arduino-shield-diagram.png">
+<img src="/img/rascal-0.4-arduino-shield-diagram.png">

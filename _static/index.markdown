@@ -1,8 +1,8 @@
-# Documentation and tutorials for the Rascal #
+# Documentation and tutorials #
 
 The Rascal is a small, open-source computer designed for connecting sensors, motors, and whatever else you can build to the internet. It's about 5 cm x 10 cm (2 inches by 4 inches).
 
-<img src="http://rascalmicro.com/img/rascal-0.6-beta-2011-02-26.jpg" alt="The Rascal">
+<img src="/img/rascal-0.6-beta-2011-02-26.jpg" alt="The Rascal" width="820px">
 
 ## Basic tutorials: building stuff with the Rascal ##
 
@@ -35,19 +35,19 @@ Reference documents are the crack cocaine of documentation-- pure facts flooding
 
 All of the Rascal hardware and software is open source. For the code, hardware design files, and some precompiled binaries, check the [sources][3] page.
 
-[1]: http://rascalmicro.com/docs/software-guts.html
-[2]: http://rascalmicro.com/docs/build-guide.html
-[3]: http://rascalmicro.com/docs/sources.html
-[4]: http://rascalmicro.com/docs/basic-tutorial-getting-started.html
-[5]: http://rascalmicro.com/blog/2011/01/07/toggling-pins-on-the-at91sam9g20-with-u-boot/
-[6]: http://rascalmicro.com/blog/2010/09/28/rascal-0.3-in-the-works/
-[7]: http://rascalmicro.com/docs/basic-tutorial-digital-control.html
-[8]: http://rascalmicro.com/docs/basic-tutorial-serial-communication.html
-[9]: http://rascalmicro.com/docs/basic-tutorial-reading-sensors.html
-[10]: http://rascalmicro.com/docs/basic-tutorial-controlling-motors.html
-[11]: http://rascalmicro.com/docs/pytronics-code-reference.html
-[12]: http://rascalmicro.com/docs/advanced-tutorial-new-filesystem-onto-microsd-card.html
-[13]: http://rascalmicro.com/docs/pinout.html
-[14]: http://rascalmicro.com/docs/basic-tutorial-getting-started-even-more.html
-[15]: http://rascalmicro.com/docs/basic-tutorial-responding-to-text-messages.html
-[16]: http://rascalmicro.com/docs/basic-tutorial-pytronics.html
+[1]: /docs/software-guts.html
+[2]: /docs/build-guide.html
+[3]: /docs/sources.html
+[4]: /docs/basic-tutorial-getting-started.html
+[5]: /blog/2011/01/07/toggling-pins-on-the-at91sam9g20-with-u-boot/
+[6]: /blog/2010/09/28/rascal-0.3-in-the-works/
+[7]: /docs/basic-tutorial-digital-control.html
+[8]: /docs/basic-tutorial-serial-communication.html
+[9]: /docs/basic-tutorial-reading-sensors.html
+[10]: /docs/basic-tutorial-controlling-motors.html
+[11]: /docs/pytronics-code-reference.html
+[12]: /docs/advanced-tutorial-new-filesystem-onto-microsd-card.html
+[13]: /docs/pinout.html
+[14]: /docs/basic-tutorial-getting-started-even-more.html
+[15]: /docs/basic-tutorial-responding-to-text-messages.html
+[16]: /docs/basic-tutorial-pytronics.html

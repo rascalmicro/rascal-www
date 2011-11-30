@@ -243,8 +243,8 @@ $$/code
 [3]: https://github.com/mgoelzer/RascalDevShield
 [4]: http://www.denx.de/wiki/view/DULG/ELDKAvailability
 [5]: https://github.com/rascalmicro/
-[6]: http://rascalmicro.com/docs/software-guts.html
-[7]: http://rascalmicro.com/2010/10/18/adding-a-microsd-card-to-the-rascal/
+[6]: /docs/software-guts.html
+[7]: /2010/10/18/adding-a-microsd-card-to-the-rascal/
 [8]: http://git-scm.com/
 [9]: http://help.github.com/linux-git-installation/
 [10]: http://help.github.com/mac-git-installation/

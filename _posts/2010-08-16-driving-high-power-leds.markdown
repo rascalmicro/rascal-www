@@ -52,7 +52,7 @@ Our circuit uses the same basic design, but with the AD5231 digital pot inserted
 
 We'll have more details when the circuit boards arrive. In the meantime, here's a picture of one of the green LEDs running at around 10% of maximum brightness, controlled by a prototype circuit built on a breadboard.
 
-<img src="http://rascalmicro.com/img/ledengin-green-led-700-ma.jpg" width="700px">
+<img src="/img/ledengin-green-led-700-ma.jpg" width="700px">
 
 [1]: http://www.ledengin.com/led_products.htm
 [2]: http://ecd.coolermaster.com/english/products/products.php?_ledlist

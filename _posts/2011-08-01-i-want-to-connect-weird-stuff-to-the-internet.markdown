@@ -109,7 +109,7 @@ That's all I talked about during the presentation. If you're interested in makin
 [7]: http://bjoern.org/
 [8]: http://rubyonrails.org/
 [9]: https://www.djangoproject.com/
-[10]: http://rascalmicro.com/blog/2011/07/06/self-serve-programming-tools/
+[10]: /blog/2011/07/06/self-serve-programming-tools/
 [11]: http://www.parallax.com/tabid/295/Default.aspx
 [12]: http://arduino.cc
 [13]: http://zeroconf.org/
@@ -129,4 +129,4 @@ That's all I talked about during the presentation. If you're interested in makin
 [27]: https://yaler.net/
 [28]: https://secure.logmein.com/products/hamachi/
 [29]: https://twitter.com/#!/rascalmicro
-[30]: http://rascalmicro.com/files/presentations/2011-07-31-sketching11-weird-stuff-to-the-internet.pdf
+[30]: /files/presentations/2011-07-31-sketching11-weird-stuff-to-the-internet.pdf

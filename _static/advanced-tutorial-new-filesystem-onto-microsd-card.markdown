@@ -43,7 +43,7 @@ For example:
 $$code(lang=bash)
 root@milo:/oe# ls /media # check that the card is mounted
 rascal-beta
-wget http://rascalmicro.com/files/rascal-filesystem-2011-11-02.tar.gz
+wget /files/rascal-filesystem-2011-11-02.tar.gz
 mv rascal-filesystem-2011-11-02.tar.gz /media/rascal-beta/
 cd /media/rascal-beta
 sudo tar xzvf rascal-filesystem-2011-11-02.tar.gz # extract the filesystem
@@ -64,5 +64,5 @@ $$/code
 
 If you have space on the card, you can generate the tarball on the card itself, but it's probably a better idea to generate it on your host computer directly. You have to move it there, anyway.
 
-[1]: http://rascalmicro.com/blog/2010/10/18/adding-a-microsd-card-to-the-rascal/
-[2]: http://rascalmicro.com/docs/sources.html
+[1]: /blog/2010/10/18/adding-a-microsd-card-to-the-rascal/
+[2]: /docs/sources.html

@@ -77,11 +77,11 @@ These Terms of Use and the documents linked in the opening constitute the entire
 Contact milo at rascalmicro dot com with questions about any Rascal Micro site.
 
 [1]: http://store.rascalmicro.com
-[2]: http://rascalmicro.com/docs/privacy.html
-[3]: http://rascalmicro.com/docs/forum-rules.html
-[4]: http://rascalmicro.com/docs/liability-disclaimer.html
-[5]: http://rascalmicro.com/docs/store-policies.html
+[2]: /docs/privacy.html
+[3]: /docs/forum-rules.html
+[4]: /docs/liability-disclaimer.html
+[5]: /docs/store-policies.html
 [6]: http://creativecommons.org/licenses/by-sa/3.0/
 [7]: http://www.phpbb.com
 [8]: http://www.phpbb.com/downloads/license/
-[9]: http://rascalmicro.com/docs/build-guide.html
+[9]: /docs/build-guide.html

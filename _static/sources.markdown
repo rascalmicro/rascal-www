@@ -42,35 +42,35 @@ For now, the hardware is under the [Creative Commons BY-SA license][1], and the 
  * [TI TPS71710 LDO regulator][41] (*1.1 MB*)
 
 [1]: http://creativecommons.org/licenses/by-sa/3.0/us/
-[2]: http://rascalmicro.com/files/rascal-0.4.schdoc
-[3]: http://rascalmicro.com/files/rascal-0.4-schematic.pdf
-[4]: http://rascalmicro.com/files/rascal-0.4.pcbdoc
-[5]: http://rascalmicro.com/files/rascal-0.4-pcb.pdf
-[6]: http://rascalmicro.com/files/rascal-0.4-gerbers.zip
-[7]: http://rascalmicro.com/files/rascal-0.4-bom.xlsx
-[8]: http://rascalmicro.com/files/boot-rascal-serialflash2sdram.elf
-[9]: http://rascalmicro.com/files/boot-rascal-serialflash2sdram.bin
-[10]: http://rascalmicro.com/files/u-boot.elf
-[11]: http://rascalmicro.com/files/u-boot.bin
+[2]: /files/rascal-0.4.schdoc
+[3]: /files/rascal-0.4-schematic.pdf
+[4]: /files/rascal-0.4.pcbdoc
+[5]: /files/rascal-0.4-pcb.pdf
+[6]: /files/rascal-0.4-gerbers.zip
+[7]: /files/rascal-0.4-bom.xlsx
+[8]: /files/boot-rascal-serialflash2sdram.elf
+[9]: /files/boot-rascal-serialflash2sdram.bin
+[10]: /files/u-boot.elf
+[11]: /files/u-boot.bin
 [12]: https://github.com/rascalmicro/u-boot-rascal
-[13]: http://rascalmicro.com/files/linux-2.6.36-rascal-2011-11-02.bin
+[13]: /files/linux-2.6.36-rascal-2011-11-02.bin
 [14]: https://github.com/rascalmicro/linux-2.6
-[15]: http://rascalmicro.com/files/rascal-filesystem-2011-11-02.tar.gz
+[15]: /files/rascal-filesystem-2011-11-02.tar.gz
 [16]: https://github.com/rascalmicro/openembedded-rascal
-[17]: http://rascalmicro.com/files/rascal-mechanical-drawing-2010-11-14.pdf
-[18]: http://rascalmicro.com/files/rascal-mechanical-cad-2010-11-14.zip
-[30]: http://rascalmicro.com/files/datasheets/Atmel%20AT91SAM9G20%20microcontroller.pdf
-[31]: http://rascalmicro.com/files/datasheets/Bel%20Fuse%20L829-1X1T-91%20RJ45%20jack.pdf
-[32]: http://rascalmicro.com/files/datasheets/CTS%2074x%20resistor%20arrays.pdf
-[33]: http://rascalmicro.com/files/datasheets/JAE%20SJ107021%20microSD%20card%20socket.pdf
-[34]: http://rascalmicro.com/files/datasheets/Fox%20FXO-HC73%20oscillator.pdf
-[35]: http://rascalmicro.com/files/datasheets/Macronix%20MX25L3205D%204%20MB%20serial%20flash.pdf
-[36]: http://rascalmicro.com/files/datasheets/Micrel%20KSZ8041TL%20Ethernet%20transceiver.pdf
-[37]: http://rascalmicro.com/files/datasheets/Micron%20MT48LCxxMxxA2%20SDRAM.pdf
-[38]: http://rascalmicro.com/files/datasheets/NXP%20PMBT2222%20transistor.pdf
-[39]: http://rascalmicro.com/files/datasheets/On%20Semi%20MC78xx%20regulators.pdf
-[40]: http://rascalmicro.com/files/datasheets/TI%20TPS60500%20adjustable%20buck%20charge%20pump.pdf
-[41]: http://rascalmicro.com/files/datasheets/TI%20TPS71710%20LDO%20regulator.pdf
+[17]: /files/rascal-mechanical-drawing-2010-11-14.pdf
+[18]: /files/rascal-mechanical-cad-2010-11-14.zip
+[30]: /files/datasheets/Atmel%20AT91SAM9G20%20microcontroller.pdf
+[31]: /files/datasheets/Bel%20Fuse%20L829-1X1T-91%20RJ45%20jack.pdf
+[32]: /files/datasheets/CTS%2074x%20resistor%20arrays.pdf
+[33]: /files/datasheets/JAE%20SJ107021%20microSD%20card%20socket.pdf
+[34]: /files/datasheets/Fox%20FXO-HC73%20oscillator.pdf
+[35]: /files/datasheets/Macronix%20MX25L3205D%204%20MB%20serial%20flash.pdf
+[36]: /files/datasheets/Micrel%20KSZ8041TL%20Ethernet%20transceiver.pdf
+[37]: /files/datasheets/Micron%20MT48LCxxMxxA2%20SDRAM.pdf
+[38]: /files/datasheets/NXP%20PMBT2222%20transistor.pdf
+[39]: /files/datasheets/On%20Semi%20MC78xx%20regulators.pdf
+[40]: /files/datasheets/TI%20TPS60500%20adjustable%20buck%20charge%20pump.pdf
+[41]: /files/datasheets/TI%20TPS71710%20LDO%20regulator.pdf
 
 
 

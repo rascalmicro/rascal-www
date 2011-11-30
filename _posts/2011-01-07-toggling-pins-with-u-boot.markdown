@@ -93,4 +93,4 @@ If you want to comment on this post, use [this post][3] on the forums.
 
 [1]: http://en.wikipedia.org/wiki/Das_U-Boot
 [2]: http://www.atmel.com/dyn/products/product_card.asp?part_id=4337
-[3]: http://rascalmicro.com/forum/viewtopic.php?f=7&t=17
+[3]: /forum/viewtopic.php?f=7&t=17

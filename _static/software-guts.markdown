@@ -4,13 +4,13 @@
 
 The Rascal starts with 4 pieces of code in its stock configuration. The first three are contained in the 4 MB serial flash; the fourth is on a removable microSD card. The picture below shows a beta unit with the serial flash and microSD card called out.
 
-<img src="http://rascalmicro.com/img/rascal-with-boot-labels.jpg">
+<img src="/img/rascal-with-boot-labels.jpg">
 
 ## Serial flash ##
 
 The serial flash holds 4 MB of memory. As long as you're using the Rascal as intended, this memory is read-only. Production versions of the Rascal will probably ship with the serial flash write protected, so that regardless of the horrible contortions you may put the CPU through, you can't corrupt the bootloaders or the Linux kernel.
 
-<img src="http://rascalmicro.com/img/4-mb-serial-flash-memory-layout.png">
+<img src="/img/4-mb-serial-flash-memory-layout.png">
 
 The addresses of the bootloaders in the diagram above are correct but the proportions are wrong so that the labels will fit. In reality, U-boot is around 100x smaller than the Linux kernel, and AT91Bootstrap is another 40x smaller.
 
@@ -30,4 +30,4 @@ The total boot process takes around 30 seconds. Most of that time is spent booti
 
 If this all sounds exciting and you want to try your hand at building some of the code, take a look at the [build guide][1].
 
-[1]: http://rascalmicro.com/docs/build-guide.html
+[1]: /docs/build-guide.html
