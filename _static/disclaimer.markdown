@@ -1,4 +1,4 @@
-# Disclaimer of liability #
+## Disclaimer of liability ##
 
 The Rascal is designed for you to connect weird stuff to the internet, but you need some technical expertise to use it. By itself, the Rascal is pretty safe-- it's like any other low voltage device that you plug into the wall. But, because the Rascal is intended to be a component in a larger system, using the Rascal usually involves working with electricity, wires, tools, robots, and the like. This can range from safe to extremely dangerous. Before using the Rascal, you should make sure that whatever you are attempting to do will be safe. If you can't do it safely, you should *not* just do it anyway and hope to get away with it. You should stop and come up with a safe plan.
 

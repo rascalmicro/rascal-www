@@ -1,18 +1,18 @@
 Note that the build guide will be outdated soon, when we pull the building of the Linux kernel and the bootloaders into OpenEmbedded.
 
-# Building the Rascal code #
+## Building the Rascal code ##
 
 If you're particularly enthusiastic, and you have access to a computer that can run Linux (perhaps in a VM), you can build all of the code for the Rascal yourself. The rest of this page assumes you're using Linux. (It's probably possible on Windows or OS X. All you need is a compiler that can generate code for the ARM architecture. For Windows, a good start would be the free CodeSourcery Lite toolchain.)
 
 The code is stored in [Git repositories][5] on Github.com. Before you try building anything, you'll want to understand the basic layout of the software on the Rascal. Take a look at the Git repositories and read over where all the code belongs on the Rascal, as detailed on the [software guts][6] page.
 
-## Software setup ##
+### Software setup ###
 
 First, you need a compiler (or possibly two) and a few related build tools. The primary bootloader requires a compiler (arm-none-eabi-gcc) that can run on a bare processor; the rest of the code uses the Linux ABI, so it uses a different version of GCC (arm-linux-gcc). The installations are not particularly arduous; installing both compilers is fine.
 
 For the first compiler, you'll need a tarball from CodeSourcery. For the second compiler, you'll need to install the [Embedded Linux Development Kit][4], which is a precompiled collection of build tools--a compiler (GCC), make, and so forth-- maintained by Denx, the folks who make U-boot. You'll also need to install the source code management software [git][8]. Strictly speaking, you could get by without git, but git simplifies the instructions, and it's a great tool worth learning.
 
-## Installing the CodeSourcery toolchain ##
+### Installing the CodeSourcery toolchain ###
 
 To build the bootloader, use the [2010q1 release of the CodeSourcery arm-none-eabi toolchain][13]. The "none" means that the binary is being built for use without an operating system; the "eabi" means that the executable will use the [standard compilation conventions][14] for ARM processors.
 
@@ -25,7 +25,7 @@ mv arm-2010q1 /opt/cs
 rm arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
 $$/code
 
-## Installing the ELDK build tools on Linux ##
+### Installing the ELDK build tools on Linux ###
 The ELDK uses its own copy of the Redhat Package Manager (RPM) to install itself. The simplest approach is to burn a copy of the 4.2 release [arm-2008-11-24.iso][12] to CD and install from that. If you know how, you could also mount the .iso file directly and install from that.
 
 *Install the ELDK*
@@ -51,7 +51,7 @@ Preparing...                ########################################### [100%]
 Done
 $$/code
 
-## Installing git ##
+### Installing git ###
 
 Next, install git. You might also want a graphical Git client, but to build the code, you only need two git commands (clone and checkout), so it's not required. Installing git is a straightforward process by now, and the fine people at Github have produced a series of guides that explain how to do it.
 
@@ -59,7 +59,7 @@ Next, install git. You might also want a graphical Git client, but to build the 
  * [Installing git on OS X][10]
  * [Installing git on Windows][11]
 
-## Test your tools ##
+### Test your tools ###
 
 After installation, you need to set a few environment variables to make sure your OS can find your build tools. On Linux, these commands will do the trick, assuming you installed the ELDK to /opt/eldk and the CodeSourcery toolchain to /opt/cs. 
 $$code(lang=bash)
@@ -96,7 +96,7 @@ brandon@milo:~$ which arm-none-eabi-gcc
 /opt/cs/bin/arm-none-eabi-gcc
 $$/code
 
-## Building AT91Bootstrap, the primary bootloader ##
+### Building AT91Bootstrap, the primary bootloader ###
 You need to have the CodeSourcery tools on your PATH.
 
 *Download the code*
@@ -117,7 +117,7 @@ $$/code
 
 The build should take just a minute or two. If this works, you'll find the binary for loading onto the serial flash with SAM-BA at at91bootstrap-rascal/at91bootstrap/bin/boot-at91sam9g20-ek-serialflash2sdram.bin. For executing the code in RAM with JTAG, you'll want to use at91bootstrap-rascal/at91bootstrap/bin/boot-at91sam9g20-ek-serialflash2sdram.elf instead.
 
-## Building U-boot, the secondary bootloader ##
+### Building U-boot, the secondary bootloader ###
 You need to have $PATH and $CROSS_COMPILE defined from the ELDK install above.
 
 *Download the code*
@@ -136,7 +136,7 @@ $$/code
 
 The build should take 1-10 minutes, depending on your build computer. If the build works, you'll find the binary for loading onto the serial flash with SAM-BA in u-boot-rascal/u-boot.bin. For executing the code in RAM with JTAG, you'll want to use u-boot-rascal/u-boot, which is actually an ELF file.
 
-## Building the Linux kernel ##
+### Building the Linux kernel ###
 You need to have $PATH and $CROSS_COMPILE defined from the ELDK install above.
 
 *Download the code*
@@ -153,7 +153,7 @@ $$/code
 
 If the toolchain builds the kernel successfully, you'll find the kernel image at arch/arm/boot/uImage.
 
-## Building OpenEmbedded filesystem image ##
+### Building OpenEmbedded filesystem image ###
 
 *Download the Rascal fork of the OpenEmbedded code and Bitbake*
 $$code(lang=bash)
@@ -172,9 +172,9 @@ bitbake --version # Tests that the bitbake to be called is version 1.10.2 or hig
 bitbake rascal-image
 $$/code
 
-# Loading code onto the Rascal #
+## Loading code onto the Rascal ##
 
-## Hardware setup ##
+### Hardware setup ###
 For development, you need 4 connections to the Rascal.
 
 1. Power: any DC power supply with a voltage in the 7.5-15 V range with a center-positive, 2.1 mm barrel connector should work. Supplies that work with the Arduino will also work with the Rascal. 
@@ -200,7 +200,7 @@ The second machine is running Ubuntu Linux 10.04. The following software is inst
  * Kermit 8.0.211 terminal emulator (default version for Ubuntu 10.04)
  * Tftpd-hpa TFTP server (default version for Ubuntu 10.04)
 
-## Loading the Linux kernel via TFTP ##
+### Loading the Linux kernel via TFTP ###
 
 You can use U-boot to load the Linux kernel via TFTP. The address 0x2200 0000 is arbitrary-- RAM starts at 0x2000 0000. I don't know where U-boot resides, but 0x2200 0000 is safe, at least for a 1.7 MB kernel.
 $$code(lang=bash)
@@ -218,7 +218,7 @@ Bytes transferred = 1729512 (1a63e8 hex)
 U-Boot> bootm 0x22000000
 $$/code
 
-## Loading Linux via Kermit ##
+### Loading Linux via Kermit ###
 
 If TFTP isn't working for some reason, you can load Linux over the DBGU port with Kermit. Here's an example. Note the somewhat weird way that Kermit works-- after issuing the loadb command to U-boot, you type Ctrl-\C (that's Ctrl-\ followed by C) to return to the machine running Kermit. Then, you send the file, wait for it to transfer, and type connect again to return to U-boot.
 Loading the kernel this way takes around 4 minutes for a 1.7 MB kernel.

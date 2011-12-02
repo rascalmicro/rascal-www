@@ -6,7 +6,7 @@ In this example, I'll use the [Lilypad temperature sensor][1] manufactured by Sp
 
 Connect the pin labeled A/D ref to a voltage between ground and 3.3 V. This voltage determines the top end of the A/D converter's range. The bottom of the range is always ground. If your sensor voltage is above 3.3 V, you can scale it down to the 0-3.3 V range with a voltage divider. (Be careful about drawing too much current from your sensor, which will make the voltage sag.)
 
-<img src="/img/analog-graph-demo-screenshot.png">
+<img class="span14" src="/img/analog-graph-demo-screenshot.png">
 
 (More explanation of jQplot needed here.)
 

@@ -41,11 +41,11 @@ blog.url = "http://rascalmicro.com/blog"
 
 ## blog_name -- Your Blog's name.
 # This is used repeatedly in default blog templates
-blog.name = "Rascal Micro: blogging since the end of time"
+blog.name = "Rascal Micro: small computers for art and science"
 
 ## blog_description -- A short one line description of the blog
 # used in the RSS/Atom feeds.
-blog.description = "Your Blog's short description"
+blog.description = "Rascal Micro: small computers for art and science"
 
 ## blog_timezone -- the timezone that you normally write your blog posts from
 blog.timezone = "US/Eastern"

@@ -14,7 +14,7 @@ In the long run, you can put whatever you want on the Rascal webserver, but it s
 
 The editor still needs work, but here's an early screenshot.
 
-<a href="/img/proto-web-editor-2011-06-21.png"><img src="/img/proto-web-editor-2011-06-21.png" width="950px"></a>
+<a href="/img/proto-web-editor-2011-06-21.png"><img class="span14" src="/img/proto-web-editor-2011-06-21.png" width="950px"></a>
 
 In the open source tradition, I didn't write the editor from scratch. The text window itself uses [Codemirror][1]; the file tree uses [jQuery with a file tree plugin][2], and the whole application uses [Flask][3]. Eventually, my code will be properly released under the GPL. In the meantime, the [source][4] to the demo is on Github.
 

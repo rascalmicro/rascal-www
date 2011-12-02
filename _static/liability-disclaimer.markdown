@@ -1,4 +1,4 @@
-# Liability disclaimer #
+## Liability disclaimer ##
 
 Rascal Micro and its suppliers make no representations about the suitability, reliability, timeliness, or accuracy of the information, software, products, or services contained on any Rascal Micro site for any purpose. All such information, software, products, and services are provided "as is" without warranty of any kind. Rascal Micro and its suppliers hereby disclaim all warranties and conditions with regard to the information, software, products, and services, including all implied warranties and conditions of security, merchantability, fitness for a particular purpose, title, and non-infringement.
 

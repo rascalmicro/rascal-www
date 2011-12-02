@@ -1,10 +1,10 @@
-# The guts of the Rascal software #
+## The guts of the Rascal software ##
 
 *This page describes how the software in the Rascal fits together. If you just want to use the Rascal, you don't need to understand any of this; it's just here for the benefit of the hardcore Rascal zealots.*
 
 The Rascal starts with 4 pieces of code in its stock configuration. The first three are contained in the 4 MB serial flash; the fourth is on a removable microSD card. The picture below shows a beta unit with the serial flash and microSD card called out.
 
-<img src="/img/rascal-with-boot-labels.jpg">
+<img class="span14" src="/img/rascal-with-boot-labels.jpg">
 
 ## Serial flash ##
 

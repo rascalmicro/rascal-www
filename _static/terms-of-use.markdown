@@ -1,6 +1,4 @@
-# Terms of use #
-
-## Agreement between you and Rascal Micro LLC and its affiliates (referred to as "Rascal Micro" or "we") ##
+## Terms of use ##
 
 This web site and other sites operated under the direction of Rascal Micro, such as Shopify's [store.rascalmicro.com][1] (collectively known as the "Rascal Micro sites" or "sites") are offered to you on the condition that you agree to abide by, without modification, both the terms, conditions, and notices on this page (collectively, the "Terms of Use"), and the other legal statements found on the Rascal Micro sites. These include, but are not limited to, Rascal Micro's [privacy policy][2], the [forum guidelines][3], the [liability disclaimer][4], and the [store policies][5].
 

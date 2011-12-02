@@ -21,6 +21,7 @@ If you understand the basic usage of the Rascal, you might want to know how it w
 * [Guts of the software][1]
 * [Build a new system image][2]
 * [Putting a new filesystem onto a microSD card][12]
+* [How data travels back and forth between your browser and the Rascal][17]
 * Blog post: [Toggling pins on the AT91SAM9G20 with U-boot][5]
 * Blog post: [Reprogramming the Rascal's serial flash with JTAG][6]
 
@@ -51,3 +52,4 @@ All of the Rascal hardware and software is open source. For the code, hardware d
 [14]: /docs/basic-tutorial-getting-started-even-more.html
 [15]: /docs/basic-tutorial-responding-to-text-messages.html
 [16]: /docs/basic-tutorial-pytronics.html
+[17]: /docs/browser-server-loop.html

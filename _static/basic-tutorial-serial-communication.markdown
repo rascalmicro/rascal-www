@@ -3,7 +3,7 @@
 The Rascal has three serial ports, which can be used to send digital signals to other devices. This tutorial explains how to make the Rascal send text to a [serial-enabled LCD][1] manufactured by Sparkfun. The basic idea is to capture the text you want to send in a text field on a web page, send it to the Rascal, and then use the Pytronics <code>send_serial</code> function to transfer the text to the LCD.
 
 Here's the hardware setup-- the aforementioned Sparkfun LCD with three wires connecting it to the Rascal.
-<img src="/img/lcd-and-rascal.jpg">
+<img class="span14" src="/img/lcd-and-rascal.jpg">
 
 The table below shows how the three wires (power, ground, and data) are connected between the Rascal and the LCD. The LCD gets power from the 5 V regulator onboard the Rascal.
 <table class="zebra">

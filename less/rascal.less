@@ -23,12 +23,14 @@ footer {
 @white: @rascal-white;
 @linkColor: @rascal-red;
 
-pre, code {
+pre {
+    border-radius: 10px;
     font-size: 16px;
 }
 
-pre {
-    border-radius: 10px;
+code {
+    background: @rascal-white;
+    font-size: 16px;
 }
 
 .pygments_monokai {
@@ -37,4 +39,10 @@ pre {
 
 /* Enlarge the typography */
 @basefont: 16px;
-@baseline: 22px;
+@baseline: 24px;
+
+.hero-unit p {
+  font-size: @basefont;
+  font-weight: 400;
+  line-height: @baseline;
+}

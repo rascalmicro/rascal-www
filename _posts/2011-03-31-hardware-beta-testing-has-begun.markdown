@@ -6,7 +6,7 @@ categories: beta, rascal
 ---
 I am pleased to announce that a box of 16 Rascals arrived from China on Tuesday, the first Rascal sale has been made, and the first Rascal has been shipped to a Distinguished Gentleman in the District of Columbia. I've been working on the Rascal for exactly a year as of tomorrow. It's taken longer than I expected, but the result is also far more awesome than what I originally had planned.
 
-<img src="/img/rascal-betas-950px.jpg">
+<img class="span14" src="/img/rascal-betas-950px.jpg">
 
 A few of the beta units are being tested by courageous individuals over the next few weeks. When the Rascal software has matured, I'll send out an email inviting normal people to join the vanguard of internet gadgeteers. [Sign up for the mailing list][1] if you're interested.
 
@@ -22,7 +22,7 @@ I announced this demo via email to a couple of my engineer friends earlier today
 
 Look at this beautiful fleet of Rascals!
 
-<img src="/img/sixteen-rascal-betas-950px.jpg">
+<img class="span14" src="/img/sixteen-rascal-betas-950px.jpg">
 
 [1]: /store
 [2]: http://demo.rascalmicro.com:81/hello/index
