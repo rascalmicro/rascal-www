@@ -80,7 +80,6 @@
 <script type="text/javascript" src="{T_TEMPLATE_PATH}/styleswitcher.js"></script>
 <script type="text/javascript" src="{T_TEMPLATE_PATH}/forum_fn.js"></script>
 
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Molengo">
 <link href="{T_THEME_PATH}/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
 <link href="{T_STYLESHEET_LINK}" rel="stylesheet" type="text/css" media="screen, projection" />
 
@@ -90,42 +89,46 @@
 	<link href="{T_THEME_PATH}/bidi.css" rel="stylesheet" type="text/css" media="screen, projection" />
 <!-- ENDIF -->
 
-<link rel="stylesheet/less" href="/style.less" type="text/css" /> 
-<script src="/js/less-1.0.35.min.js"></script>
-
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/less/rascal.less" rel="stylesheet/less">
+    <link rel="stylesheet" href="/css/pygments_monokai.css" type="text/css" />
+    <script src="/js/less-1.1.5.min.js"></script>
+    <script src="/js/jquery-1.5.js"></script>
 </head>
 
 <body id="phpbb" class="section-{SCRIPT_NAME} {S_CONTENT_DIRECTION}">
 <div id="header">
-    <div class="rascalcontent">
-        <div id="topbar">
-            <a href="/"><img src="/img/rascallogo.png" id="rascallogo" alt="Rascal Micro logo"></a>
-            <ul id="nav">
-              <li><a href="http://store.rascalmicro.com">Store</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href=".">Forum</a></li>
-              <li><a href="/docs">Docs</a></li>
-              <li><a href="/help.htm">Help</a></li>
-            </ul>
-        </div>
-        <div id="topcontent">
-            <p>Small computers for art and science</p>
-		<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
-			<div id="search-box">
-				<form action="{U_SEARCH}" method="post" id="search">
-				<fieldset>
-					<input name="keywords" id="keywords" type="text" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="inputbox search" value="<!-- IF SEARCH_WORDS-->{SEARCH_WORDS}<!-- ELSE -->{L_SEARCH_MINI}<!-- ENDIF -->" onclick="if(this.value=='{LA_SEARCH_MINI}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_MINI}';" />
-					<input class="button2" value="{L_SEARCH}" type="submit" /><br />
-					<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}">{L_SEARCH_ADV}</a> {S_SEARCH_HIDDEN_FIELDS}
-				</fieldset>
-				</form>
-			</div>
-		<!-- ENDIF -->
+    <div class="topbar">
+        <div class="fill">
+            <div class="container">
+                <a class="brand" href="/"><img src="/img/rm-logo-words-only-light.png" style="height:18px"></a>
+                <ul class="nav">
+                    <li class="active"><a href="http://store.rascalmicro.com">Store</a></li>
+                    <li><a href="/about.htm">About</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/forum/">Forum</a></li>
+                    <li><a href="/docs/">Docs</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+    <script type="text/javascript">
+      function activateNavbar() { // From https://gist.github.com/1362111, but with the regex tweaked
+        var path = location.pathname.replace (/^(\/.+?\/).+$/, '$1');
+        $('ul.nav li').removeClass("active");
+        $('ul.nav a[href="' + path + '"]').parent().addClass("active");
+      }
+      $(function(){
+        activateNavbar();
+      })
+    </script>
 </div>
-<div id="torso">
-	<div class="rascalcontent">
+<div class="container">
+    <div class="hero-unit">
 		<div id="wrap">
 			<a id="top" name="top" accesskey="t"></a>
 			<div id="page-header">
