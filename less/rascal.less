@@ -46,3 +46,42 @@ code {
   font-weight: 400;
   line-height: @baseline;
 }
+
+/* for phpBB */
+
+.postbody .content, #message-box textarea, input.button1, input.button2 {
+    font-size: 0.875em;
+}
+
+dt a { /* links to authors' names */
+    color: @rascal-dark !important; /* prevent admin name links from looking different */
+    font-weight: bold;
+}
+
+.navbar, .forumbg, .forabg {
+    background-color: @rascal-forum-bg;
+}
+
+html, body, #phpbb-cron-thingy, #phpbb { /* counteracting phpBB's attempt to force a vertical scroll bar */
+    height: 100%;
+    background-color: @rascal-white;
+}
+
+ul.forums {
+    background-color: @rascal-white;
+    background-image: none;
+}
+
+ul.topiclist li.row:hover {
+    background-color: @rascal-forum-bg;
+}
+
+ul.topiclist dt {
+    width: 45%; /* Shrink the titles a little so that the usernames and dates don't wrap */
+}
+
+a:link {
+    color: #C6433C;
+}
+
+/* end phpBB styles */

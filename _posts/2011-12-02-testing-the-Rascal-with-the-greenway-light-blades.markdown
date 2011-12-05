@@ -6,7 +6,7 @@ categories: rascal
 ---
 Here's a low quality video of a truly excellent event.
 
-I'm working on a project to control the light blades on the Greenway in Boston through text messages. While I was filming the videow with my phone, [Dan][2] was crouched in "The Vault," a concrete bunker under the Greenway plaza. We had a Rascal plugged into the light controller with a serial cable. Dan used a Python script I wrote to generate HTTP POSTs on my laptop. In theory, the POSTs are the same requests that we'll eventually receive from Twilio. (See this [Rascal-and-Twilio tutorial][1] for the details on how that works.) The Rascal parses the messages Dan sends and decides what show to play. The shows are still a bit of a mess, but the Rascal is working great.
+I'm working on a project to control the light blades on the Greenway in Boston through text messages. While I was filming the video with my phone, [Dan][2] was crouched in "The Vault," a concrete bunker under the Greenway plaza. We had a Rascal plugged into the light controller with a serial cable. Dan used a Python script I wrote to generate HTTP POSTs on my laptop. In theory, the POSTs are the same requests that we'll eventually receive from Twilio. (See this [Rascal-and-Twilio tutorial][1] for the details on how that works.) The Rascal parses the messages Dan sends and decides what show to play. The shows are still a bit of a mess, but the Rascal is working great.
 
 I don't want to say too much more about what we have planned until it's closer to fruition, but I think it will be cool.
 
