@@ -20,8 +20,8 @@ $$code(lang=html)
     <link rel="stylesheet" type="text/css" href="/static/demo.css">
     <link rel="shortcut icon" href="/static/favicon.ico">
     <script src="/static/jquery-1.5.js"></script>
-    <!--[if IE]><script language="javascript" type="text/javascript" src="/excanvas.js"></script><![endif]-->
-    <script language="javascript" type="text/javascript" src="/static/jquery.jqplot.js"></script>
+    <!--[if IE]><script type="text/javascript" src="/excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="/static/jquery.jqplot.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/jquery.jqplot.css" />
 </head>
 <body>
@@ -29,7 +29,7 @@ $$code(lang=html)
         <h1>Analog graph demo</h1>
         <div id="chart1" style="height:400px;width:900px;"></div>
     </div>
-    <script language="javascript" type="text/javascript">
+    <script type="text/javascript">
     chartOptions = {
         legend: {
             show: true,

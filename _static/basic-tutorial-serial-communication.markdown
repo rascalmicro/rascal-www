@@ -58,7 +58,7 @@ $$code(lang=html)
         <input id="send-to-lcd" type="button" value="Send to LCD" class="large blue awesome" alt="Send to LCD">
         <input id="clear-lcd" type="button" value="Clear LCD" class="large red awesome" alt="Clear LCD">
     </div>
-    <script language="javascript" type="text/javascript">
+    <script type="text/javascript">
     $("#send-to-lcd").click( function() {
         $.post("/send-to-lcd", { serial_text: $("#serial-text").val() });
     });

@@ -84,8 +84,8 @@ $$code(lang=html)
     <link rel="stylesheet" type="text/css" href="/static/demo.css">
     <link rel="shortcut icon" href="/static/favicon.ico">
     <script src="/static/jquery-1.5.js"></script>
-    <!--[if IE]><script language="javascript" type="text/javascript" src="/excanvas.js"></script><![endif]-->
-    <script language="javascript" type="text/javascript" src="/static/jquery.jqplot.js"></script>
+    <!--[if IE]><script type="text/javascript" src="/excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="/static/jquery.jqplot.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/jquery.jqplot.css" />
 </head>
 <body>
@@ -93,7 +93,7 @@ $$code(lang=html)
         <input id="sprinkler-on" type="button" value="ON" class="large red awesome" alt="ON">
         <input id="sprinkler-off" type="button" value="OFF" class="large red awesome" alt="OFF">
     </div>
-    <script language="javascript" type="text/javascript">
+    <script type="text/javascript">
     $("#sprinkler-on").click( function() {
         $.post("/sprinkler", { command: "ON" });
     });
