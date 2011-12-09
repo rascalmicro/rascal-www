@@ -2,7 +2,9 @@
 
 ## Basic tutorial: timed events ##
 
-To create a timed event, you write the function you want to execute in <code>server.py</code>. Then, add an <code>@rbtimer</code> decorator on the line before it that determines how many seconds you want to wait between executions. You should, of course, make sure that your function will be finished before you try to run it again-- that way lies madness.
+Most of the time when you're working with the Rascal, you want stuff to happen in response to web requests. Sometimes, you'd like something to happen constantly in the background, regardless of any web activity. The way to do that is using timed events.
+
+To create a timed event, you write the function you want to execute in <code>server.py</code>. Then, add an <code>@rbtimer</code> decorator on the line before it that determines how many seconds you want to wait between executions. You should, of course, make sure that your function will be finished before you try to run it again-- that way lies madness. If you want something to happen *really* fast (say, more on the time scale of milliseconds), you should use a dedicated processor to handle it, as described in the [motor control tutorial][2].
 
 Here's an example function that toggles pin 2 every 5 seconds. The logic is: "If the pin is high, set it low. Otherwise, set it high." 
 $$code(lang=python)
@@ -20,3 +22,4 @@ The number you pass to <code>@rbtimer</code> has to be an integer-- no decimal p
 If you read the [uWSGI documentation on decorators][1], you'll notice that there is another decorator, <code>@timer</code>. This timer is not implemented for ARM chips, so we just have <code>@rbtimer</code> at our disposal.
 
 [1]: http://projects.unbit.it/uwsgi/wiki/Decorators
+[2]: /docs/basic-tutorial-controlling-motors.html

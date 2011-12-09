@@ -1,4 +1,6 @@
-This is a description of the Pytronics functions intended for external use. If you need more detail, try looking at the [Pytronics code][1] itself.
+# Pytronics #
+
+Pytronics is a Python library used to control the electronic hardware on the Rascal. This page describes the Pytronics functions available for use in response to web requests. If you need more detail, try looking at the [Pytronics code][1] itself.
 
 ## Functions for reading data ##
 
