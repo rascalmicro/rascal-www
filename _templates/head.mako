@@ -13,4 +13,5 @@
         <link rel="stylesheet" href="/css/pygments_monokai.css" type="text/css" />
         <script src="/js/less-1.1.5.min.js"></script>
         <script src="/js/jquery-1.5.js"></script>
+        <script src="/js/bootstrap-tabs.js"></script>
     </head>
