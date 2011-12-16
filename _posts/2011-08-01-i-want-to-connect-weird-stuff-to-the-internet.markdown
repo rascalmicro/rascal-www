@@ -82,7 +82,7 @@ There is a large swarm of amateurs who, when faced with HTML and CSS, will say, 
 
 ## Problem 6: No users, permissions, sessions. ##
 
-After you get your weird thing connected to the internet, you often realize that you want to have some features that aren't accesible to everyone, while still letting the general public have some access. This involves writing a bunch of tedious code, and doing it securely is not easy.
+After you get your weird thing connected to the internet, you often realize that you want to have some features that aren't accessible to everyone, while still letting the general public have some access. This involves writing a bunch of tedious code, and doing it securely is not easy.
 
 Fortunately, these problems were crushed a few years ago by web frameworks like [Ruby on Rails][8] or [Django][9] (“Python on Rails”).
 
