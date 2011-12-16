@@ -10,10 +10,10 @@
                     <img src="/img/rascal-glamour-shot.jpg" width="820px" alt="A red circuit board used for controlling the universe">                    
                 </div>
                 <div class="ring row pane-connect">
-                    <img src="/img/rascal-summary-diagram-with-white-borders.png" width="820px" alt="A diagram showing a connection between a Rascal and a laptop">
+                    <img src="/img/rascal-summary-diagram-820x575px.png" width="820px" alt="A diagram showing a connection between a Rascal and a laptop">
                 </div>
                 <div class="ring row pane-arduino">
-                    <img src="/img/rascals-with-arduino-shields.jpg" width="820px" alt="Three Rascals with Arduino shields plugged in">
+                    <img src="/img/rascals-with-arduino-shields-820x575px.jpg" width="820px" alt="Three Rascals with Arduino shields plugged in">
                 </div>
                 <div class="ring row pane-web-editor">
                     <img src="/img/web-editor-with-white-borders.png" width="820px" alt="Screenshot of a web browser with an editor inside">
