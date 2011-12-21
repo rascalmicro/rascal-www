@@ -16,13 +16,13 @@ For the first compiler, you'll need a tarball from CodeSourcery. For the second 
 
 To build the bootloader, use the [2010q1 release of the CodeSourcery arm-none-eabi toolchain][13]. The "none" means that the binary is being built for use without an operating system; the "eabi" means that the executable will use the [standard compilation conventions][14] for ARM processors.
 
-Unpack the tools where you like; I've put them in /opt/cs.
+Unpack the tools where you like; I've put them in /opt/cs, which generally requires root privileges. You can put them elsewhere if you prefer.
 $$code(lang=bash)
 cd /opt
-wget http://www.codesourcery.com/sgpp/lite/arm/portal/package6493/public/arm-none-eabi/arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
-tar xjvf arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
-mv arm-2010q1 /opt/cs
-rm arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
+sudo wget http://www.codesourcery.com/sgpp/lite/arm/portal/package6493/public/arm-none-eabi/arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
+sudo tar xjvf arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
+sudo mv arm-2010q1 /opt/cs
+sudo rm arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
 $$/code
 
 ### Installing the ELDK build tools on Linux ###
