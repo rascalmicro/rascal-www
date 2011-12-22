@@ -1,5 +1,44 @@
 ## Basic tutorial: DIY thermostat ##
 (This tutorial is unfinished.)
+
+My original reason for designing the Rascal was to make hooking the thermostat in my house to the web easier. I was working a somewhat unpredictable schedule a couple winters ago, and I wanted our house to be warm when I got home, but not at the cost of heating it all day. I built a [prototype][2] using a small industrial computer. It was expensive, but it basically worked.
+
+Now that I have the Rascal at my disposal, I want to make a badass thermostat. Here's what my thermostat should do:
+
+1. Pull target temperatures from my Google calendar.
+2. Allow me to override the calendar with text messages.
+3. Show me a nice graph of temperature versus time
+4. The obvious: sense the house temperature and switch our gas boiler on and off.
+
+(In the long run, I'd also like the thermostat to log all the data and give me some useful summary statistics about energy usage, but I haven't written that code yet.)
+
+## The main loop ##
+
+Let's start with the basic functionality-- checking the temperature and turning the heat on and off. For a temperature sensor, I'm using a [TMP102 breakout board][3] from Sparkfun. The Rascal talks to the sensor over the I<sup>2</sup>C bus.
+
+The code below has the line <code>@rbtimer(3)</code> at the beginning. This is a decorator that will make the Rascal's Python app server execute the function below every 3 seconds. (The "rb" comes from the fact that server implements the timer with [red-black trees][4].)
+$$code(lang=python)
+@rbtimer(3)
+def update_relay(num):
+    import pytronics, thermostat
+    actual = float(thermostat.read_sensor(0x48)) * 1.8 + 32.0
+    target = float(thermostat.get_target_temp('/var/www/public/static/basic.ics', 'America/New_York'))
+    if actual < target:
+        pytronics.set_pin_high(2) # Turn heat on
+    else:
+        pytronics.set_pin_low(2)  # Turn heat off
+$$/code
+
+The basic flow of the function is to check the sensor, then get the current target temperature. If the temperature is too low, we heat; otherwise we don't. I've put the code that is specific to the thermostat in a separate file, <code>thermostat.py</code>. Let's look at the <code>read_sensor</code> function in more detail.
+$$code(lang=python)
+def read_sensor(address):
+    import subprocess
+    cmd = 'i2cget -y 0 ' + hex(address) + ' 0x00 w'
+    subp = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+    data = int(subp.communicate()[0].strip(), 16)
+    return ((data % 0x0100 * 16) + (data / 0x1000)) * 0.0625
+$$/code
+This code is definitely on the ugly end of things, but it demonstrates a cool characteristic of the Rascal-- the ability to use command line tools to get stuff done. The <code>read_sensor</code> function uses the <code>i2cget</code>
 $$code(lang=html)
 <div id="chart1" style="height:500px;width:900px;"></div>
 $$/code
@@ -138,3 +177,9 @@ def read_sensor(address):
     data = int(subp.communicate()[0].strip(), 16)
     return ((data % 0x0100 * 16) + (data / 0x1000)) * 0.0625
 $$/code
+If you find errors in this tutorial, please drop a note in the [forums][1], and we'll fix it up.
+
+[1]: /forum/
+[2]: http://www.flickr.com/photos/pingswept/4361956125/in/photostream/
+[3]: http://www.sparkfun.com/products/9418
+[4]: http://en.wikipedia.org/wiki/Red%E2%80%93black_tree
