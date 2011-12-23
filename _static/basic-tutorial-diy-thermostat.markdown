@@ -10,13 +10,13 @@ Now that I have the Rascal at my disposal, I want to make a badass thermostat. H
 3. Show me a nice graph of temperature versus time
 4. The obvious: sense the house temperature and switch our gas boiler on and off.
 
-(In the long run, I'd also like the thermostat to log all the data and give me some useful summary statistics about energy usage, but I haven't written that code yet.)
+(In the long run, I'd also like the thermostat to log all the data and give me some useful summary statistics about energy usage, but this is supposed to be a basic tutorial.)
 
 ## The main loop ##
 
 Let's start with the basic functionality-- checking the temperature and turning the heat on and off. For a temperature sensor, I'm using a [TMP102 breakout board][3] from Sparkfun. The Rascal talks to the sensor over the I<sup>2</sup>C bus.
 
-The code below has the line <code>@rbtimer(3)</code> at the beginning. This is a decorator that will make the Rascal's Python app server execute the function below every 3 seconds. (The "rb" comes from the fact that server implements the timer with [red-black trees][4].)
+The code below has the line <code>@rbtimer(3)</code> at the beginning. This will make the Rascal's Python app server execute the function below every 3 seconds. (The "rb" comes from the fact that server implements the timer with [red-black trees][4].)
 $$code(lang=python)
 @rbtimer(3)
 def update_relay(num):
@@ -29,7 +29,9 @@ def update_relay(num):
         pytronics.set_pin_low(2)  # Turn heat off
 $$/code
 
-The basic flow of the function is to check the sensor, then get the current target temperature. If the temperature is too low, we heat; otherwise we don't. I've put the code that is specific to the thermostat in a separate file, <code>thermostat.py</code>. Let's look at the <code>read_sensor</code> function in more detail.
+The basic flow of the function is to check the sensor, then get the current target temperature. If the temperature is too low, we heat; otherwise we don't. I've put the code that is specific to the thermostat in a separate file, <code>thermostat.py</code>.
+
+Let's look at the <code>read_sensor</code> function in more detail.
 $$code(lang=python)
 def read_sensor(address):
     import subprocess
@@ -38,13 +40,16 @@ def read_sensor(address):
     data = int(subp.communicate()[0].strip(), 16)
     return ((data % 0x0100 * 16) + (data / 0x1000)) * 0.0625
 $$/code
-This code is definitely on the ugly end of things, but it demonstrates a cool characteristic of the Rascal-- the ability to use command line tools to get stuff done. The <code>read_sensor</code> function uses the <code>i2cget</code>
+This code is definitely on the ugly end of things, but it demonstrates a cool characteristic of the Rascal-- the ability to use command line tools to get stuff done. The <code>read_sensor</code> function uses the <code>i2cget</code> command line tool and the Python <code>subprocess</code> module to ask the sensor for the temperature.
+
+## The interface ##
+
+The target temperature is controlled through the aforementioned calendar, so all the web interface has to do is show us a nice graph. We start by adding a <code>div</code> like the one below to a new page on the Rascal. 
 $$code(lang=html)
 <div id="chart1" style="height:500px;width:900px;"></div>
 $$/code
-This is the web page.
-$$code(lang=html)
-<script language="javascript" type="text/javascript">
+Then, we use [jQplot][5], a Javascript library that is a jQuery plugin, to turn the <code>div</code> into a graph. The first part of the script sets up all the jQplot options.
+$$code(lang=javascript)
 chartOptions = {
     legend: {
         show: true,
@@ -68,6 +73,9 @@ chartOptions = {
     },
     seriesColors: [ "#414243", "#08C239", "#CD2820" ]
 };
+$$/code
+You can read more details about how jQplot options work in the [jQplot API documentation][6].
+$$code(lang=javascript)
 a0 = new Array();
 a1 = new Array();
 a2 = new Array();
@@ -91,7 +99,6 @@ setInterval(function() {
         $.jqplot("chart1", [a0, a1, a2], chartOptions).replot();
     });
 }, 1000);
-</script>
 $$/code
 This Python code is run by the webserver. It grabs a new copy of the Google calendar every 60 seconds. Every 3 seconds, it reads the TMP102 temperature sensor to see if the temperature is above or below the target and then turns the heater on or off accordingly.
 $$code(lang=python)
@@ -183,3 +190,5 @@ If you find errors in this tutorial, please drop a note in the [forums][1], and 
 [2]: http://www.flickr.com/photos/pingswept/4361956125/in/photostream/
 [3]: http://www.sparkfun.com/products/9418
 [4]: http://en.wikipedia.org/wiki/Red%E2%80%93black_tree
+[5]: http://www.jqplot.com/
+[6]: http://www.jqplot.com/docs/files/jqPlotOptions-txt.html
