@@ -1,4 +1,4 @@
-(Note: for now, to get this tutorial to work, you have to add <code>from uwsgidecorators import *</code> to your <code>server.py</code> and add the actual uwsgidecorators.py library to your <code>/usr/lib/python2.6/sitepackages</code> directory. In the long run, this will already be installed on all Rascals.)
+(Note: for now, to get this tutorial to work, you have to add <code>from uwsgidecorators import *</code> to your <code>server.py</code> and add the actual uwsgidecorators.py library to your <code>/usr/lib/python2.6/site-packages</code> directory. In the long run, this will already be installed on all Rascals.)
 
 ## Basic tutorial: timed events ##
 
