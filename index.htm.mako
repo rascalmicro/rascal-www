@@ -47,7 +47,7 @@
             <div class="span8">
                 <h2>Why do I need one?</h2>
                 <p>Maybe you played with legos or erector sets as a kid. Maybe you just got into hacking electronics recently. Either way, you're one of the pioneers of a new era. Instead of saying, "They should make one of those that connects to the internet," you do it yourself.</p>
-                <p>You're part of the vanguard of internet gadgeteers, and it's already 2011! Get to work!</p>
+                <p>You're part of the vanguard of internet gadgeteers, and it's already 2012! Get to work!</p>
             </div>
         </div>
         <div class="ring row pane-connect">
