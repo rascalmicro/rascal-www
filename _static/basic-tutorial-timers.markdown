@@ -8,15 +8,15 @@ Most of the time when you're working with the Rascal, you want stuff to happen i
 
 To create a timed event, you write the function you want to execute in <code>server.py</code>. Then, add an <code>@rbtimer</code> decorator on the line before it that determines how many seconds you want to wait between executions. You should, of course, make sure that your function will be finished before you try to run it again-- that way lies madness. If you want something to happen *really* fast (say, more on the time scale of milliseconds), you should use a dedicated processor to handle it, as described in the [motor control tutorial][2].
 
-Here's an example function that toggles pin 2 every 5 seconds. The logic is: "If the pin is high, set it low. Otherwise, set it high." 
+Here's an example function that toggles the LED onboard the Rascal every 5 seconds. The logic is: "If the LED pin is high, set it low. Otherwise, set it high." 
 $$code(lang=python)
 @rbtimer(5)
 def toggle_pin(num):
     import pytronics
-    if pytronics.read_pin('2') == '1':
-        pytronics.set_pin_low('2')
+    if pytronics.read_pin('LED') == '1':
+        pytronics.set_pin_low('LED')
     else:
-        pytronics.set_pin_high('2')
+        pytronics.set_pin_high('LED')
 $$/code
 
 The number you pass to <code>@rbtimer</code> has to be an integer-- no decimal places. If you do pass something like 10.6, it will be rounded down to 10 seconds. Note that a value like 0.9 will get rounded down to 0, which will result in the server swamping itself with tasks. Also, note that you need the <code>num</code> argument in your function so that the decorator can use it for the seconds count, even if you never actually use it in the rest of your function.
