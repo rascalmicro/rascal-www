@@ -46,9 +46,11 @@ This code is definitely on the ugly end of things, but it demonstrates a cool ch
 
 When we call this function, we pass it the hex number <code>48</code>. The <code>hex()</code> formatting function returns <code>0x48</code>, so the command we execute will be <code>i2cget -y 0 0x48 0x00 w</code>. This can be roughly translated as "Read a word of data from address 0x00 of the device at address 0x48." The authors of lm-sensors have [more documentation][7] on usage of <code>i2cget</code>.
 
+The sensor returns the data in a funny format, so the last line converts it to Celsius.
+
 ## Figuring out the target temperature ##
 
-Now let's look at the code to figure out the target temperature. First let's assume that we've set up a Google calendar with some sensible events that recur weekly. The "summary" of each event is the target temperature for the duration of the event. If there is no event happening, the thermostat will fall back to its default value. I have the calendar set up so that the events are during the day. At night, the thermostat falls back to 56 degrees.
+Now let's look at the code to figure out the target temperature. First let's assume that we've set up a Google calendar with some sensible events that recur weekly. For each event, the calendar field called "summary" is the target temperature for the duration of the event. If there is no event happening, the thermostat will fall back to its default value. I have the calendar set up so that the events are during the day. At night, the thermostat falls back to 56 degrees.
 
 <img class="span14" src="/img/google-calendar-as-thermostat.png">
 
@@ -60,7 +62,7 @@ def fetch_calendar(num):
     urllib.urlretrieve(CALENDAR_URL, LOCAL_CALENDAR)
 $$/code
 
-We called <code>get_target_temp()</code> and passed it two strings: <code>'/var/www/public/static/basic.ics'</code> and <code>'America/New_York'</code>.
+Parsing the calendar file would be *really* ugly, but because people use Python for all sorts of weird stuff, an [open source iCalendar Python library][8] already exists for parsing the .ics files used by Google Calendar. We called <code>get_target_temp()</code> and passed it two strings: <code>'/var/www/public/static/basic.ics'</code> and <code>'America/New_York'</code>.
 $$code(lang=python)
 def get_target_temp(calendar_path, timezone_name):
     import datetime, icalendar, pytz
@@ -167,3 +169,4 @@ If you find errors in this tutorial, please drop a note in the [forums][1], and 
 [5]: http://www.jqplot.com/
 [6]: http://www.jqplot.com/docs/files/jqPlotOptions-txt.html
 [7]: http://www.lm-sensors.org/wiki/man/i2cget
+[8]: https://github.com/collective/icalendar

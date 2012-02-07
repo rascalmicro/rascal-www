@@ -155,6 +155,11 @@ If the toolchain builds the kernel successfully, you'll find the kernel image at
 
 ### Building OpenEmbedded filesystem image ###
 
+*Install some software on Ubuntu Linux*
+$$code(lang=bash)
+sudo apt-get install build-essential chrpath cvs diffstat gawk git libglu1-mesa-dev libgl1-mesa-dev libsdl1.2-dev subversion texinfo texi2html
+$$/code
+
 *Download the Rascal fork of the OpenEmbedded code and Bitbake*
 $$code(lang=bash)
 git clone git://github.com/rascalmicro/openembedded-rascal.git

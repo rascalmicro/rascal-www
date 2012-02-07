@@ -36,6 +36,19 @@ Reference documents are the crack cocaine of documentation-- pure facts flooding
 * [Pytronics code reference][11]
 * [Rascal pinout and table of pin names][13]
 
+## Community documentation ##
+
+There are a few hacker types who have written up the details of their experimentation with the Rascal. Many thanks are due to these courageous pioneers. Please let us know if you discover a tutorial or account that we should add here.
+
+* David Small on ["Hello, World" with the Rascal][21]
+* David Small on [using a Mac for testing Rascal code][22]
+* David Small on [creating a new SD card on OS X][23]
+
+* Mike on [building the Rascal's Python appserver, uWSGI, on Ubuntu][24]
+* Mike on [compiling a loading kernel modules on the Rascal][25]
+
+* Jacques Fortier on [setting up a DHCP server on OS X][26]
+
 ## Hardware and software sources ##
 
 All of the Rascal hardware and software is open source. For the code, hardware design files, and some precompiled binaries, check the [sources][3] page.
@@ -60,3 +73,9 @@ All of the Rascal hardware and software is open source. For the code, hardware d
 [18]: /docs/basic-tutorial-timers.html
 [19]: /docs/basic-tutorial-python-on-the-rascal.html
 [20]: /docs/basic-tutorial-controlling-motors.html
+[21]: http://blog.hlh.co.uk/2012/02/07/hello-world-2/
+[22]: http://blog.hlh.co.uk/2012/02/04/setting-up-a-mac-as-a-rascal-development-system/
+[23]: http://blog.hlh.co.uk/2012/01/23/mac-os-x-lion-and-creating-a-new-rascal-ext3-microsd-card/
+[24]: http://goelzer.com/blog/2012/01/25/building-uwsgi-on-ubuntu-11-xx/
+[25]: http://goelzer.com/blog/2012/01/22/compiling-and-loading-kernel-modules-on-the-rascal/
+[26]: http://www.jacquesf.com/2011/04/mac-os-x-dhcp-server/
