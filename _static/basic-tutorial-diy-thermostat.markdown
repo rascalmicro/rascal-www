@@ -12,11 +12,15 @@ Now that I have the Rascal at my disposal, I want to make a badass thermostat. H
 
 (In the long run, I'd also like the thermostat to log all the data and give me some useful summary statistics about energy usage, but this is supposed to be a basic tutorial. Back in your chairs!)
 
+## The hardware ##
+
+For 
+
 ## The main loop ##
 
 Let's start with the basic functionality-- checking the temperature and turning the heat on and off. For a temperature sensor, I'm using a [TMP102 breakout board][3] from Sparkfun. I want the Rascal to query the sensor over the I<sup>2</sup>C bus every few seconds.
 
-The code below, added to <code>server.py</code> does what we need. The line <code>@rbtimer(3)</code> at the beginning makes the Rascal's Python app server execute the function below every 3 seconds. (The "rb" comes from the fact that server implements the timer with [red-black trees][4].)
+The code below, added to <code>server.py</code>, does what we need. The line <code>@rbtimer(3)</code> at the beginning makes the Rascal's Python app server execute the function below every 3 seconds. (The "rb" comes from the fact that server implements the timer with [red-black trees][4].)
 $$code(lang=python)
 @rbtimer(3)
 def update_relay(num):
@@ -29,7 +33,7 @@ def update_relay(num):
         pytronics.set_pin_low(2)  # Turn heat off
 $$/code
 
-The basic flow of the function is to check the sensor, then get the current target temperature. If the temperature is too low, we heat; otherwise we don't. The address <code>0x48</code> is the default I<sup>2</sup>C address for the TMP102 sensor. The <code>* 1.8 + 32.0</code> is a conversion from the sensor's native Celsius to the inferior Fahrenheit scale my American upbringing burdened me with. There's also some tricky business going on with the arguments to <code>get_target_temp</code>, but let's look at the guts of the <code>read_sensor</code> function in more detail first.
+The basic flow of the function is to check the sensor, then get the current target temperature. If the temperature is too low, we heat; otherwise we don't. The address <code>0x48</code> is the default I<sup>2</sup>C address for the TMP102 sensor. The <code>* 1.8 + 32.0</code> is a conversion from the sensor's native Celsius to the inferior Fahrenheit scale my American upbringing burdened me with. There's also some tricky business going on with the arguments to <code>get_target_temp</code>, but let's look at the guts of the <code>read_sensor</code> function in more detail first. I've put the code that is specific to the thermostat in a separate file, <code>thermostat.py</code>. That's where the function below comes from.
 $$code(lang=python)
 def read_sensor(address):
     import subprocess
@@ -46,15 +50,15 @@ This code is definitely on the ugly end of things, but it demonstrates a cool ch
 
 When we call this function, we pass it the hex number <code>48</code>. The <code>hex()</code> formatting function returns <code>0x48</code>, so the command we execute will be <code>i2cget -y 0 0x48 0x00 w</code>. This can be roughly translated as "Read a word of data from address 0x00 of the device at address 0x48." The authors of lm-sensors have [more documentation][7] on usage of <code>i2cget</code>.
 
-The sensor returns the data in a funny format, so the last line converts it to Celsius.
+The sensor returns the data in a funny format, so the last line converts it to a (Celsius) decimal string like <code>25.0</code>.
 
 ## Figuring out the target temperature ##
 
-Now let's look at the code to figure out the target temperature. First let's assume that we've set up a Google calendar with some sensible events that recur weekly. For each event, the calendar field called "summary" is the target temperature for the duration of the event. If there is no event happening, the thermostat will fall back to its default value. I have the calendar set up so that the events are during the day. At night, the thermostat falls back to 56 degrees.
+Now let's look at the code to figure out the target temperature. First, let's assume that we've set up a Google calendar with some sensible events that recur weekly. For each event, the calendar field called "summary" is the target temperature for the duration of the event. If there is no event happening, the thermostat will fall back to its default value. I have the calendar set up so that the events are during the day. At night, the thermostat falls back to my default of 56.0 degrees. The image below shows what my calendar looks like.
 
 <img class="span14" src="/img/google-calendar-as-thermostat.png">
 
-This Python code is run by the webserver. It grabs a new copy of the Google calendar every 300 seconds using the <code>urllib</code> library, which is part of the Python standard library.
+We want to query the calendar every so often to see what temperature we should be aiming at. For this, we have the Python code below from <code>server.py</code>, which grabs a new copy of the Google calendar every 300 seconds using the <code>urllib</code> library, which is part of the Python standard library.
 $$code(lang=python)
 @rbtimer(300)
 def fetch_calendar(num):
@@ -79,8 +83,6 @@ def get_target_temp(calendar_path, timezone_name):
             return float(event.decoded('summary'))
     return DEFAULT_TEMPERATURE
 $$/code
-
-I've put the code that is specific to the thermostat in a separate file, <code>thermostat.py</code>.
 
 ## The interface ##
 
