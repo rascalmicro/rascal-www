@@ -25,6 +25,7 @@ If you understand the basic usage of the Rascal, you might want to know how it w
 * [Guts of the software][1]
 * [Build a new system image][2]
 * [Putting a new filesystem onto a microSD card][12]
+* [Creating an Amazon machine image for building OpenEmbedded filesystems][27]
 * [How data travels back and forth between your browser and the Rascal][17]
 * Blog post: [Toggling pins on the AT91SAM9G20 with U-boot][5]
 * Blog post: [Reprogramming the Rascal's serial flash with JTAG][6]
@@ -79,3 +80,4 @@ All of the Rascal hardware and software is open source. For the code, hardware d
 [24]: http://goelzer.com/blog/2012/01/25/building-uwsgi-on-ubuntu-11-xx/
 [25]: http://goelzer.com/blog/2012/01/22/compiling-and-loading-kernel-modules-on-the-rascal/
 [26]: http://www.jacquesf.com/2011/04/mac-os-x-dhcp-server/
+[27]: /docs/advanced-tutorial-creating-amazon-machine-image.html
