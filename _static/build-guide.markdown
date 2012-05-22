@@ -155,25 +155,30 @@ If the toolchain builds the kernel successfully, you'll find the kernel image at
 
 ### Building OpenEmbedded filesystem image ###
 
-*Install some software on Ubuntu Linux*
+*Install some software on Ubuntu Linux 10.04 LTS*
 $$code(lang=bash)
-sudo apt-get install build-essential chrpath cvs diffstat gawk git libglu1-mesa-dev libgl1-mesa-dev libsdl1.2-dev subversion texinfo texi2html
+sudo dpkg-reconfigure dash # choose "No" to disable dash
+sudo apt-get update
+sudo apt-get install build-essential chrpath cvs diffstat gawk git-core libglu1-mesa-dev libgl1-mesa-dev libsdl1.2-dev subversion texinfo texi2html
 $$/code
 
 *Download the Rascal fork of the OpenEmbedded code and Bitbake*
 $$code(lang=bash)
+cd ~
 git clone git://github.com/rascalmicro/openembedded-rascal.git
 cd openembedded-rascal
 git checkout rascal # Switches to the Rascal branch
 git clone git://openembedded.org/bitbake.git # Downloads Bitbake inside OpenEmbedded directory
+cd bitbake
+git checkout 36fe59c # This selects a version of Bitbake that is known to work
 $$/code
 
 (Will need to do 'sudo ln -s i386-linux-gnu/ i686-linux-gnu' if on x86 with Ubuntu 11.04+.) 
 
 *Build the code*
 $$code(lang=bash)
+cd ~/openembedded-rascal
 source env.sh # Sets some environment variables, like BBPATH
-bitbake --version # Tests that the bitbake to be called is version 1.10.2 or higher.
 bitbake rascal-image
 $$/code
 
