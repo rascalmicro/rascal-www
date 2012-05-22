@@ -92,6 +92,10 @@ I also rearranged the decoupling capacitors to minimize the length of their conn
 
 The Rascal 1.2 PCBs have been sent out for assembly in Colorado; I should have the new Rascals back later this week. If they work, I'll have a larger batch up for sale in a few weeks as I already have the PCBs. Otherwise, Rascal 1.2 be cursed, and on to Rascal 1.3!
 
+### UPDATE ###
+
+I got the new Rascals today (May 2, 2012) and they work. I haven't tested them 100% yet, but they both booted correctly, passed a few minutes of memory testing (~1 trillion write/read cycles without error) and loaded a bunch of files in the editor without a hitch.
+
 ### Code ###
 
 Here's the Jscript code for talking to Altium; feel free to do whatever you want with it. I'd recommend deleting it and then destroying all storage media it may have tainted.
