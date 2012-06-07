@@ -1,4 +1,4 @@
-@import "/less/twitter-bootstrap-1.4.0/bootstrap.less";
+@import "/css/bootstrap-2.0.4.css";
 
 @rascal-red: #C6433C;
 @rascal-red-light: @rascal-red + #222;
@@ -15,17 +15,16 @@ footer {
     border: none;
 }
 
-.topbar .fill, footer, footer .fill, pre {
+.navbar .fill, footer, footer .fill, pre {
     background: @rascal-gray;
     color: @rascal-white;
 }
 
-.hero-unit {
-    padding-top: 75px;
-    padding-bottom: 0px;
+.navbar .fill .container {
+    width: 940px;
 }
 
-ul.nav li a {
+.navbar ul.nav li a {
     padding-top: 23px;
     padding-right: 20px;
     padding-left: 20px;
@@ -34,44 +33,6 @@ ul.nav li a {
     line-height: 20px;
     color: darken(@rascal-white, 15);
 }
-
-/* Cycle of 5 images on front page */
-
-.image {
-    position: relative;
-    width: 100%; /* for IE 6 */
-}
-
-#the-rascal {
-    position: absolute;
-    top: 10px;
-    width: 100%;
-}
-
-#bullet-strip {
-    position: absolute;
-    bottom: 10px;
-}
-
-.ring {
-    display: none;
-}
-
-.ring.active {
-    display: block;
-}
-
-.bullets {
-    cursor: default;
-}
-
-.bullets li {
-    list-style-type: none;
-    font-size: 40px;
-    display: inline;
-}
-
-/* End of front page stuff */
 
 @white: @rascal-white;
 @linkColor: @rascal-red;
@@ -92,13 +53,13 @@ code {
 
 /* Enlarge the typography */
 
-@basefont: 16px;
-@baseline: 24px;
+@baseFontSize: 16px;
+@baseLineHeight: 24px;
 
 .hero-unit p {
-  font-size: @basefont;
+  font-size: @baseFontSize;
   font-weight: 400;
-  line-height: @baseline;
+  line-height: @baseLineHeight;
 }
 
 /* For blog posts */

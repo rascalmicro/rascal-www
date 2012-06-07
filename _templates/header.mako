@@ -1,4 +1,4 @@
-    <div class="topbar">
+    <div class="navbar">
         <div class="fill">
             <div class="container">
                 <a class="brand" href="/"><img src="/img/rm-logo-words-only-light.png"></a>

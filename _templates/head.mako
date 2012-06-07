@@ -12,6 +12,6 @@
         <link href="/less/rascal.less" rel="stylesheet/less">
         <link rel="stylesheet" href="/css/pygments_monokai.css" type="text/css" />
         <script src="/js/less-1.1.5.min.js"></script>
-        <script src="/js/jquery-1.5.js"></script>
-        <script src="/js/bootstrap-tabs.js"></script>
+        <script src="/js/jquery-1.7.2.js"></script>
+        <script src="/js/bootstrap-2.0.4.js"></script>
     </head>
