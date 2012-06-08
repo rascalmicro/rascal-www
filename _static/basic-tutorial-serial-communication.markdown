@@ -6,7 +6,7 @@ Here's the hardware setup-- the aforementioned Sparkfun LCD with three wires con
 <img class="span14" src="/img/lcd-and-rascal.jpg">
 
 The table below shows how the three wires (power, ground, and data) are connected between the Rascal and the LCD. The LCD gets power from the 5 V regulator onboard the Rascal.
-<table class="zebra">
+<table class="table table-striped table-bordered">
     <tr><th>Rascal</th><th>LCD</th></tr>
     <tr><td>GND</td><td>GND</td></tr>
     <tr><td>3.3V</td><td>5V (mislabeled on 3.3 V LCDs)</td></tr>

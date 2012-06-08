@@ -13,6 +13,12 @@
 
 footer {
     border: none;
+    margin-top: 23px;
+    padding-top: 23px;
+}
+
+.navbar {
+    margin-bottom: 0px;
 }
 
 .navbar .fill, footer, footer .fill, pre {
@@ -56,10 +62,51 @@ code {
 @baseFontSize: 16px;
 @baseLineHeight: 24px;
 
-.hero-unit p {
-  font-size: @baseFontSize;
-  font-weight: 400;
-  line-height: @baseLineHeight;
+.hero-unit p, p, li, pre {
+    font-size: @baseFontSize;
+    font-weight: 400;
+    line-height: @baseLineHeight;
+}
+
+a:visited, a:link {
+    color: @linkColor;
+}
+
+a.btn, a.carousel-control {
+    color: #F5F5F5;
+}
+
+.carousel-caption p {
+    color: #F5F5F5;
+}
+
+h2 {
+    line-height: @baseLineHeight * 2;
+}
+
+h3 {
+    color: @rascal-gray;
+    line-height: @baseLineHeight * 2;
+}
+
+h6 {
+    font-size: 13px;
+}
+
+.hero-unit {
+    background-color: #F5F5F5;
+    padding-top: 25px;
+}
+
+.hero-unit h1 {
+    position: relative;
+    z-index: 100;
+    margin-bottom: 20px;
+    color: @rascal-gray;
+}
+
+#the-rascal {
+    margin-bottom: -60px;
 }
 
 /* For blog posts */
@@ -105,10 +152,6 @@ ul.topiclist li.row:hover {
 
 ul.topiclist dt {
     width: 45%; /* Shrink the titles a little so that the usernames and dates don't wrap */
-}
-
-a:link {
-    color: #C6433C;
 }
 
 /* end phpBB styles */
