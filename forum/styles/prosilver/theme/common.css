@@ -189,7 +189,7 @@ a#logo:hover {
 	padding: 0 5px;
 }
 
-.navbar {
+.phpbb-navbar {
 	background-color: #ebebeb;
 	padding: 0 10px;
 }
@@ -282,7 +282,7 @@ span.corners-bottom span {
 	margin-bottom: -1px;
 }
 
-.post span.corners-top, .post span.corners-bottom, .panel span.corners-top, .panel span.corners-bottom, .navbar span.corners-top, .navbar span.corners-bottom {
+.post span.corners-top, .post span.corners-bottom, .panel span.corners-top, .panel span.corners-bottom, .phpbb-navbar span.corners-top, .phpbb-navbar span.corners-bottom {
 	margin: 0 -10px;
 }
 
