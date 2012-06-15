@@ -123,10 +123,6 @@ hr {
 
 /* for phpBB */
 
-.postbody .content, #message-box textarea, input.button1, input.button2 {
-    font-size: 0.875em;
-}
-
 dt a { /* links to authors' names */
     color: @rascal-dark !important; /* prevent admin name links from looking different */
     font-weight: bold;
@@ -156,6 +152,11 @@ ul.topiclist li.row:hover {
 
 ul.topiclist dt {
     width: 45%; /* Shrink the titles a little so that the usernames and dates don't wrap */
+}
+
+ul.linklist.rightside {
+    overflow: visible;
+    padding-bottom: 10px;
 }
 
 /* end phpBB styles */
