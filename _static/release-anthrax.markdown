@@ -1,14 +1,38 @@
 ## Download the Rascal filesystem release: Anthrax ##
 
-This release was used on Rascal 1.2 built June 22, 2012.
+The RC1 release was used on Rascal 1.2 built June 22, 2012.
 
 *Note that "release candidates" are less well tested and may set your Rascal on fire.*
 
- * Release candidate 1 released June 22, 2012: [rascal-filesystem-anthrax-rc1-2012-06-22.tar.gz][1]
- * Size: 53 MB
- * MD5 sum: 4f7fffef42b9334e031e2ffe149ded23
+<table class="table table-striped table-bordered table-condensed">
+    <thead>
+        <tr>
+            <th>Release</th>
+            <th>Date</th>
+            <th>Size</th>
+            <th>MD5 hash</th>
+            <th>Download link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Release candidate 2</td>
+            <td>July 12, 2012</td>
+            <td>85 MB</td>
+            <td></td>
+            <td><a href="/files/rascal-filesystem-anthrax-rc2-2012-07-12.tar.gz">rascal-filesystem-anthrax-rc2-2012-07-12.tar.gz</a></td>
+        </tr>
+        <tr>
+            <td>Release candidate 1</td>
+            <td>June 22, 2012</td>
+            <td>53 MB</td>
+            <td>4f7fffef42b9334e031e2ffe149ded23</td>
+            <td><a href="/files/rascal-filesystem-anthrax-rc1-2012-06-22.tar.gz">rascal-filesystem-anthrax-rc2-2012-06-22.tar.gz</a></td>
+        </tr>
+    </tbody>
+</table>
 
-Follow the [microSD card tutorial][2] to copy the filesystem onto the Rascal's microSD card.
+Follow the [microSD card tutorial][4] to copy the filesystem onto the Rascal's microSD card.
 
 ## Description of changes since previous release ##
 
@@ -22,7 +46,16 @@ Follow the [microSD card tutorial][2] to copy the filesystem onto the Rascal's m
  * Upgraded Werkzeug Python network utility library to 0.8.3
  * Upgraded Jinja2 Python templating library to 2.6
  * Made uWSGI and Nginx handle Python and HTTP error messages more nicely
- 
+ * New in RC2: Fixed spurious linebreaks in Nginx logs
+ * New in RC2: Re-fixed Python error handling
+ * New in RC2: New I2C Python bindings based on native fcntl and ctypes Python modules
+ * New in RC2: Improved build process: uWSGI, Flask-Login, vim-syntax, pip and opkg now install correctly
+ * New in RC2: New Python libraries: numpy, matplotlib, ipython, networkx, pysolar, python-devel
+ * New in RC2: Editor: Refined theme selection
+ * New in RC2: Editor: Folders-first filetree sorting
+ * New in RC2: Editor: Display app-server log on Python reload
+ * New in RC2: Optional interrupt handler added to uWSGI
+
 ### New features in Control Freak 0.3 ###
 
 The UK dev team has been hard at work on Control Freak, the web interface for the Rascal, for the last few months. The changes below are the most significant software changes in the Anthrax release.
@@ -60,4 +93,5 @@ The UK dev team has been hard at work on Control Freak, the web interface for th
     * Type Cmd-F/Ctrl-F to search or Cmd-Alt-F/Shift-Ctrl-F to search and replace
 
 [1]: /files/rascal-filesystem-anthrax-rc1-2012-06-22.tar.gz
-[2]: /docs/advanced-tutorial-new-filesystem-onto-microsd-card.html
+[2]: /files/rascal-filesystem-anthrax-rc2-2012-07-12.tar.gz
+[4]: /docs/advanced-tutorial-new-filesystem-onto-microsd-card.html
