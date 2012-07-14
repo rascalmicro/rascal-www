@@ -17,10 +17,10 @@ The RC1 release was used on Rascal 1.2 built June 22, 2012.
     <tbody>
         <tr>
             <td>Release candidate 2</td>
-            <td>July 12, 2012</td>
-            <td>85 MB</td>
-            <td></td>
-            <td><a href="/files/rascal-filesystem-anthrax-rc2-2012-07-12.tar.gz">rascal-filesystem-anthrax-rc2-2012-07-12.tar.gz</a></td>
+            <td>July 13, 2012</td>
+            <td>103 MB</td>
+            <td>c7f431bf465905e747cc99252aa969ea</td>
+            <td><a href="/files/rascal-filesystem-anthrax-rc2-2012-07-13.tar.gz">rascal-filesystem-anthrax-rc2-2012-07-13.tar.gz</a></td>
         </tr>
         <tr>
             <td>Release candidate 1</td>
@@ -55,6 +55,8 @@ Follow the [microSD card tutorial][4] to copy the filesystem onto the Rascal's m
  * New in RC2: Editor: Folders-first filetree sorting
  * New in RC2: Editor: Display app-server log on Python reload
  * New in RC2: Optional interrupt handler added to uWSGI
+ 
+ Thanks to dsmall and mgoelzer for the substantial code contributions to this release.
 
 ### New features in Control Freak 0.3 ###
 
