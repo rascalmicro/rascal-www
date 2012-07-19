@@ -1,6 +1,6 @@
 ## Download the Rascal filesystem release: Anthrax ##
 
-The RC1 release was used on Rascal 1.2 built June 22, 2012.
+The RC1 release was used on Rascal 1.2 built June 22, 2012. The final release was used on all Rascals built after June 22, 2012.
 
 *Note that "release candidates" are less well tested and may set your Rascal on fire.*
 
@@ -16,18 +16,18 @@ The RC1 release was used on Rascal 1.2 built June 22, 2012.
     </thead>
     <tbody>
         <tr>
-            <td>Release candidate 2</td>
+            <td>Final release</td>
             <td>July 13, 2012</td>
             <td>103 MB</td>
             <td>c7f431bf465905e747cc99252aa969ea</td>
-            <td><a href="/files/rascal-filesystem-anthrax-rc2-2012-07-13.tar.gz">rascal-filesystem-anthrax-rc2-2012-07-13.tar.gz</a></td>
+            <td><a href="/files/rascal-filesystem-anthrax-2012-07-13.tar.gz">rascal-filesystem-anthrax-2012-07-13.tar.gz</a></td>
         </tr>
         <tr>
             <td>Release candidate 1</td>
             <td>June 22, 2012</td>
             <td>53 MB</td>
             <td>4f7fffef42b9334e031e2ffe149ded23</td>
-            <td><a href="/files/rascal-filesystem-anthrax-rc1-2012-06-22.tar.gz">rascal-filesystem-anthrax-rc2-2012-06-22.tar.gz</a></td>
+            <td><a href="/files/rascal-filesystem-anthrax-rc1-2012-06-22.tar.gz">rascal-filesystem-anthrax-rc1-2012-06-22.tar.gz</a></td>
         </tr>
     </tbody>
 </table>
@@ -46,15 +46,15 @@ Follow the [microSD card tutorial][4] to copy the filesystem onto the Rascal's m
  * Upgraded Werkzeug Python network utility library to 0.8.3
  * Upgraded Jinja2 Python templating library to 2.6
  * Made uWSGI and Nginx handle Python and HTTP error messages more nicely
- * New in RC2: Fixed spurious linebreaks in Nginx logs
- * New in RC2: Re-fixed Python error handling
- * New in RC2: New I2C Python bindings based on native fcntl and ctypes Python modules
- * New in RC2: Improved build process: uWSGI, Flask-Login, vim-syntax, pip and opkg now install correctly
- * New in RC2: New Python libraries: numpy, matplotlib, ipython, networkx, pysolar, python-devel
- * New in RC2: Editor: Refined theme selection
- * New in RC2: Editor: Folders-first filetree sorting
- * New in RC2: Editor: Display app-server log on Python reload
- * New in RC2: Optional interrupt handler added to uWSGI
+ * New in final release: Fixed spurious linebreaks in Nginx logs
+ * New in final release: Re-fixed Python error handling
+ * New in final release: New I2C Python bindings based on native fcntl and ctypes Python modules
+ * New in final release: Improved build process: uWSGI, Flask-Login, vim-syntax, pip and opkg now install correctly
+ * New in final release: New Python libraries: numpy, matplotlib, ipython, networkx, pysolar, python-devel
+ * New in final release: Editor: Refined theme selection
+ * New in final release: Editor: Folders-first filetree sorting
+ * New in final release: Editor: Display app-server log on Python reload
+ * New in final release: Optional interrupt handler added to uWSGI
  
  Thanks to dsmall and mgoelzer for the substantial code contributions to this release.
 
@@ -95,5 +95,5 @@ The UK dev team has been hard at work on Control Freak, the web interface for th
     * Type Cmd-F/Ctrl-F to search or Cmd-Alt-F/Shift-Ctrl-F to search and replace
 
 [1]: /files/rascal-filesystem-anthrax-rc1-2012-06-22.tar.gz
-[2]: /files/rascal-filesystem-anthrax-rc2-2012-07-12.tar.gz
+[2]: /files/rascal-filesystem-anthrax-2012-07-12.tar.gz
 [4]: /docs/advanced-tutorial-new-filesystem-onto-microsd-card.html
