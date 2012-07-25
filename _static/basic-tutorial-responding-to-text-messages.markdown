@@ -4,7 +4,7 @@ Twilio is a web service that allows you to send and receive phone calls and text
 
 Here's a quick video that shows the system in operation.
 
-<iframe class="span14"src="http://player.vimeo.com/video/31884547?title=0&amp;byline=0&amp;portrait=0&amp;color=C6433C" height="461" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+<iframe class="span10"src="http://player.vimeo.com/video/31884547?title=0&amp;byline=0&amp;portrait=0&amp;color=C6433C" height="461" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
 
 Twilio has good instructions for setting up a trial account. Here are some details:
 
