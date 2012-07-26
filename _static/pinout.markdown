@@ -1,4 +1,4 @@
-<img src="/img/pinout.png">
+<img src="/img/pinout-1.2.png">
 
 <table class="condensed-table bordered-table zebra-striped">
     <tr><th>Pin names</th><th>Number in sysfs</th><th>Name in AT91 datasheet</th><th>Function</th></tr>
