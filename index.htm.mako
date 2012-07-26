@@ -10,7 +10,7 @@
               <!-- Carousel items -->
               <div class="carousel-inner">
                 <div class="active item">
-                    <img src="/img/rascal-glamour-shot.jpg" width="820px" alt="A red circuit board used for controlling the universe">
+                    <img src="/img/rascal-1.1.jpg" width="820px" alt="A red circuit board used for controlling the universe">
                     <div class="carousel-caption">
                         <h4>The Rascal</h4>
                         <p>A small computer that you can use to monitor and control the world remotely.</p>
