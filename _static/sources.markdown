@@ -7,8 +7,6 @@ For now, the hardware is under the [Creative Commons BY-SA license][1], and the 
 ### Rascal hardware sources ###
  * Schematic diagram as [Altium .schdoc][2] or [PDF][3]
  * PCB layout as [Altium .pcbdoc][4] or [PDF][5]
- * [Gerber files][6]
- * [Bill of materials][7]
 
 ### Bootloaders ###
  * [AT91Bootstrap Project 3.0 ELF][8] for loading via JTAG
@@ -42,10 +40,10 @@ For now, the hardware is under the [Creative Commons BY-SA license][1], and the 
  * [TI TPS71710 LDO regulator][41] (*1.1 MB*)
 
 [1]: http://creativecommons.org/licenses/by-sa/3.0/us/
-[2]: /files/rascal-0.4.schdoc
-[3]: /files/rascal-0.4-schematic.pdf
-[4]: /files/rascal-0.4.pcbdoc
-[5]: /files/rascal-0.4-pcb.pdf
+[2]: /files/rascal-1.2.schdoc
+[3]: /files/rascal-1.2-schematic.pdf
+[4]: /files/rascal-1.2.pcbdoc
+[5]: /files/rascal-1.2-pcb.pdf
 [6]: /files/rascal-0.4-gerbers.zip
 [7]: /files/rascal-0.4-bom.xlsx
 [8]: /files/boot-rascal-serialflash2sdram.elf
