@@ -173,7 +173,13 @@ cd bitbake
 git checkout 36fe59c # This selects a version of Bitbake that is known to work
 $$/code
 
-(Will need to do 'sudo ln -s i386-linux-gnu/ i686-linux-gnu' if on x86 with Ubuntu 11.04+.) 
+If you're building OpenEmbedded on x86 with Ubuntu 11.04+ you'll need to add two symlinks.
+$$code(lang=bash)
+cd /usr/lib
+sudo ln -s i386-linux-gnu/ i686-linux-gnu
+cd /lib
+sudo ln -s i386-linux-gnu/ i686-linux-gnu
+$$/code
 
 *Build the code*
 $$code(lang=bash)
