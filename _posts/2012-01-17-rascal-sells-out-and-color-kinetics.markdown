@@ -25,7 +25,7 @@ Most of my time has been devoted to PCB layout, but I've also been working on so
 
 Here's a short video that shows the demo in action. If you happen to be on Artisan's Asylum's wireless network, you're welcome to [test it out][7] yourself-- just look for the light near the Rascal Micro space (#16).
 
-<iframe class="span14" src="http://player.vimeo.com/video/35173486?title=0&amp;byline=0&amp;portrait=0&amp;color=C6433C" height="461" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe class="span10" src="http://player.vimeo.com/video/35173486?title=0&amp;byline=0&amp;portrait=0&amp;color=C6433C" height="461" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 [1]: http://newamericanpublicart.com
 [2]: http://artisansasylum.com
