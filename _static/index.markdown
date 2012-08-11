@@ -14,6 +14,7 @@ These are a good place to start if you are new to the Rascal.
 * [Digital control][7]: turning stuff on and off through the web
 * [Serial communication][8]: sending messages out the serial port
 * [Graphing analog sensor data][9]: connecting a temperature sensor to the Rascal
+* [Batteries][29]: Running the Rascal off of lithium polymer batteries
 * [Timed events][18]: making stuff happen in the background
 * [Controlling motors][20]: an example of real-time control
 * [Text messages and tri-color LEDs][15]: Twilio, I<sup>2</sup>C to a BlinkM, and the Rascal
@@ -83,3 +84,4 @@ All of the Rascal hardware and software is open source. For the code, hardware d
 [26]: http://www.jacquesf.com/2011/04/mac-os-x-dhcp-server/
 [27]: /docs/advanced-tutorial-creating-amazon-machine-image.html
 [28]: /docs/github-and-the-rascal.html
+[29]: /docs/basic-tutorial-batteries.html
