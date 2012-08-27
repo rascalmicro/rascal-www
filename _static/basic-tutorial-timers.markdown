@@ -1,5 +1,3 @@
-(Note: for now, to get this tutorial to work, you have to add <code>from uwsgidecorators import *</code> to your <code>server.py</code> and add the actual uwsgidecorators.py library to your <code>/usr/lib/python2.6/site-packages</code> directory. In the long run, this will already be installed on all Rascals.)
-
 ## Basic tutorial: timed events ##
 
 Most of the time when you're working with the Rascal, you want stuff to happen in response to web requests. Sometimes, you'd like something to happen constantly in the background, regardless of any web activity. The way to do that is using timed events.
@@ -13,15 +11,15 @@ $$code(lang=python)
 @rbtimer(5)
 def toggle_pin(num):
     import pytronics
-    if pytronics.read_pin('LED') == '1':
-        pytronics.set_pin_low('LED')
+    if pytronics.digitalRead('LED') == '1':
+        pytronics.digitalWrite('LED', 'LOW')
     else:
-        pytronics.set_pin_high('LED')
+        pytronics.digitalRead('LED', 'HIGH')
 $$/code
 
 The number you pass to <code>@rbtimer</code> has to be an integer-- no decimal places. If you do pass something like 10.6, it will be rounded down to 10 seconds. Note that a value like 0.9 will get rounded down to 0, which will result in the server swamping itself with tasks. Also, note that you need the <code>num</code> argument in your function so that the decorator can use it for the seconds count, even if you never actually use it in the rest of your function.
 
-If you read the [uWSGI documentation on decorators][1], you'll notice that there is another decorator, <code>@timer</code>. This timer is not implemented for ARM chips, so we just have <code>@rbtimer</code> at our disposal.
+If you read the [uWSGI documentation on decorators][1], you'll notice that there is another decorator, <code>@timer</code>. This timer is not implemented in uWSGI for ARM chips, so we just have <code>@rbtimer</code> at our disposal.
 
 ### Scheduled events ###
 
@@ -31,9 +29,8 @@ Here's an example.
 $$code(lang=python)
 @cron(30, 13, -1, -1, -1)
 def siesta(num):
-    print('It's 1:30 PM! Time for a siesta!)
+    print('It is 1:30 PM! Time for a siesta!')
 $$/code
-
 
 [1]: http://projects.unbit.it/uwsgi/wiki/Decorators
 [2]: /docs/basic-tutorial-controlling-motors.html

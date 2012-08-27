@@ -81,12 +81,12 @@ $$code(lang=python)
 @public.route('/send-to-lcd', methods=['POST'])
 def send_to_lcd():
     import pytronics
-    pytronics.send_serial(request.form['serial_text'], 9600)
+    pytronics.serialWrite(request.form['serial_text'], 9600)
     return render_template('/lcd.html')
 @public.route('/clear-lcd', methods=['POST'])
 def clear_lcd():
     import pytronics
-    pytronics.send_serial(chr(0xFE) + chr(0x01), 9600)
+    pytronics.serialWrite(chr(0xFE) + chr(0x01), 9600)
     return render_template('/lcd.html')
 $$/code
 

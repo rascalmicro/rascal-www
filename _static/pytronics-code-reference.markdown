@@ -72,7 +72,7 @@ Returns <code>None</code>
 
 ### i2cWrite(addr, reg, val = '', size = 'B') ###
 
-The function <code>i2cWrite()</code> sends one or more bytes onto the I<sup>2</sup>C bus.
+The function <code>i2cWrite()</code> sends one or more bytes onto the [I<sup>2</sup>C][3] bus.
 
 *Parameters*
 
@@ -91,7 +91,7 @@ The function <code>serialWrite()</code> is used to send data out the Rascal seri
 
 *Parameters*
 
- * <code>text</code> String consisting of text to be sent. Truncated after 80 characters.
+ * <code>text</code> String consisting of characters to be sent. Truncated after 80 characters.
  * <code>speed</code> (optional) Integer. Defaults to 19200.
  * <code>port</code> (optional) String ('1', '2', or '3'). Defaults to '1'.
 
@@ -99,14 +99,14 @@ The function <code>serialWrite()</code> is used to send data out the Rascal seri
 
 Returns <code>None</code>
 
-### spiWrite() ###
+### spiWrite(data, channel='0') ###
 
-The function <code>spiWrite()</code> is not implemented yet . . .
+The function <code>spiWrite()</code> sends data over one of the Rascal's four [SPI][4] channels. The maximum speed of the SPI port is limited in the kernel driver to 14.67 MHz, but can be decreased with an ioctl call that hasn't been sorted out yet.
 
 *Parameters*
 
- * <code>chip</code>
- * <code>data</code>
+ * <code>data</code> Integer or string to be sent.
+ * <code>channel</code> (optional) String representing SPI channel to use ('0', '1', '2', or '3'). Defaults to '0'.
 
 *Return type*
 
@@ -114,3 +114,5 @@ Returns <code>None</code>
 
 [1]: http://arduino.cc/en/Reference/HomePage
 [2]: https://github.com/rascalmicro/pytronics/blob/master/pytronics.py
+[3]: https://en.wikipedia.org/wiki/I2C
+[4]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus

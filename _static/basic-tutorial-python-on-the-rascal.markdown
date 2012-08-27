@@ -2,11 +2,11 @@
 
 The Rascal ships with a built-in webserver. It serves HTML and images like a normal webserver, but it can also execute Python code in response to web requests.
 
-The file <code>server.py</code> contains all the functions that control how the Rascal reacts to requests from the web. The functions are organized by URL, and you can add your own functions to make the Rascal react to a new URL.
+The file <code>server.py</code> contains all the functions that control how the Rascal reacts to requests from the web. The functions are organized by URL, and you can add your own functions to make the Rascal react to a new URL. You can edit <code>server.py</code> using the Rascal's built-in web editor, which you can find at <code>http://your.rascal's.address/editor/</code>.
 
 ## A minimal example ##
 
-Here's the basic structure of a function in <code>server.py</code>.
+As an example, here's the basic structure of a function in <code>server.py</code>.
 $$code(lang=python)
 @public.route('/path', methods=['POST'])
 def function_name():
@@ -19,15 +19,18 @@ $$/code
  * <code>do_something()</code> is where you put the code that does the real work. You can control the Rascal's hardware with the [Pytronics library][1] or use other Python libraries to do whatever you want-- tweet something, solve a differential equation, generate an image, whatever.
  * <code>'/page.html'</code> is the name of the page that you want to send back to the browser afterwards. Sometimes, you don't need to send back a response, so you can leave this line blank or send back a diagnostic message like "It worked."
 
-Here's what a function might look like filled in.
+Here's what the example function might look like filled in.
 $$code(lang=python)
 @public.route('/send-to-lcd', methods=['POST'])
 def send_to_lcd():
-    pytronics.send_serial(request.form['serial_text'], 9600)
+    data = request.form['serial_text']
+    pytronics.serialWrite(data, 9600)
     return render_template('/lcd.html')
 $$/code
 
 Assuming the same IP address as before, if you sent an HTTP POST request containing form data <code>serial_text: Hamilton</code> to <code>http://192.168.1.101/send-to-lcd</code>, the <code>send_to_lcd()</code> function would be executed. It would retrieve the word "Hamilton" from the request and send it out the Rascal's serial port at a rate of 9600 bits per second. Then, it would send back a copy of the <code>lcd.html</code> template to your browser.
+
+Note the two bits of magic that occurred here. The Rascal knew what Python code to execute because your POST request went to <code>/send-to-lcd</code>, and it also magically pulled whatever data was included in the POST into a structure called <code>request.form</code>, so you could retrieve it with <code>request.form['serial_text']</code>.
 
 ## More detail ##
 

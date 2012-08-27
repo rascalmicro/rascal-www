@@ -79,7 +79,7 @@ Here's the Python.
 $$code(lang=python)
 @public.route('/analog', methods=['POST'])
 def analog():
-    from pytronics import read_analog
+    from pytronics import analogRead
     import json, time
     try:
         ad_ref = float(request.form['adref'])
@@ -87,7 +87,7 @@ def analog():
         ad_ref = 3.3
     data = {
         "time" : float(time.time()),
-        "A0" : float(read_analog('A0')) * ad_ref / 1024.0
+        "A0" : float(analogRead('A0')) * ad_ref / 1024.0
     }
     return json.dumps(data)
 $$/code

@@ -66,9 +66,9 @@ def sprinkler():
     import pytronics
     command = request.form['command']
     if(command == "ON"):
-        pytronics.set_pin_high(2)
+        pytronics.digitalWrite('2', 'HIGH')
     else:
-        pytronics.set_pin_low(2)
+        pytronics.digitalWrite('2', 'LOW')
     return ('Sprinkler toggled')
 $$/code
 
