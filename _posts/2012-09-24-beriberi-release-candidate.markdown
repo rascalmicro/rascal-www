@@ -1,19 +1,19 @@
 ---
 format: markdown
-date: 2012/09/14 00:00:00
+date: 2012/09/24 00:00:00
 title: Preparing to inflict Beriberi
 categories: rascal
 ---
 
-There's a new batch of Rascals at the assembler right now. When they're ready, I'll be putting new, better software on them. In the Rascal tradition of alphabetized ailments, the new release will be called "Beriberi." (The last release was "Anthrax;" up next is "Cooties.")
+There's a new batch of Rascals at the assembler right now. When they're ready, I'll be putting new, better software on them. In the Rascal tradition of alphabetized ailments, the new release will be called "Beriberi." (The last release was "Anthrax." Up next is "Cooties.")
 
-If you have an older Rascal, you can download the new software. Beriberi should be compatible with all existing Rascals, though this release candidate has only been tested on Rascal 1.2's. The point of release candidates is to test the software before we send it out to newly-minted Rascal zealots, so please let us know if you run into difficulties with Anthrax.
+If you have an older Rascal, you can download the new software. Beriberi should be compatible with all existing Rascals, though this release candidate has only been tested on Rascal 1.2's. The point of release candidates is to test the software before we send it out to newly-minted Rascal zealots, so please let us know if you run into difficulties with Beriberi.
 
 More details are on the [Beriberi release page][3]; a few highlights are summarized below.
 
 ### Wireless connections via USB ###
 
-Beriberi comes with precompiled wireless drivers that can be loaded into the Rascal kernel automatically when the Rascal boots. The process is still less polished than we'd like, but at least it works. Currently, two wireless adapters are supported: the Iogear GWU523 and the Edimax EW-7811UN. The Edimax is cheaper and smaller, but also a bit flakier-- it's worth the few extra bucks for the Iogear if it's available in your country. In theory, other adapters that use the zd1211rw or 8192cu driver should work too. If you get an adapter working, please drop brandon at rascalmicro dot com and email and share the details.
+The Beriberi release candidate comes with precompiled wireless drivers that can be loaded into the Rascal kernel automatically when the Rascal boots. The process is still less polished than we'd like, but at least it works. Currently, two wireless adapters are supported: the IOGear GWU523 and the Edimax EW-7811UN. The Edimax is cheaper and smaller, but also a bit flakier-- it's worth the few extra bucks for the IOGear if it's available in your country. In theory, other adapters that use the zd1211rw or 8192cu driver should work too. If you get an adapter working, please drop me (brandon at rascalmicro dot com) and email and share the details.
 
 ### Useful libraries ###
 
