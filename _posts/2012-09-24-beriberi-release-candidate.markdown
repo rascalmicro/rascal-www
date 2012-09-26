@@ -21,7 +21,7 @@ A lot of the libraries on the Rascal have been updated, but there are also a few
 
 <img src="/img/rascal-laplace-edge-detection.png">
 
-[Templeton Automation][5] has been using the Rascal for benchmarking image processing performance on an ARM processor for their [touch table project][4]
+[Templeman Automation][5] has been using the Rascal for benchmarking image processing performance on an ARM processor for their [touch table project][4]
 
 ### Controlling SPI port from Python ###
 

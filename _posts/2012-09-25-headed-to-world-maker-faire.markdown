@@ -1,26 +1,15 @@
 ---
 format: markdown
-date: 2012/09/17 00:00:00
+date: 2012/09/25 00:00:00
 title: Headed to World Maker Faire 2012 in New York City
 categories: rascal
-draft: true
 ---
-<div class="row">
-    <img class="span2" src="/img/postscapes-award-badge.png">
 
-    <div class="span12">
-    <p>The Rascal won the <a href="http://postscapes.com/best-iot-open-source-project-2011">Editors' Choice award</a> in the Open Source Project category at <a href="http://postscapes.com">Postscapes</a> a few days ago. Postscapes is a site in South Korea that tracks the "internet of things," which means stuff like the Rascal, more or less. In the aftermath of the contest, Trevor Harwood of Postscapes and I recorded a discussion of the various topics related to connecting stuff to the internet, open source hardware, and the Rascal. Trevor was kind enough to transcribe and discretize the discussion so you can absorb it in palatable chunks.</p>
-    </div>
-</div>
+Wednesday night, I'm headed down to the [Open Hardware Summit][1] and [World Maker Faire][2] in New York City. If you're in the neighborhood on Saturday or Sunday, stop by the Rascal booth at Maker Faire. It will be in the Arduino Pavilion, which is in Zone C. I'll have a demo of the Rascal talking to multiple I<sup>2</sup>C devices from different web pages at the same time, and I'd be happy to answer any Rascal questions you've got.
 
-<iframe class="span14" src="http://player.vimeo.com/video/31444914?title=0&amp;byline=0&amp;portrait=0&amp;color=C6433C" height="461" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+I'll have some Rascals for sale with the new Beriberi release candidate on them, assuming that the wifi works well enough that I can charge credit cards at the event. You'll at least get the advantage of free shipping when I hand you your Rascal.
 
-**Read/listen to [the interview][1].**
+<img src="/img/rascals-for-world-maker-faire-2012.jpg">
 
-### A brief rant about firewalls and port forwarding ###
-
-More text
-
-<img src="/img/rascal-1.1.jpg" width="820px">
-
-[1]: http://rascalmicro.com
+[1]: http://summit.oshwa.org/
+[2]: http://makerfaire.com/newyork/2012/index.html
