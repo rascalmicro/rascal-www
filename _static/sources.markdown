@@ -22,7 +22,7 @@ For now, the hardware is under the [Creative Commons BY-SA license][1], and the 
  * [Rascal fork of OpenEmbedded][16] for building an Angstrom filesystem image for a microSD card
 
 ### Mechanical drawings ###
- * Mechanical drawing of PCB as [PDF][17] (*130 kB*)
+ * Mechanical drawing of PCB (version 1.2) as [PDF][17] (*130 kB*)
  * [Zip file of Solidworks files][18] used for drawing above
 
 ### Mirror of relevant datasheets ###
@@ -55,8 +55,8 @@ For now, the hardware is under the [Creative Commons BY-SA license][1], and the 
 [14]: https://github.com/rascalmicro/linux-2.6
 [15]: /files/rascal-filesystem-2011-11-02.tar.gz
 [16]: https://github.com/rascalmicro/openembedded-rascal
-[17]: /files/rascal-mechanical-drawing-2010-11-14.pdf
-[18]: /files/rascal-mechanical-cad-2010-11-14.zip
+[17]: /files/rascal-mechanical-drawing-2012-05-30.pdf
+[18]: /files/rascal-mechanical-cad-2012-05-30.zip
 [30]: /files/datasheets/Atmel%20AT91SAM9G20%20microcontroller.pdf
 [31]: /files/datasheets/Bel%20Fuse%20L829-1X1T-91%20RJ45%20jack.pdf
 [32]: /files/datasheets/CTS%2074x%20resistor%20arrays.pdf
