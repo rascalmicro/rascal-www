@@ -11,8 +11,8 @@
         <tr><td>'3'</td><td>70</td><td>PB6</td><td>digital I/O</td></tr>
         <tr><td>'4'</td><td>73</td><td>PB9</td><td>digital I/O</td></tr>
         <tr><td>'5'</td><td>72</td><td>PB8</td><td>digital I/O</td></tr>
-        <tr><td>'6'</td><td>55</td><td>PA23</td><td>digital I/O</td></tr>
-        <tr><td>'7'</td><td>56</td><td>PA24</td><td>digital I/O</td></tr>
+        <tr><td>'6'</td><td>75</td><td>PB11</td><td>digital I/O</td></tr>
+        <tr><td>'7'</td><td>74</td><td>PB10</td><td>digital I/O</td></tr>
         <tr><td>'8'</td><td>100</td><td>PC4</td><td>digital I/O</td></tr>
         <tr><td>'9'</td><td>101</td><td>PC5</td><td>digital I/O</td></tr>
         <tr><td>'10'</td><td>67</td><td>PB3</td><td>digital I/O</td></tr>
