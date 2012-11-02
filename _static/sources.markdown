@@ -2,11 +2,16 @@
 
 The Rascal is open source hardware. This means that you are free to build off of my work, provided that you also allow me to build off of your work, as is specified in the licenses described below.
 
-For now, the hardware is under the [Creative Commons BY-SA license][1], and the software is either GPL or BSD licensed. Some of the software source code for the bootloaders is missing below, but only because I'm changing it every day. Once we have stable releases, they'll be posted here. In the meantime, if you want sources, post something in the forums or email Brandon.
+For now, the hardware is under the [Creative Commons BY-SA license][1], and all of the Rascal-Micro-written code is under the GPL. The remainder of the code is GPL or BSD licensed, with a few other open source licenses sprinkled in. If you're looking for something but can't find it, post something in the forums or email Brandon.
 
 ### Rascal hardware sources ###
  * Schematic diagram as [Altium .schdoc][2] or [PDF][3]
  * PCB layout as [Altium .pcbdoc][4] or [PDF][5]
+
+### Rascal software releases ###
+ * [Software release: <unnamed beta>][15] (*52 MB*) used on Rascals built November 2, 2011. MD5 sum: cd01e5103ad10de439547a0a7356b3f8
+ * [Software release: Anthrax][42] (*103 MB*) used on Rascals sold before September 1, 2012
+ * [Software release: Beriberi][43] (*136 MB*) used on Rascals sold after September 1, 2012
 
 ### Bootloaders ###
  * [AT91Bootstrap Project 3.0 ELF][8] for loading via JTAG
@@ -18,9 +23,8 @@ For now, the hardware is under the [Creative Commons BY-SA license][1], and the 
 ### Linux code and source ###
  * [Linux kernel uImage][13] (*2.9 MB*) MD5 sum: 0cae4fb2cf94e9af8bfc73328eb38a1b
  * [Rascal fork of Linux kernel][14]
- * [Tarball of Linux filesystem][15] (*52 MB*) used on Rascals built November 2, 2011. MD5 sum: cd01e5103ad10de439547a0a7356b3f8
  * [Rascal fork of OpenEmbedded][16] for building an Angstrom filesystem image for a microSD card
-
+ 
 ### Mechanical drawings ###
  * Mechanical drawing of PCB (version 1.2) as [PDF][17] (*130 kB*)
  * [Zip file of Solidworks files][18] used for drawing above
@@ -69,6 +73,8 @@ For now, the hardware is under the [Creative Commons BY-SA license][1], and the 
 [39]: /files/datasheets/On%20Semi%20MC78xx%20regulators.pdf
 [40]: /files/datasheets/TI%20TPS60500%20adjustable%20buck%20charge%20pump.pdf
 [41]: /files/datasheets/TI%20TPS71710%20LDO%20regulator.pdf
+[42]: /docs/release-anthrax.html
+[43]: /docs/release-beriberi.html
 
 
 
