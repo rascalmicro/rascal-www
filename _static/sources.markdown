@@ -33,10 +33,11 @@ For now, the hardware is under the [Creative Commons BY-SA license][1], and all 
  * [Atmel AT91SAM9G20 microcontroller][30] (*12 MB*)
  * [Bel Fuse L829-1X1T-91 RJ45 jack][31] (*184 kB*)
  * [CTS 74x resistor arrays][32] (*191 kB*)
- * [JAE SJ107021 microSD card socket][33] (*138 kB*)
+ * [FCI dual USB port][29] (*276 kB*)
  * [Fox FXO-HC73 oscillator][34] (*67 kB*)
+ * [JAE SJ107021 microSD card socket][33] (*138 kB*)
  * [Macronix MX25L3205D 4 MB serial flash][35] (*3.2 MB*)
- * [Micrel KSZ8041TL Ethernet transceiver][36] (*430 kB*)
+ * [Micrel KSZ8051RNL Ethernet transceiver][36] (*569 kB*)
  * [Micron MT48LCxxMxxA2 SDRAM][37] (*2.5 MB*)
  * [NXP PMBT2222 transistor][38] (*146 kB*)
  * [On Semi MC78xx regulators][39] (*290 kB*)
@@ -61,13 +62,14 @@ For now, the hardware is under the [Creative Commons BY-SA license][1], and all 
 [16]: https://github.com/rascalmicro/openembedded-rascal
 [17]: /files/rascal-mechanical-drawing-2012-05-30.pdf
 [18]: /files/rascal-mechanical-cad-2012-05-30.zip
+[29]: /files/datasheets/FCI%20dual%20USB%20port.pdf
 [30]: /files/datasheets/Atmel%20AT91SAM9G20%20microcontroller.pdf
 [31]: /files/datasheets/Bel%20Fuse%20L829-1X1T-91%20RJ45%20jack.pdf
 [32]: /files/datasheets/CTS%2074x%20resistor%20arrays.pdf
 [33]: /files/datasheets/JAE%20SJ107021%20microSD%20card%20socket.pdf
 [34]: /files/datasheets/Fox%20FXO-HC73%20oscillator.pdf
 [35]: /files/datasheets/Macronix%20MX25L3205D%204%20MB%20serial%20flash.pdf
-[36]: /files/datasheets/Micrel%20KSZ8041TL%20Ethernet%20transceiver.pdf
+[36]: /files/datasheets/Micrel%20KSZ8051RNL%20Ethernet%20transceiver.pdf
 [37]: /files/datasheets/Micron%20MT48LCxxMxxA2%20SDRAM.pdf
 [38]: /files/datasheets/NXP%20PMBT2222%20transistor.pdf
 [39]: /files/datasheets/On%20Semi%20MC78xx%20regulators.pdf

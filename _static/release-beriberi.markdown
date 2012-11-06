@@ -29,6 +29,13 @@ The final release of Beriberi is still forthcoming. So far, we have two release 
             <td>66e8f211bff806c07136f5ac33caf26b</td>
             <td><a href="/files/rascal-filesystem-beriberi-rc2-2012-10-30.tar.gz">rascal-filesystem-beriberi-rc2-2012-10-30.tar.gz</a></td>
         </tr>
+        <tr>
+            <td>Final release</td>
+            <td>November 6, 2012</td>
+            <td>136 MB</td>
+            <td>62a12165c26fde1db5ce24962cdd6817</td>
+            <td><a href="/files/rascal-filesystem-beriberi-2012-11-06.tar.gz">rascal-filesystem-beriberi-2012-11-06.tar.gz</a></td>
+        </tr>
     </tbody>
 </table>
 
@@ -44,6 +51,7 @@ Follow the [microSD card tutorial][4] to copy the filesystem onto the Rascal's m
 * New BlinkM knob demo (thanks to D. Small)
 * Reworking of Pytronics reloading code (thanks to D. Small)
 * Squashing of a [nasty iOS6 POST caching bug][3] (thanks to D. Small)
+* Fix GPIO initialization for pins 6 and 7 (thanks to D. Small)
 * A pile of other small documentation and demo improvements (thanks to D. Small)
 * New SPI functions added to Pytronics
 
