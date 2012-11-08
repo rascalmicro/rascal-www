@@ -152,8 +152,13 @@ Options
 	see: http://support.google.com/googleanalytics/bin/topic.py?hl=en&topic=27612
 	*/
 	"google-analytics": {
-		"enabled": false,
-		"gaq": []
+		"enabled": true,
+		"gaq": [
+			["_setAccount", "UA-96134-3"],
+			["_setDomainName", ".rascalmicro.com"],
+			["_trackPageview"],
+			["_trackPageLoadTime"]
+		]
 	},
 
 	/* [all]
