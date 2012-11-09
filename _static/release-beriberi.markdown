@@ -1,7 +1,5 @@
 ## Download the Rascal filesystem release: Beriberi ##
 
-The final release of Beriberi is still forthcoming. So far, we have two release candidates.
-
 *Note that "release candidates" are less well tested and may set your Rascal on fire.*
 
 <table class="table table-striped table-bordered table-condensed">
@@ -31,10 +29,10 @@ The final release of Beriberi is still forthcoming. So far, we have two release 
         </tr>
         <tr>
             <td>Final release</td>
-            <td>November 6, 2012</td>
+            <td>November 9, 2012</td>
             <td>136 MB</td>
-            <td>62a12165c26fde1db5ce24962cdd6817</td>
-            <td><a href="/files/rascal-filesystem-beriberi-2012-11-06.tar.gz">rascal-filesystem-beriberi-2012-11-06.tar.gz</a></td>
+            <td>66e6b562db5d446d3b9d975fe23eaed4</td>
+            <td><a href="/files/rascal-filesystem-beriberi-2012-11-09.tar.gz">rascal-filesystem-beriberi-2012-11-09.tar.gz</a></td>
         </tr>
     </tbody>
 </table>
