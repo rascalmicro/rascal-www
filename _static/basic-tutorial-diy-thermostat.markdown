@@ -178,8 +178,8 @@ setInterval(function() {
             firstTime = false;
         } else {
             plot1.series[0].data = a0;
-            plot1.series[1].data = a1;
-            plot1.series[2].data = a2;
+            plot1.series\[1\].data = a1;
+            plot1.series\[2\].data = a2;
             plot1.replot();
         }
     });
