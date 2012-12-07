@@ -18,6 +18,7 @@ These are a good place to start if you are new to the Rascal.
 * [Timed events][18]: making stuff happen in the background
 * [Controlling motors][20]: an example of real-time control
 * [Text messages and tri-color LEDs][15]: Twilio, I<sup>2</sup>C to a BlinkM, and the Rascal
+* [DIY thermostat using Google calendar and SMS][30]: combining a temperature sensor with a relay and the internet
 
 ## Advanced tutorials: how the Rascal works under the hood ##
 
@@ -85,3 +86,4 @@ All of the Rascal hardware and software is open source. For the code, hardware d
 [27]: /docs/advanced-tutorial-creating-amazon-machine-image.html
 [28]: /docs/github-and-the-rascal.html
 [29]: /docs/basic-tutorial-batteries.html
+[30]: /docs/basic-tutorial-diy-thermostat.html
