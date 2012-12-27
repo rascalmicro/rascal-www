@@ -41,13 +41,15 @@ Tarballs of the stock filesystem can be found on the [sources][2] page. Download
 
 For example:
 $$code(lang=bash)
+root@milo:/oe# whoami # check that you're still the superuser
+root
 root@milo:/oe# ls /media # check that the card is mounted
 rascal-beta
-wget /files/rascal-filesystem-2011-11-02.tar.gz
-mv rascal-filesystem-2011-11-02.tar.gz /media/rascal-beta/
+wget http://rascalmicro.com/files/rascal-filesystem-beriberi-2012-11-09.tar.gz
+mv rascal-filesystem-beriberi-2012-11-09.tar.gz /media/rascal-beta/
 cd /media/rascal-beta
-sudo tar xzvf rascal-filesystem-2011-11-02.tar.gz # extract the filesystem
-rm rascal-filesystem-2011-11-02.tar.gz # delete the tarball
+tar xzvf rascal-filesystem-beriberi-2012-11-09.tar.gz # extract the filesystem
+rm rascal-filesystem-beriberi-2012-11-09.tar.gz # delete the tarball
 sync # make sure all the data is committed to the card
 exit # relinquish root privileges
 $$/code
