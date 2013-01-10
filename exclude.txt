@@ -2,3 +2,4 @@
 licenses
 packages
 sources
+forum/config.php
