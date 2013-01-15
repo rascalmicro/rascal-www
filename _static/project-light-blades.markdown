@@ -1,10 +1,10 @@
-## Project profile: the technology behind Color Commons ##
+## Persistent encrypted connections for interactive art ##
 
-Color Commons is an installation at the [Rose Kennedy Greenway][1] in Boston, USA. Based around the light blades sculpture, which were originally designed in 2008 by Dennis Carmichael of [EDAW][2] (later bought by AECOM), Color Commons makes the light blades interactive, so that anyone can change the color of the lights by sending a text message (like "purple" or "navy blue") to 917-5BL-ADES.
+### A little background on the project ###
+
+Color Commons is an installation at the [Rose Kennedy Greenway][1] in Boston, USA. Based around the light blades sculpture, which was originally designed in 2008 by Dennis Carmichael of [EDAW][2] (later bought by AECOM), Color Commons makes the light blades interactive, so that anyone can change the color of the lights by sending a text message (like "purple" or "navy blue") to 917-5BL-ADES. Color Commons uses the Rascal microcontroller to receive text messages and talk to a Color Kinetics light controller in a subterranean vault below the Greenway. The interactive features were opened to the public on January 10, 2013, as part of the Greenway's annual Winter Lights festival. More of the non-technical background is [summarized on the New American Public Art blog][6]. The rest of this post focuses on some of the technical innovations that went into making the light blades interactive.
 
 <a href="http://www.flickr.com/photos/ekilby/2600873212/"><img src="/img/eric-kilby-light-blades.jpg" alt="6 green steel blades, 20 feet high, aimed at the sky"></a>
-
-Color Commons uses the Rascal microcontroller to receive text messages and talk to a Color Kinetics light controller in a subterranean vault below the Greenway. The interactive features were opened to the public on January 10, 2013, as part of the Greenway's annual Winter Lights festival.
 
 ## What's innovative about the Rascal and Color Commons? ##
 
@@ -14,7 +14,7 @@ The Rascal can receive text messages from the internet, and almost everyone in B
 
 ### Persistent connection to an external server ###
 
-The second innovative step of the Rascal's use in Color Commons is that it's operating on the Greenway's public wifi network. Quite sensibly, the Greenway's firewall protects computers on their wifi network from the dangers of the public internet, but this also prevents the Rascal from receiving text messages directly. To get around this, the Rascal makes an encrypted connection to a Rascal Micro server in a datacenter in New Jersey. This server listens to the public internet for new messages and sends them to the Rascal when they arrive. The encryption isn't actually necessary in this application, but it does prevent other devices on the network from hijacking the connection to the Rascal.
+The second innovative step of the Rascal's use in Color Commons is that it's operating on the Greenway's public wifi network. Quite sensibly, the Greenway's firewall protects computers on their wifi network from the dangers of the public internet, but this also prevents the Rascal from receiving text messages directly. To get around this, the Rascal makes an encrypted connection to a generic Linux server in a datacenter in New Jersey. This server listens to the public internet for new messages and sends them to the Rascal when they arrive. The encryption isn't actually necessary in this application, but it does prevent other devices on the network from hijacking the connection to the Rascal.
 
 This kind of connection can be useful for all sorts of interactive work. Normally, most internet connections, like the cable or DSL modem in your house, have a built-in firewall that protects your computer from crap on the internet. They work by blocking everything but responses to requests that you initiate. It's like if you order a pizza from Aaron Burr's Delicious Pizza, and then a few minutes later, a dude shows up outside your house wearing a shirt that says "Aaron Burr's Delicious Pizza", you think, "Ah, that's probably my pizza. I'll open the door." On the other hand, if you are awoken in the night by a man in a cloak ringing the doorbell, and he's holding a handwritten sign saying "Real cheap pizza", I don't think it would be a good idea to open the door.
 
@@ -36,3 +36,4 @@ To set up a connection, you need a server on the internet somewhere. Fortunately
 [3]: http://www.harding.motd.ca/autossh/
 [4]: http://linode.com/
 [5]: http://library.linode.com/security/ssh-keys
+[6]: http://newamericanpublicart.tumblr.com/post/40131886561/hacking-ginormous-public-art-to-make-it-more
