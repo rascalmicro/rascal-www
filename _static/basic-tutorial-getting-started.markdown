@@ -24,11 +24,13 @@ After a brief stop at the login page where you enter the password that was inclu
 
 ### Troubleshooting the boot process ###
 
+Here are a few tips that might be useful if you run into trouble connecting to your Rascal.
+
 If both green LEDs remain on, try reseating your microSD card.
 
 If the Rascal won't resolve at its Bonjour address, it's most likely that your DHCP server is failing to dole out an address. You might try using a Bonjour browser (iStumbler or Bonjour Browser for OS X, avahi-discover for Linux) to see if the address is getting broadcast. If the Rascal can't get an DHCP address, it will fall back to a link-local address.
 
-When the Rascal boots, it sends a large amount of diagnostic data out its debug serial port and then waits for someone to login. You can connect to this serial port with 3.3 V signals at 115200 bps. The pins are arranged in order to match [Sparkfun's FTDI adapters][2] and cables. If you have a recent 5 V FTDI adapter, it can be converted to 3.3 V with the solder jumper on the bottom of the board.
+When the Rascal boots, it sends a large amount of diagnostic data out its debug serial port and then waits for someone to login. You can connect to this serial port with 3.3 V signals at 115200 bps. The pins are arranged in order to match [Sparkfun's FTDI adapters][2] and cables. If you have a recent 5 V FTDI adapter, it can be converted to 3.3 V with the solder jumper on the bottom of the board. If the Rascal doesn't send out this diagnostic data, the Rascal's power supply is probably insufficient in some way. You might check the voltages at the circled vias labeled 3.3 V and 1.0 V.
 
 ### Useful development tools ###
 
