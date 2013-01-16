@@ -155,7 +155,7 @@ Options
 		"enabled": true,
 		"gaq": [
 			["_setAccount", "UA-96134-3"],
-			["_setDomainName", ".rascalmicro.com"],
+			["_setDomainName", "rascalmicro.com"],
 			["_trackPageview"],
 			["_trackPageLoadTime"]
 		]
