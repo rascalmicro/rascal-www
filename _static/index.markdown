@@ -2,7 +2,7 @@
 
 The Rascal is a small, open-source computer designed for connecting sensors, motors, and whatever else you can build to the internet. It's about 5 cm x 10 cm (2 inches by 4 inches).
 
-<img src="/img/rascal-0.6-beta-2011-02-26.jpg" alt="The Rascal" width="820px">
+<img src="/img/rascal-1.1.jpg" alt="The Rascal" width="820px">
 
 ## Basic tutorials: building stuff with the Rascal ##
 
