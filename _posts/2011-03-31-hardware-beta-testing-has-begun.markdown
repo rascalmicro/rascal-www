@@ -24,6 +24,6 @@ Look at this beautiful fleet of Rascals!
 
 <img class="span14" src="/img/sixteen-rascal-betas-950px.jpg">
 
-[1]: /store
+[1]: http://store.rascalmicro.com
 [2]: http://demo.rascalmicro.com:81/hello/index
 
