@@ -38,7 +38,7 @@ If you want more detail, you can start by looking at all the functions that are 
 
 If you want still more detail, you can look at the documentation for [Flask][4], the web framework that the Rascal uses, and [Werkzeug][5], the utility library that Flask uses behind the scenes. The [routing section][2] of the [Flask quickstart][3] page is a good starting point.
 
-[1]: /docs/pytronics-code-reference.html
+[1]: /docs/rascal-api.html
 [2]: http://flask.pocoo.org/docs/quickstart/#routing
 [3]: http://flask.pocoo.org/docs/quickstart/
 [4]: http://flask.pocoo.org

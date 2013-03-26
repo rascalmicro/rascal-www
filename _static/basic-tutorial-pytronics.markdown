@@ -44,7 +44,7 @@ $$code(lang=python)
 spiWrite(data, channel='0')
 $$/code
 [1]: http://www.adafruit.com/products/94
-[2]: /docs/pytronics-code-reference.html
+[2]: /docs/rascal-api.html
 [3]: https://github.com/rascalmicro/pytronics/blob/master/pytronics.py
 [4]: /docs/pinout.html
 [5]: http://www.google.com/patents/US4689740

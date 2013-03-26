@@ -110,6 +110,6 @@ If you find errors in this tutorial, please drop a note in the [forums][4], and 
 [2]: http://www.amazon.com/Class-II-Transformer-Approved-MGT-2440/dp/B004VMVDTA/
 [3]: http://www.sparkfun.com/tutorials/119
 [4]: /forum/
-[5]: /docs/pytronics-code-reference.html
+[5]: /docs/rascal-api.html
 [6]: /docs/pinout.html
 [7]: http://www.zurb.com/blog_uploads/0000/0617/buttons-03.html

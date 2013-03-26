@@ -67,7 +67,7 @@ All of the Rascal hardware and software is open source. For the code, hardware d
 [8]: /docs/basic-tutorial-serial-communication.html
 [9]: /docs/basic-tutorial-reading-sensors.html
 [10]: /docs/basic-tutorial-controlling-motors.html
-[11]: /docs/pytronics-code-reference.html
+[11]: /docs/rascal-api.html
 [12]: /docs/advanced-tutorial-new-filesystem-onto-microsd-card.html
 [13]: /docs/pinout.html
 [14]: /docs/basic-tutorial-getting-started-even-more.html

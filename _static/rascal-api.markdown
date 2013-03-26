@@ -2,6 +2,80 @@
 
 Pytronics is a Python library used to control the electronic hardware on the Rascal. It closely mirrors the [library of functions used by the Arduino][1]. This page describes the Pytronics functions available for use in response to web requests. If you need more detail, try looking at the [Pytronics code][2] itself.
 
+## Summary of useful URLs (coming in Cooties software release)##
+
+The parts with angle brackets, like &lt;analog pin&gt;, mean "substitute a number in here."
+
+The sections in braces, like { data: &lt;data&gt; } mean "pass JSON with your request that looks like this."
+
+<table class="table table-striped table-bordered table-condensed">
+    <thead>
+        <tr><th>Name</th><th>Request</th><th>URL</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>analog read</td><td>GET</td><td>/analog/read/&lt;analog pin&gt;</tr></tr>
+        <tr class="error"><td>analog write</td><td>POST</td><td>(can't actually do this with current Rascal kernel)</tr></tr>
+        <tr><td>digital read</td><td>GET</td><td>/digital/read/&lt;pin&gt;</tr></tr>
+        <tr><td>digital write</td><td>POST</td><td>/digital/write/&lt;pin&gt;, { data: &lt;data&gt; }</tr></tr>
+        <tr><td>I<sup>2</sup>C read</td><td>GET</td><td>/i2c/read/&lt;addr&gt;/&lt;reg&gt;/&lt;num_bytes&gt;</tr></tr>
+        <tr><td>I<sup>2</sup>C write</td><td>POST</td><td>/i2c/write/&lt;addr&gt;/&lt;reg&gt;, { data: &lt;data&gt; }</tr></tr>
+        <tr><td>serial read</td><td>GET</td><td>/serial/read/&lt;channel&gt;/&lt;speed&gt;/&lt;num_bytes&gt;</tr></tr>
+        <tr><td>serial write</td><td>POST</td><td>/serial/write/&lt;channel&gt;/&lt;speed&gt;, { data: &lt;data&gt; }</tr></tr>
+        <tr><td>SPI read</td><td>GET</td><td>/spi/read/&lt;channel&gt;/&lt;speed&gt;/&lt;num_bytes&gt;</tr></tr>
+        <tr><td>SPI write</td><td>POST</td><td>/spi/write/&lt;channel&gt;/&lt;speed&gt;, { data: &lt;data&gt; }</tr></tr>
+    </tbody>
+</table>
+
+## Other useful URLs (coming in Cooties software release) ##
+
+Shortcuts
+
+<table class="table table-striped table-bordered table-condensed">
+    <thead>
+        <tr><th>Name</th><th>Request</th><th>URL</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>digital toggle</td><td>GET or POST</td><td>/digital/toggle/&lt;pin&gt;</tr></tr>
+        <tr><td>digital write shortcut</td><td>GET or POST</td><td>/digital/write/&lt;pin&gt;/&lt;state&gt;</tr></tr>
+    </tbody>
+</table>
+
+BlinkM smart LED
+
+<table class="table table-striped table-bordered table-condensed">
+    <thead>
+        <tr><th>Name</th><th>Request</th><th>URL</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>set hue, saturation and brightness</td><td>GET or POST</td><td>/blinkm/&lt;address&gt;/hsb/&lt;hue&gt;/&lt;saturation&gt;/&lt;brightness&gt;</tr></tr>
+        <tr><td>get hue, saturation and brightness </td><td>GET or POST</td><td>/blinkm/&lt;address&gt;/hsb</tr></tr>
+    </tbody>
+</table>
+
+4D Systems PICASO microLCDs
+
+<table class="table table-striped table-bordered table-condensed">
+    <thead>
+        <tr><th>Name</th><th>Request</th><th>URL</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>clear LCD</td><td>GET or POST</td><td>/fd/clear-lcd</tr></tr>
+        <tr><td>draw filled rectangle</td><td>GET or POST</td><td>/fd/draw-filled-rectangle/&lt;x1&gt;/&lt;y1&gt;/&lt;x2&gt;/&lt;y2&gt;/&lt;color&gt;</tr></tr>
+    </tbody>
+</table>
+
+Rascal Micro precision voltage shield
+
+<table class="table table-striped table-bordered table-condensed">
+    <thead>
+        <tr><th>Name</th><th>Request</th><th>URL</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>reset shield</td><td>GET or POST</td><td>/pvs/reset</tr></tr>
+        <tr><td>read voltages</td><td>GET or POST</td><td>/pvs/read</tr></tr>
+    </tbody>
+</table>
+
 ## Functions for reading data ##
 
 ### digitalRead(pin) ###
