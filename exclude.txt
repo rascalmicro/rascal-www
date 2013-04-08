@@ -1,4 +1,6 @@
 *cache/*
+files
+h5ai
 licenses
 packages
 sources
