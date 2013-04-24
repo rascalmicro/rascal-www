@@ -6,10 +6,11 @@
   <div class="post_prose">
     ${self.post_prose(post)}
   </div>
-  <a href="https://twitter.com/share" class="twitter-share-button" data-via="rascalmicro" data-url="http://rascalmicro.com${post.permapath()}" data-text="${post.title}" data-size="large">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  <a href="https://twitter.com/rascalmicro" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @rascalmicro</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  <div class="fb-like" data-href="http://rascalmicro.com${post.permapath()}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="trebuchet ms"></div>
+  <div class="g-plusone" data-size="medium" data-href="http://rascalmicro.com${post.permapath()}"></div>
+  <a href="//pinterest.com/pin/create/button/?url=http://rascalmicro.com${post.permapath()}&media=http%3A%2F%2Frascalmicro.com%2Fimg%2Frascal-1.1.jpg&description=Rascal%20Micro%3A%20small%20computers%20for%20art%20and%20science" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="rascalmicro" data-url="http://rascalmicro.com${post.permapath()}" data-text="${post.title}" data-size="small">Tweet</a>
 </div>
 
 <%def name="post_prose(post)">
