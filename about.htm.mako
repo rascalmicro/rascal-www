@@ -12,10 +12,10 @@
     <p>If you're an artist or scientist who needs a little more horsepower than the Arduino can provide, and you like the idea of hacking up web pages to make your own interface, the Rascal is for you.</p>
     <h2>Brandon Stafford makes the Rascal.</h2>
     <div class="row">
-        <div class="span4">
-            <img src="/img/brandon-stafford.jpg">
-        </div>
         <div class="span6">
+            <img src="/img/brandon-stafford-at-artisans-asylum-rascal-headquarters-2012.jpg">
+        </div>
+        <div class="span4">
             <p>The Rascal is the work of Brandon Stafford, an engineer who lives in Somerville, Massachusetts, USA. Brandon grew up north of Boston and spent a lot of time building tree forts and skateboard ramps as an adolescent. After a degree in English and a few years of teaching high school math, Brandon went to grad school in mechanical engineering.</p>
             <p>Since grad school, Brandon has worked at the Stanford Robotics Lab, MindTribe Product Engineering, IDEO, and as a consultant for various renewable energy startups.</p>
             <p>Brandon's profile on Linkedin: <a href="http://linkedin.com/in/brandonstafford"><img src="/img/linkedin-icon-15px.png"></a></p>
