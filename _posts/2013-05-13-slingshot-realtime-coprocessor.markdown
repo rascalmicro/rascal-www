@@ -1,7 +1,7 @@
 ---
 format: markdown
 date: 2013/05/13 00:00:00
-title: The Slingshot&#58; a realtime coprocessor for the Rascal
+title: The Slingshot, a realtime coprocessor for the Rascal
 categories: rascal
 ---
 
