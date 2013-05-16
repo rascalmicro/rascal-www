@@ -11,24 +11,43 @@
                 <p><a class="btn btn-primary btn-large" href="http://store.rascalmicro.com">Buy &raquo;</a></p>
             </div>
         </div>
-        <div class="ring active row pane-home">
+        <div class="row">
             <div class="span12">
                 <h2>It should be easier to talk to hardware from your web browser.</h2>
                 <p class="lead">With the Rascal, you get a web interface that's ready to help you test new hardware and develop projects fast.</p>
             </div>
-        </div>
+        </div> <!-- ./row -->
+        <div class="row">
+            <div class="span6">
+                <h2>Test serial devices</h2>
+                <a href="/img/test-serial-screenshot.png"><img src="/img/test-serial-screenshot.png" width="440px" alt="A red circuit board used for controlling the universe"></a>
+                <p>Use the serial testing page to talk to serial devices without writing any code.</p>
+            </div>
+            <div class="span6">
+                <h2>Test SPI devices</h2>
+                <a href="/img/test-spi-screenshot.png"><img src="/img/test-spi-screenshot.png" width="440px" alt="A red circuit board used for controlling the universe"></a>
+                <p>Use the serial testing page to talk to SPI devices without writing any code.</p>
+            </div>
+        </div> <!-- ./row -->
         <div class="row">
             <div class="span6">
                 <h2>Test digital I/O</h2>
-                <a href="/img/test-i2c-2013-05-15.png"><img src="/img/test-pins-screenshot.png" width="440px" alt="A red circuit board used for controlling the universe"></a>
+                <a href="/img/test-pins-screenshot.png"><img src="/img/test-pins-screenshot.png" width="440px" alt="A red circuit board used for controlling the universe"></a>
                 <p>Use the I/O testing page to set pins high and low without writing any code.</p>
             </div>
             <div class="span6">
                 <h2>Test I<sup>2</sup>C devices</h2>
-                <a href="/img/test-i2c-2013-05-15.png"><img src="/img/test-i2c-screenshot.png" width="440px" alt="A red circuit board used for controlling the universe"></a>
+                <a href="/img/test-i2c-screenshot.png"><img src="/img/test-i2c-screenshot.png" width="440px" alt="A red circuit board used for controlling the universe"></a>
                 <p>Plug in an I<sup>2</sup>C device and quickly scan the bus to detect it. Read and write to different addresses to test that your hardware works.</p>
             </div>
-        </div>
+        </div> <!-- ./row -->
+        <div class="row">
+            <div class="span12">
+                <h2>Experiment with hardware by hitting URLs with your browser</h2>
+                <p class="lead">The Rascal comes with a API that makes testing easy. Hitting <code>/digital/write/2/on</code> turns on pin 2.</p>
+                <img src="/img/digital-write-api-screenshot.png" width="440px" alt="screenshot of the browser URL /digital/write/2/on, skewed at a jaunty angle">
+            </div>
+        </div> <!-- ./row -->
         <div class="row">
             <div class="span12">
                 <h2>Testimonials</h2>
@@ -45,7 +64,22 @@
                     <small>Bill S., Maryland, USA</small>
                 </blockquote>
             </div>
-        </div>
+        </div> <!-- ./row -->
+        <div class="row">
+            <div class="span12">
+                <h2>Case Studies</h2>
+            </div>
+        </div> <!-- ./row -->
+        <div class="row">
+            <div class="span12">
+                <div class="span4">
+                    <p>Color Commons</p>
+                    <iframe src="http://player.vimeo.com/video/57427317" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <p><a href="http://vimeo.com/57427317">Color Commons - Interactive Public Lighting Installation</a> from <a href="http://vimeo.com/newamericanpublicart">New American Public Art</a>.</p>
+                </div>
+                <div class="span4">ARTEMIS</div>
+            </div>
+        </div> <!-- ./row -->
     </div> <!-- /container -->
 <%include file="footer.mako" />
 </body>
