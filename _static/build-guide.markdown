@@ -19,7 +19,7 @@ To build the bootloader, use the [2010q1 release of the CodeSourcery arm-none-ea
 Unpack the tools where you like; I've put them in /opt/cs, which generally requires root privileges. You can put them elsewhere if you prefer.
 $$code(lang=bash)
 cd /opt
-sudo wget http://www.codesourcery.com/sgpp/lite/arm/portal/package6493/public/arm-none-eabi/arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
+sudo wget http://rascalmicro.com/sources/arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
 sudo tar xjvf arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
 sudo mv arm-2010q1 /opt/cs
 sudo rm arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
@@ -53,11 +53,7 @@ $$/code
 
 ### Installing git ###
 
-Next, install git. You might also want a graphical Git client, but to build the code, you only need two git commands (clone and checkout), so it's not required. Installing git is a straightforward process by now, and the fine people at Github have produced a series of guides that explain how to do it.
-
- * [Installing git on Ubuntu Linux][9]
- * [Installing git on OS X][10]
- * [Installing git on Windows][11]
+Next, install git. You might also want a graphical Git client, but to build the code, you only need two git commands (clone and checkout), so it's not required. Installing git is a straightforward process by now, and the fine people at Github have produced guides that explains how to do it: [installing git][9]
 
 ### Test your tools ###
 
@@ -152,6 +148,15 @@ make ARCH=arm uImage # Note that case matters here. "arch=ARM" won't work.
 $$/code
 
 If the toolchain builds the kernel successfully, you'll find the kernel image at arch/arm/boot/uImage.
+
+If you see errors like the ones below, you've probably forgetten to set $PATH and $CROSS_COMPILE as was explained earlier.
+$$code(lang=bash)
+cc1: error: unrecognized command line option "-mlittle-endian"
+cc1: error: unrecognized command line option "-mabi=aapcs-linux"
+cc1: error: unrecognized command line option "-mno-thumb-interwork"
+kernel/bounds.c:1: error: bad value (armv4t) for -march= switch
+kernel/bounds.c:1: error: bad value (arm9tdmi) for -mtune= switch
+$$/code
 
 ### Building OpenEmbedded filesystem image ###
 
@@ -262,9 +267,7 @@ $$/code
 [6]: /docs/software-guts.html
 [7]: /2010/10/18/adding-a-microsd-card-to-the-rascal/
 [8]: http://git-scm.com/
-[9]: http://help.github.com/linux-git-installation/
-[10]: http://help.github.com/mac-git-installation/
-[11]: http://help.github.com/win-git-installation/
-[12]: http://ftp.denx.de/pub/eldk/4.2/arm-linux-x86/iso/
-[13]: http://www.codesourcery.com/sgpp/lite/arm/portal/release1294
+[9]: https://help.github.com/articles/set-up-git
+[12]: http://rascalmicro.com/sources/arm-2008-11-24.iso
+[13]: http://rascalmicro.com/sources/arm-2010q1-188-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
 [14]: http://en.wikipedia.org/wiki/Application_binary_interface
