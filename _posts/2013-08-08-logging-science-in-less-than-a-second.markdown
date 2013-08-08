@@ -17,7 +17,7 @@ I think we can do data collection and management better. It's a broad problem, b
 
 ### The event logger ###
 
-I've been collaborating with an angel-funded startup at MIT called [Biobright][1]. Their goal is to build an open software framework for the collection, analysis, and visualization of biomedical data. Recently, we have been working on a device for the lab bench that will help biomedical experimenters log their progress while executing biomedical protocols.
+I've been collaborating with an angel-funded startup at MIT called [BioBright][1]. Their goal is to build an open software framework for the collection, analysis, and visualization of biomedical data. Recently, we have been working on a device for the lab bench that will help biomedical experimenters log their progress while executing biomedical protocols.
 
 <img src="/img/event-logger-prototypes-2013-08-07.jpg">
 
