@@ -11,7 +11,9 @@ As the Rascal has matured over the last few years, I've started to think about h
 
 In science, one of the largest changes in the last 20 or 30 years is the rise of computerized statistical analysis. Scientists have long used statistics to analyze their data, but with microcontrollers embedded in everything, we can now gather data more easily than ever before. I think it would be fair to say that our ability to gather data has outstripped our ability to manage that data.
 
-In my experience, researchers manage data in a haphazard way, but only because it's so hard to do better. They're often collecting data from multiple instruments simultaneously. The data ends up with different timestamps, on various USB sticks or shared fileservers, often in CSV or Excel files, or in some weird text format specific to the instrument. The researcher then pulls the data together onto one computer, reconciles the timescales, and analyzes the data using Excel, SPSS, R, Python, or a software tool specific to their research specialty. I think we can do data collection and management better.
+In my experience, researchers manage data in a haphazard way, but only because it's so hard to do better. They're often collecting data from multiple instruments simultaneously. The data ends up with different timestamps, on various USB sticks or shared fileservers, often in CSV or Excel files, or in some weird text format specific to the instrument. The researcher then pulls the data together onto one computer, reconciles the timescales, and analyzes the data using Excel, SPSS, R, Python, or a software tool specific to their research specialty. Merging and reformatting the data into a form that you can analyze is painful, mind-numbing work, not worthy of the attention of a scientist.
+
+I think we can do data collection and management better. It's a broad problem, but I'm working on a solution to one narrow slice of it, as I'll explain below.
 
 ### The event logger ###
 
@@ -21,7 +23,7 @@ I've been collaborating with an angel-funded startup at MIT called [Biobright][1
 
 ##### The first cardboard mock-up, a first try, and a much smaller, more refined prototype #####
 
-The scenario goes like this: you're at the lab bench wearing nitrile gloves, holding a pipette in one hand and a test tube in the other. You're working your way through a protocol. You'd like to be able to note down, "Yes, at 10:36 AM today, I added 10 mL of NaCl to the solution," but given that the protocol is long and complex, and you have a lot of samples to prepare, you're not going to take the time at every step to log what happened. You'd have to put down the pipette and type on your laptop one-handed, or use a pencil and a notebook. Your average time for each step could easily double or triple, and you might end up contaminating your samples as well.
+The scenario goes like this: you're at the lab bench wearing nitrile gloves, holding a pipette in one hand and a test tube in the other. You might be working in a fume hood or a glovebox. You're working your way through a protocol, maybe printed out and stuck to the front of the fume hood. You'd like to be able to note down, "Yes, at 10:36 AM today, I exchanged the cell culture media," but given that the protocol is long and complex, and you have a lot of samples to deal with, you're not going to take the time at every step to log what happened. You'd have to put down the pipette, and type on your laptop one-handed, or use a pencil and a notebook. Your average time for each step could easily double or triple, and you might end up contaminating your samples as well.
 
 ### Logging in less than a second ###
 
